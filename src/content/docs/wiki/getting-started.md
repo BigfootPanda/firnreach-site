@@ -1,51 +1,58 @@
 ---
 title: Getting started
-description: Your first day and night in Firnreach - mining, the Base, power, walls and the two views.
+description: Your first match in Firnreach - mining, the Base, power, walls, the waves and the two views.
 sidebar:
   order: 1
 ---
 
-Firnreach is played in two halves. **By day** you mine crystals and build. **By night** waves of enemies come out
-of the cold and head for your Base. Hold the Base through the nights to win.
+A Firnreach match starts with a short **prep** in the daylight: mine crystals and build. Then the dark comes and
+stays. Enemies attack in **waves** through the lanes at the edge of the map, and the quiet **night** between waves is
+your time to rebuild. Hold the Base through every wave to win; if the Base falls and everyone is down, you lose.
 
 :::tip[New here?]
-Play the **Tutorial** first. It walks you through one full day and night on a small map, points at everything with
-an on-screen arrow, and pays full XP the first time.
+Play the **Tutorial** first (it is preselected on a new profile). Three gentle waves walk you through mining, the
+Base, a wall, a generator and a turret, step by step, and your first Tutorial pays full XP.
 :::
 
-## The first day
+## The first prep
 
-1. **Mine.** Hold **Left Mouse** while facing a rock or crystal. You collect four kinds of crystal:
-   **Red**, **Purple**, **Amber** and **Obsidian**.
-2. **Build your Base first.** Press **B** for build mode. Other towers unlock once the team's Base is down, so place
-   it somewhere you can wall in.
-3. **Make power.** Most towers only work with power. Generators make it, Batteries store it and pass it on. You can
-   also feed a tower yourself: hold **F** while looking at it (or press **V** to auto-feed the nearest tower that
-   needs it).
-4. **Build guns and walls.** Turrets, Artillery and Snipers shoot. Walls block the lanes so enemies have to chew
-   through them while your guns work.
-5. **Start the night** when you're ready. Press **J** to skip the rest of the day (in multiplayer the team votes).
+1. **Mine.** Hold **Left Mouse** while facing a rock or crystal. There are four colors of crystal: **Red**, **Purple**,
+   **Amber** and **Obsidian**. Gray rocks give +5 of a random color.
+2. **Place your Base first.** Press **B** for the build bar; the Base is under **UTILITY**. Until it's down the other
+   build cards say *BUILD YOUR BASE FIRST*, and with no Base the enemies hunt *you*. Pick a spot you can wall in:
+   a pocket of rock with one way in is ideal.
+3. **Wall off the way in.** **DEFENSE** has the walls. The Stone Wall is cheap and needs no power; **R** turns a wall
+   before you place it.
+4. **Make power.** Most towers only work with power. Generators make it, Batteries store it and pass it on. You can
+   feed a tower yourself: hold **F** while looking at it (or press **V** to auto-feed the nearest tower that needs it).
+5. **Build guns.** Turrets, Artillery and Snipers (**OFFENSE**) shoot. Put them in reach of a generator.
+6. **Start the first wave** when you're ready, or let the timer run out. **J** skips the rest of the prep; in
+   multiplayer the team votes (**Y** / **N**).
 
 ## Which crystal builds what
 
-| Crystal | Mostly used for |
+| Crystal | What it builds |
 |---|---|
-| Red | Power: generators and batteries |
-| Purple | Offense: Turret, Artillery, Sniper |
-| Amber | Utility: Healer, Shield Projector, Siphon |
-| Obsidian | Defense: walls and doors |
+| Red | Power: Generators and Batteries |
+| Purple | Guns: Turret, Artillery, Sniper |
+| Amber | Support: Healers, Shield Projectors, Siphons |
+| Obsidian | Walls, and it pays for upgrades |
 
-See [Towers](/wiki/towers/) for exact costs at every level.
+Carrying more than your capacity slows you; twice your capacity stops you. See
+[Crystals and resources](/wiki/resources/) for Heartstone, Rime Essence and power, and [Buildings](/wiki/towers/) for
+exact costs at every level.
 
-## The night
+## The waves
 
-- Enemies come in waves and go for your **Base**. If it falls, its core goes dark and nobody respawns any more:
-  the team has to survive without it.
-- Some enemies change the rules: a **Cryo-Mage** slows your guns, a **Rime-Warden** shields its friends, a **Burrower**
-  dives underground. Their pages under [Enemies](/wiki/enemies/) say how to spot each attack.
-- Gun towers have a weapon you can take: press **Q** at the stand to carry it and aim it yourself. Carried guns are
-  never frozen by bosses.
-- Down? While the Base stands, you respawn there after a short countdown.
+- Enemies go for your **Base**. Its level also caps how far every other building can be upgraded, so upgrade it.
+- Some enemies change the rules: a **Cryo-Mage** slows your guns, a **Rime-Warden** protects its friends, a
+  **Burrower** dives underground. Their pages under [Enemies](/wiki/enemies/) say how to spot each attack.
+- A **boss** walks every few waves (every 5th in a Standard match). Aim your own shots at its glowing weak spots:
+  they hit for double.
+- Gun towers have a weapon you can take: press **Q** at the stand to carry it and aim it yourself. Your own shots hit
+  harder than the tower's aim, and carried guns are never frozen by bosses.
+- **Between waves:** open the Base menu (click the Base, press **Home**, or walk up to it and press **E**) for your
+  player upgrades, like Mine Speed and Mine Yield.
 
 ## Two ways to play: first person and commander
 
@@ -55,13 +62,15 @@ Press **Tab** to switch at any time.
 - **Commander view:** a top-down view for planning. Pan with **WASD**, left-click to select and place, right-click to
   send your character to walk somewhere or mine something.
 
+The Almanac's [Player](/wiki/player/) page has the details for both views.
+
 ## Default controls
 
 | Action | Key |
 |---|---|
-| Move / jump / sprint | WASD / Space / Left Shift |
+| Move / jump / sprint | WASD / Space / Shift |
 | Mine or fire | Left Mouse (hold) |
-| Aim / scope | Right Mouse |
+| Aim / scope | Right Mouse (hold) |
 | Build mode | B |
 | Switch first person / commander | Tab |
 | Use, tower menu | E |
@@ -71,15 +80,16 @@ Press **Tab** to switch at any time.
 | Open / close a Stone Door | T |
 | Upgrade / sell selected tower | U / X |
 | Rotate a tower | R |
-| Skip the day | J |
+| Skip the day (start the next wave) | J |
 | Ping (twice: need help) | G |
 | Chat | Enter |
-| Pause | Esc |
+| Pause | P (Esc always works too) |
 
-Every key can be rebound in **Settings**.
+Every key can be rebound in **Settings**. The full list is on the [Controls](/wiki/controls/) page.
 
 ## Between matches: the Hollow
 
-After a match you return to the Hollow, an underground street of shops. Spend what you earned on outfits, better picks
-and supplies, and spend **Rime Essence** in the skill tree. Every player earns Rime Essence at the end of
-each day, so co-op progress is shared fairly.
+After a match you return to the [Hollow](/wiki/hollow/), an underground street of shops. Spend **Rime Essence** (the
+pale wisps enemies drop, plus a wage every wave) and banked **Heartstone** on outfits, a better
+[pick](/wiki/picks/), tower parts and supplies. Leveling up earns **skill points**, which you spend with your
+**Trainer** in the [skill tree](/wiki/skills/). The **Surface Lift** at the end of the street takes you back up to the ice.

@@ -6,12 +6,23 @@ import news from '../data/news.json';
 import game from '../data/game.json';
 import type { ImageMetadata } from 'astro';
 
-// Screenshots: only shots from the CURRENT build go here (Alex, 2026-10-08). Drop PNGs in src/assets/shots/
-// and list them below; the hero, commander panel and gallery each hide themselves while they have no shot.
-const heroShot: ImageMetadata | null = null;
-const commanderShot: ImageMetadata | null = null;
-const gallery: { src: ImageMetadata; alt: string }[] = [];
-const commanderAlt = 'Commander view from above.';
+// Screenshots: only shots from the CURRENT build go here (Alex, 2026-10-08). Drop images in src/assets/shots/
+// (scripts/sync-shots.mjs copies them in): hero-* is the hero background, commander-* the commander panel, every other
+// file joins the gallery in name order. Alt text comes from src/assets/shots/alt.json ({ "<file name>": "alt" }).
+// The hero, commander panel and gallery each hide themselves while they have no shot.
+const shotFiles = import.meta.glob<{ default: ImageMetadata }>('../assets/shots/*.{png,jpg,jpeg,webp}', { eager: true });
+const shotAltFiles = import.meta.glob<Record<string, string>>('../assets/shots/alt.json', { eager: true, import: 'default' });
+const shotAlts: Record<string, string> = Object.values(shotAltFiles)[0] ?? {};
+const shots = Object.entries(shotFiles)
+	.map(([path, mod]) => ({ file: path.split('/').pop() as string, src: mod.default }))
+	.sort((a, b) => a.file.localeCompare(b.file));
+const heroShot: ImageMetadata | null = shots.find((s) => s.file.startsWith('hero'))?.src ?? null;
+const commander = shots.find((s) => s.file.startsWith('commander'));
+const commanderShot: ImageMetadata | null = commander?.src ?? null;
+const gallery: { src: ImageMetadata; alt: string }[] = shots
+	.filter((s) => !s.file.startsWith('hero') && !s.file.startsWith('commander'))
+	.map((s) => ({ src: s.src, alt: shotAlts[s.file] || 'A scene from Firnreach.' }));
+const commanderAlt = (commander && shotAlts[commander.file]) || 'Commander view from above.';
 
 const latest = news[0];
 

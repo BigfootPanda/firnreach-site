@@ -1,7 +1,7 @@
 {
-	"version": "0.0.20",
-	"tag": "v0.0.20",
-	"releaseDate": "2026-10-07",
+	"version": "0.0.21",
+	"tag": "v0.0.21",
+	"releaseDate": "2026-10-08",
 	"towers": [
 		{
 			"id": 10,
@@ -1050,7 +1050,7 @@
 			"slug": "rime-vent",
 			"category": "Defense",
 			"primaryCrystal": "Obsidian",
-			"description": "A 2-cell wall that breathes dead light: a freezing mist 2 cells out from both faces. Enemies in it move 30-55% and attack 20-45% slower (by level; bosses half as much). Needs power; R turns it.",
+			"description": "A 2-cell wall that breathes dead light: a freezing mist 2 cells out from both faces. Enemies in it move 30-55% and attack 20-45% slower (by level; bosses half as much). Needs power; R turns it. Unlocks after Night 2.",
 			"upgrades": "+HP, +Stronger slow field",
 			"levels": [
 				{
@@ -3910,6 +3910,7 @@
 			"order": 0,
 			"name": "Frost Mite",
 			"slug": "frost-mite",
+			"short": "Mite",
 			"category": "Regular",
 			"threat": "Low (Individually)",
 			"description": "Frost ticks: a handful of frost on six legs, drawn to any warmth. Each one is nothing. The night makes thousands, and they win by what leaks through.",
@@ -3926,6 +3927,7 @@
 			"order": 1,
 			"name": "Ice Brawler",
 			"slug": "ice-brawler",
+			"short": "Brawler",
 			"category": "Regular",
 			"threat": "Medium",
 			"description": "Packed snow given a shape to walk in. Slow and broad, it walks in front of the others and takes what was meant for them.",
@@ -3942,6 +3944,7 @@
 			"order": 2,
 			"name": "Glacial Runner",
 			"slug": "glacial-runner",
+			"short": "Runner",
 			"category": "Regular",
 			"threat": "Medium",
 			"description": "Shards in the shape of a wolf, held together by the song. Fast, and half of it is gaps: some of your shots will find them.",
@@ -3958,6 +3961,7 @@
 			"order": 3,
 			"name": "Cryo-Mage",
 			"slug": "cryo-mage",
+			"short": "Cryo-Mage",
 			"category": "Regular",
 			"threat": "High (Support)",
 			"description": "A floating knot of white crystal carrying a bubble of dead light. Doesn't hit. Doesn't need to: every gun inside its ring fires slow. Pick one up; hands don't care.",
@@ -3974,6 +3978,7 @@
 			"order": 4,
 			"name": "Permafrost Golem",
 			"slug": "permafrost-golem",
+			"short": "Golem",
 			"category": "Regular",
 			"threat": "High",
 			"description": "Older than Skarnholt: a stone heart in a century of permafrost shell, and something in there wants out. Break the shell, then be quick.",
@@ -3990,6 +3995,7 @@
 			"order": 5,
 			"name": "Subzero Burrower",
 			"slug": "subzero-burrower",
+			"short": "Burrower",
 			"category": "Unique",
 			"threat": "Medium",
 			"description": "The Rime's own miner. It tunnels through frozen earth faster than you mine light. Shoot it when it comes up for air.",
@@ -4006,6 +4012,7 @@
 			"order": 6,
 			"name": "Rime-Warden",
 			"slug": "rime-warden",
+			"short": "Warden",
 			"category": "Unique",
 			"threat": "High (Support)",
 			"description": "A solemn floating figure of clear ice with a heart of stone, and the stone sings. The others stand straighter near it. Shoot it first.",
@@ -4022,6 +4029,7 @@
 			"order": 7,
 			"name": "The Avalanche",
 			"slug": "the-avalanche",
+			"short": "Avalanche",
 			"category": "Boss",
 			"threat": "Extreme",
 			"description": "A mountain's worth of snow and rock that learned to walk toward the song: the first colossus. When it roars, the storm comes with it. You get a breath of warning. Use it.",
@@ -4038,6 +4046,7 @@
 			"order": 8,
 			"name": "The Hibernating Leviathan",
 			"slug": "the-hibernating-leviathan",
+			"short": "Leviathan",
 			"category": "Boss",
 			"threat": "Extreme",
 			"description": "The drill woke it. It freezes guns with a look, breathes frost through walls and drinks the warmth from what it breaks. It won't breathe on the Base; it wants what the Base is singing.",
@@ -4048,6 +4057,2213 @@
 			"speed": 0.5,
 			"damage": 10,
 			"drops": 750
+		}
+	],
+	"playerTab": [
+		{
+			"title": "TWO VIEWS",
+			"body": "Tab switches between FIRST PERSON (you walk, mine and feed towers yourself) and the RTS commander view (you order your character around and place buildings)."
+		},
+		{
+			"title": "FIRST PERSON",
+			"body": "WASD move, mouse look, Space jump.\nHold Left Mouse facing a rock or crystal to mine it.\nHold F facing a tower to feed it your personal power - Healers, Batteries, Shield Projectors and Siphons run on it (look at one: its amber bar is its store). V: auto-feed the nearest tower that needs it.\nPress T at a Stone Door to open or close it (anyone can).\nWalk up to a tower, look at it and press E for its menu (upgrade, sell, take its gun). B opens build mode."
+		},
+		{
+			"title": "RTS VIEW",
+			"body": "WASD / screen edges pan, mouse wheel zooms.\nRight Mouse on the ground to walk there, on a rock or crystal to mine it.\nB opens the build bar: pick a tower, then Left Mouse on the grid to place (it stays armed; Shift-click queues). Esc puts it away; Backspace cancels your orders.\nLeft Mouse a placed tower to see its stats, upgrade it or sell it. On a tower that runs on power, FEED POWER (or F) sends your character to feed it; on a Stone Door, OPEN / CLOSE. Click the Base (or press Home) for the mining / move upgrades. Click a crystal to see how much is left.\nEsc (or P) opens the pause menu."
+		},
+		{
+			"title": "SURVIVAL",
+			"body": "Mine Red / Purple / Amber / Obsidian crystals (gray rocks give +5 of a random color). Carrying more than your capacity slows you; twice your capacity stops you.\nPlace a Base early - it's what the enemies attack, and its level caps your upgrades.\nGenerators power nearby towers; batteries store and relay power.\nPrep is the short daylight. Then the dark comes once a match and stays; the quiet between waves is a night to rebuild. A boss walks every few waves (every 5th in a Standard match). Survive them all to win; if the base falls and everyone is down, you lose."
+		}
+	],
+	"relics": [
+		{
+			"id": "Lantern",
+			"name": "Frozen Lantern",
+			"lore": "A miner's lantern, still faintly lit after who knows how long in the ice. Cut into the glass: three peaks over a closed eye. Skarnholt's mark, the old Company's. They lived under this ice before us, and they closed the eye on purpose.",
+			"hint": "A warm light glints in the rock maze, a short walk from where the cage sets you down. Walk into it to bring it home.",
+			"reward": "The Hollow's library alcove lights up and the lantern takes its place on the plinth.",
+			"book": {
+				"title": "The Skarnholt Ledger",
+				"text": "Tallies in a tidy hand: red, purple, amber, obsidian, more loads every season. The last line is underlined twice: \"Deep shaft opened. Bonus to all crews.\""
+			}
+		},
+		{
+			"id": "SurveyLog",
+			"name": "Surveyor's Log",
+			"lore": "Water-stained pages in the Company surveyor's hand. The last entry: \"The deep light sings at night. The colossi walk toward the song, not toward us. We are the ones making it louder. We sealed the lower gate.\"",
+			"hint": "After the first night, a survey stake glows far out past the landing site. The log lies beside it.",
+			"reward": "The survey table is restored and the map of the old tunnels goes up on the Hollow's wall.",
+			"book": {
+				"title": "Survey Notes, year three",
+				"text": "A careful sketch of a colossus mid-stride, its head turned away from the camp. Under it, in the surveyor's hand: \"toward the song.\""
+			}
+		},
+		{
+			"id": "HeartShard",
+			"name": "Heart of the Hollow",
+			"lore": "A shard of blue ice, warm in the hand, humming the note the deep light sings. The echo stones were keeping it. It fits the socket in the Company's gate.",
+			"hint": "Three echo stones hum somewhere in the maze. Wake all three in one match and follow the sound.",
+			"reward": "The sealed gate beneath the Hollow opens.",
+			"book": {
+				"title": "On Sealing a Gate",
+				"text": "The Company's instructions, half washed out: \"...white light, bled cold, poured in the socket... the Heart holds it... do not drill below the second bench.\""
+			}
+		}
+	],
+	"relicIntro": "Skarnholt left things in the ice. Walk into one to bring it home: each survivor earns their own, once per profile. Relics restore the Hollow and tell you what happened here. They never change your stats.",
+	"achievements": [
+		{
+			"category": "Building & Defense",
+			"id": "master_architect",
+			"name": "Master Architect",
+			"objective": "Build a total of 500 buildings across all playthroughs.",
+			"bonus": "All buildings cost 10% fewer resources to construct (rounded down).",
+			"tracked": true
+		},
+		{
+			"category": "Building & Defense",
+			"id": "peak_performance",
+			"name": "Peak Performance",
+			"objective": "Upgrade any single building to its maximum level (Level 8).",
+			"bonus": "Upgrading buildings costs 5% fewer resources.",
+			"tracked": true
+		},
+		{
+			"category": "Building & Defense",
+			"id": "fort_knox",
+			"name": "Fort Knox",
+			"objective": "Have a single Battery store over 100,000 power.",
+			"bonus": "All Batteries have their maximum power storage increased by 10%.",
+			"tracked": true
+		},
+		{
+			"category": "Building & Defense",
+			"id": "flawless_defense",
+			"name": "Flawless Defense",
+			"objective": "Survive an entire wave (after wave 5) without losing a single building.",
+			"bonus": "All buildings start with +5% maximum health.",
+			"tracked": true
+		},
+		{
+			"category": "Building & Defense",
+			"id": "jack_of_all_trades",
+			"name": "Jack of All Trades",
+			"objective": "Build every type of building AND upgrade each type to level 5 in a single match.",
+			"bonus": "Permanently start with +55 of each resource.",
+			"tracked": true
+		},
+		{
+			"category": "Building & Defense",
+			"id": "generator_who",
+			"name": "Generator who?",
+			"objective": "generate 100,000 total power from your character across all playthroughs.",
+			"bonus": "Start every match with an extra +500 personal power capacity.",
+			"tracked": true
+		},
+		{
+			"category": "Building & Defense",
+			"id": "maze_master",
+			"name": "Maze Master",
+			"objective": "Build a maze that forces a single enemy to walk at least 50 tiles further than its direct route to reach your base.",
+			"bonus": "Wall maximum health is increased by 15%.",
+			"tracked": true
+		},
+		{
+			"category": "Building & Defense",
+			"id": "glass_cannon",
+			"name": "Glass Cannon",
+			"objective": "Survive to wave 10 without building any defensive Walls.",
+			"bonus": "Offensive towers cost 10% less power to fire.",
+			"tracked": true
+		},
+		{
+			"category": "Building & Defense",
+			"id": "the_great_wall",
+			"name": "The Great Wall",
+			"objective": "Have 50 Wall structures active simultaneously in a single match.",
+			"bonus": "Walls passively repair themselves for 1 HP every 3 seconds.",
+			"tracked": true
+		},
+		{
+			"category": "Building & Defense",
+			"id": "sentry_duty",
+			"name": "Sentry Duty",
+			"objective": "Upgrade a single tower to Level 5 before Wave 5 begins.",
+			"bonus": "Level 1 towers start with +10% base damage.",
+			"tracked": true
+		},
+		{
+			"category": "Building & Defense",
+			"id": "overcharged",
+			"name": "Overcharged",
+			"objective": "Keep 10 of your towers at maximum power capacity for an entire wave (its whole day).",
+			"bonus": "Towers have a 5% chance to not consume any power when they fire.",
+			"tracked": true
+		},
+		{
+			"category": "Building & Defense",
+			"id": "demolition_expert",
+			"name": "Demolition Expert",
+			"objective": "Sell 250 buildings across all playthroughs.",
+			"bonus": "Selling a building now refunds an additional 5% of its total cost.",
+			"tracked": true
+		},
+		{
+			"category": "Combat & Kill",
+			"id": "exterminator",
+			"name": "Exterminator",
+			"objective": "Kill 1,000 normal enemies across all playthroughs.",
+			"bonus": "Turrets deal +5% damage to normal (non-boss) enemies.",
+			"tracked": true
+		},
+		{
+			"category": "Combat & Kill",
+			"id": "legendary_hunter",
+			"name": "Legendary Hunter",
+			"objective": "Defeat 25 bosses across all playthroughs.",
+			"bonus": "Turrets deal +10% damage to boss enemies.",
+			"tracked": true
+		},
+		{
+			"category": "Combat & Kill",
+			"id": "blitzkrieg",
+			"name": "Blitzkrieg",
+			"objective": "Kill a Cryo-Mage within 5 seconds of it spawning, before its aura can take full effect.",
+			"bonus": "All of your towers have a 5% chance per second to ignore the \"chill\" slowing effect from Cryo-Mages.",
+			"tracked": true
+		},
+		{
+			"category": "Combat & Kill",
+			"id": "retaliator",
+			"name": "Retaliator",
+			"objective": "Defeat 50 total enemies using the reflected damage from Spike Walls.",
+			"bonus": "Spike Walls permanently reflect an additional 5% of incoming damage.",
+			"tracked": true
+		},
+		{
+			"category": "Combat & Kill",
+			"id": "sniper",
+			"name": "Sniper",
+			"objective": "Kill 500 enemies from long range using long-range towers (Snipers).",
+			"bonus": "All offensive towers gain +5% attack range.",
+			"tracked": true
+		},
+		{
+			"category": "Combat & Kill",
+			"id": "david_and_goliath",
+			"name": "David & Goliath",
+			"objective": "Deal 10,000 total damage to bosses using only your character's Stomp ability.",
+			"bonus": "Stomp ability radius is permanently increased by 50%.",
+			"tracked": true
+		},
+		{
+			"category": "Combat & Kill",
+			"id": "crowd_control",
+			"name": "Crowd Control",
+			"objective": "Kill 10 enemies within a 1-second window.",
+			"bonus": "Splash damage radius on all explosive weapons is increased by 5%.",
+			"tracked": true
+		},
+		{
+			"category": "Combat & Kill",
+			"id": "icebreaker",
+			"name": "Icebreaker",
+			"objective": "Kill 250 FrostMites.",
+			"bonus": "FrostMites move 5% slower permanently.",
+			"tracked": true
+		},
+		{
+			"category": "Combat & Kill",
+			"id": "giant_slayer",
+			"name": "Giant Slayer",
+			"objective": "Defeat a boss while your character has less than 20% health.",
+			"bonus": "Deal +10% Stomp damage when your character is below 50% health.",
+			"tracked": true
+		},
+		{
+			"category": "Combat & Kill",
+			"id": "no_mans_land",
+			"name": "No Man's Land",
+			"objective": "Kill 100 enemies within 3 seconds of them spawning.",
+			"bonus": "Towers deal +10% bonus damage to enemies at 100% full health.",
+			"tracked": true
+		},
+		{
+			"category": "Mining & Economic",
+			"id": "strip_miner",
+			"name": "Strip Miner",
+			"objective": "Mine a total of 50,000 resources across all playthroughs.",
+			"bonus": "Start every match with +1 permanent mining yield.",
+			"tracked": true
+		},
+		{
+			"category": "Mining & Economic",
+			"id": "resource_hoarder",
+			"name": "Resource Hoarder",
+			"objective": "Hold more than 25,000 of a single resource type (e.g., 25,001 Red) at one time.",
+			"bonus": "Your personal resource carrying capacity is permanently increased by 500",
+			"tracked": true
+		},
+		{
+			"category": "Mining & Economic",
+			"id": "industrialist",
+			"name": "Industrialist",
+			"objective": "Generate 1,000,000 total power from Generators across all playthroughs.",
+			"bonus": "All Generators (H. and D. types) produce 5% more power per second.",
+			"tracked": true
+		},
+		{
+			"category": "Mining & Economic",
+			"id": "energy_independence",
+			"name": "Energy Independence",
+			"objective": "Win a match without building any Power Generators (Batteries and personal power are allowed).",
+			"bonus": "Your personal power generation from the gear upgrade is increased by 10%.",
+			"tracked": true
+		},
+		{
+			"category": "Mining & Economic",
+			"id": "maximum_efficiency",
+			"name": "Maximum Efficiency",
+			"objective": "Reach the hard cap for mining speed (200ms) in any match.",
+			"bonus": "Gain a permanent +1 bonus to your base player movement speed.",
+			"tracked": true
+		},
+		{
+			"category": "Mining & Economic",
+			"id": "time_to_start_hiking",
+			"name": "Time to start Hiking",
+			"objective": "Become so over-encumbered that you can not move.",
+			"bonus": "Start every match with an extra +500 personal carry capacity.",
+			"tracked": true
+		},
+		{
+			"category": "Mining & Economic",
+			"id": "spectrum_miner",
+			"name": "Spectrum Miner",
+			"objective": "Mine 100,000 of Red, Purple, Green, and White resources each.",
+			"bonus": "5% chance to get double resources on every successful mine.",
+			"tracked": true
+		},
+		{
+			"category": "Mining & Economic",
+			"id": "speed_demon",
+			"name": "Speed Demon",
+			"objective": "Maintain maximum movement speed for 60 consecutive seconds.",
+			"bonus": "Movement speed penalty when carrying heavy resources is reduced by 5%.",
+			"tracked": true
+		},
+		{
+			"category": "Mining & Economic",
+			"id": "penny_pincher",
+			"name": "Penny Pincher",
+			"objective": "Spend exactly 0 resources for the first 3 waves of a match.",
+			"bonus": "STOMP ability damage is permanently doubled.",
+			"tracked": true
+		},
+		{
+			"category": "Mining & Economic",
+			"id": "philanthropist",
+			"name": "Philanthropist",
+			"objective": "Transfer 50,000 total power to buildings from your character (hold F).",
+			"bonus": "Your personal power transfer rate to buildings is 20% faster.",
+			"tracked": true
+		},
+		{
+			"category": "Survival & Milestone",
+			"id": "hardened_survivor",
+			"name": "Hardened Survivor",
+			"objective": "Successfully win a match on \"Hard\" difficulty.",
+			"bonus": "Gain +0.5 additional skill point every time you level up.",
+			"tracked": true
+		},
+		{
+			"category": "Survival & Milestone",
+			"id": "frost-born",
+			"name": "Frost-Born",
+			"objective": "Successfully win a match on \"Insane\" difficulty.",
+			"bonus": "Gain +0.25 additional skill point every time you level up.",
+			"tracked": true
+		},
+		{
+			"category": "Survival & Milestone",
+			"id": "close_one",
+			"name": "Close one",
+			"objective": "Finish a match with health missing.",
+			"bonus": "Your passive health regeneration outside of combat is slightly increased.",
+			"tracked": true
+		},
+		{
+			"category": "Survival & Milestone",
+			"id": "capitalist",
+			"name": "Capitalist",
+			"objective": "End a match with over 50,000 total resources remaining in your inventory.",
+			"bonus": "You get a 10% higher refund when selling buildings.",
+			"tracked": true
+		},
+		{
+			"category": "Survival & Milestone",
+			"id": "gear_head",
+			"name": "Gear Head",
+			"objective": "Fully unlock and max out every single permanent gear upgrade",
+			"bonus": "Rainbow outline around character?",
+			"tracked": true
+		},
+		{
+			"category": "Survival & Milestone",
+			"id": "untouched",
+			"name": "Untouched",
+			"objective": "Complete the first 5 waves of a match without your character taking a single step.",
+			"bonus": "map wide placement of buildings, you don't need to move anyways. ",
+			"tracked": true
+		},
+		{
+			"category": "Survival & Milestone",
+			"id": "close_call",
+			"name": "Close Call",
+			"objective": "Survive a wave with you at exactly 1 HP.",
+			"bonus": "The very first time your base takes fatal damage in a match, it doesn't die. Instead, it drops to exactly 1 HP and gets a 3-second invulnerability shield.",
+			"tracked": true
+		},
+		{
+			"category": "Survival & Milestone",
+			"id": "marathon_runner",
+			"name": "Marathon Runner",
+			"objective": "Play the game for a total of 10 hours.",
+			"bonus": "All resource storage limits in buildings are increased by 15%.",
+			"tracked": true
+		},
+		{
+			"category": "Survival & Milestone",
+			"id": "the_first_step",
+			"name": "The First Step",
+			"objective": "Successfully complete Wave 1 for the very first time.",
+			"bonus": "Start every match with +1 maximum Player HP.",
+			"tracked": true
+		},
+		{
+			"category": "Survival & Milestone",
+			"id": "perfectionist",
+			"name": "Perfectionist",
+			"objective": "Win a match without repairing any buildings.",
+			"bonus": "All buildings gain a permanent +5% innate damage reduction armor.",
+			"tracked": true
+		},
+		{
+			"category": "Survival & Milestone",
+			"id": "i_can_read",
+			"name": "I Can Read!",
+			"objective": "Successfully complete the tutorial.",
+			"bonus": "Gain 1 permanent skill point and start every match with +20 of each resource.",
+			"tracked": true
+		},
+		{
+			"category": "Survival & Milestone",
+			"id": "made_you_look",
+			"name": "Made You Look",
+			"objective": "Scroll to the very bottom of the achievement list.",
+			"bonus": "Unlocks the Stats page from the main menu.",
+			"tracked": true
+		},
+		{
+			"category": "Survival & Milestone",
+			"id": "hold_the_hollow",
+			"name": "Hold the Hollow",
+			"objective": "Survive Endless wave 20 on Normal or harder.",
+			"bonus": "Lights the first lamp on the Company's machine in the deep workshop. Story only.",
+			"tracked": true
+		}
+	],
+	"skillBranches": [
+		{
+			"key": "GENERALIST",
+			"name": "Generalist",
+			"slug": "generalist",
+			"advanced": false,
+			"unlockLevel": 1,
+			"summary": "A little of everything for a new survivor.",
+			"nodes": [
+				{
+					"id": "name_generalist",
+					"branch": "GENERALIST",
+					"name": "Generalist",
+					"summary": "Start every match with +5 of each resource. Opens the Generalist branch.",
+					"costs": [
+						1
+					],
+					"requires": "",
+					"requiresRank": 1,
+					"minLevel": 1,
+					"unlockLevel": 1,
+					"requiresName": ""
+				},
+				{
+					"id": "gen_hardy",
+					"branch": "GENERALIST",
+					"name": "Hardy",
+					"summary": "A little more max HP (stacks with Thick Furs).",
+					"costs": [
+						1,
+						1
+					],
+					"requires": "name_generalist",
+					"requiresRank": 1,
+					"minLevel": 1,
+					"unlockLevel": 1,
+					"requiresName": "Generalist"
+				},
+				{
+					"id": "gen_hands",
+					"branch": "GENERALIST",
+					"name": "Steady Hands",
+					"summary": "Mine a little faster (stacks with Quick Pick).",
+					"costs": [
+						1,
+						1
+					],
+					"requires": "name_generalist",
+					"requiresRank": 1,
+					"minLevel": 1,
+					"unlockLevel": 1,
+					"requiresName": "Generalist"
+				},
+				{
+					"id": "gen_feet",
+					"branch": "GENERALIST",
+					"name": "Light Feet",
+					"summary": "Move a little faster (stacks with Snow Stride).",
+					"costs": [
+						1,
+						2
+					],
+					"requires": "gen_hardy",
+					"requiresRank": 1,
+					"minLevel": 2,
+					"unlockLevel": 2,
+					"requiresName": "Hardy"
+				},
+				{
+					"id": "gen_spark",
+					"branch": "GENERALIST",
+					"name": "Spark",
+					"summary": "A trickle of personal POWER (stacks with Personal Reactor).",
+					"costs": [
+						1,
+						2
+					],
+					"requires": "gen_hands",
+					"requiresRank": 1,
+					"minLevel": 2,
+					"unlockLevel": 2,
+					"requiresName": "Steady Hands"
+				},
+				{
+					"id": "gen_frame",
+					"branch": "GENERALIST",
+					"name": "Pack Frame",
+					"summary": "Overloaded, you still walk at 55% / 60% of your speed instead of 50%.",
+					"costs": [
+						2,
+						3
+					],
+					"requires": "gen_feet",
+					"requiresRank": 1,
+					"minLevel": 20,
+					"unlockLevel": 20,
+					"requiresName": "Light Feet"
+				}
+			]
+		},
+		{
+			"key": "MINER",
+			"name": "Miner",
+			"slug": "miner",
+			"advanced": false,
+			"unlockLevel": 3,
+			"summary": "Faster, richer mining and more to carry home.",
+			"nodes": [
+				{
+					"id": "name_miner",
+					"branch": "MINER",
+					"name": "Miner",
+					"summary": "Start every match with +5 of each resource. Opens the Miner branch.",
+					"costs": [
+						1
+					],
+					"requires": "",
+					"requiresRank": 1,
+					"minLevel": 3,
+					"unlockLevel": 3,
+					"requiresName": ""
+				},
+				{
+					"id": "miner_speed",
+					"branch": "MINER",
+					"name": "Quick Pick",
+					"summary": "Mine faster (-50 ms per rank).",
+					"costs": [
+						1,
+						1,
+						2,
+						2,
+						3
+					],
+					"requires": "name_miner",
+					"requiresRank": 1,
+					"minLevel": 3,
+					"unlockLevel": 3,
+					"requiresName": "Miner"
+				},
+				{
+					"id": "miner_yield",
+					"branch": "MINER",
+					"name": "Rich Seams",
+					"summary": "+2 crystal per mining hit per rank.",
+					"costs": [
+						1,
+						2,
+						2,
+						3,
+						3
+					],
+					"requires": "miner_speed",
+					"requiresRank": 1,
+					"minLevel": 4,
+					"unlockLevel": 4,
+					"requiresName": "Quick Pick"
+				},
+				{
+					"id": "miner_carry",
+					"branch": "MINER",
+					"name": "Deep Pockets",
+					"summary": "Carry +100 more per rank before you slow down (rank 5 doubles the base 500).",
+					"costs": [
+						1,
+						1,
+						2,
+						2,
+						3
+					],
+					"requires": "miner_speed",
+					"requiresRank": 1,
+					"minLevel": 4,
+					"unlockLevel": 4,
+					"requiresName": "Quick Pick"
+				},
+				{
+					"id": "miner_rockbreaker",
+					"branch": "MINER",
+					"name": "Rock Breaker",
+					"summary": "Gray rocks give +10 instead of +5.",
+					"costs": [
+						2
+					],
+					"requires": "miner_yield",
+					"requiresRank": 1,
+					"minLevel": 10,
+					"unlockLevel": 10,
+					"requiresName": "Rich Seams"
+				},
+				{
+					"id": "miner_stone",
+					"branch": "MINER",
+					"name": "Stone Sense",
+					"summary": "Gray rocks drop a Heartstone 3.5% / 4% / 4.5% of the time (3% without it).",
+					"costs": [
+						2,
+						2,
+						3
+					],
+					"requires": "miner_carry",
+					"requiresRank": 1,
+					"minLevel": 25,
+					"unlockLevel": 25,
+					"requiresName": "Deep Pockets"
+				}
+			]
+		},
+		{
+			"key": "FIGHTER",
+			"name": "Fighter",
+			"slug": "fighter",
+			"advanced": false,
+			"unlockLevel": 5,
+			"summary": "Toughness, speed and the stomp.",
+			"nodes": [
+				{
+					"id": "name_fighter",
+					"branch": "FIGHTER",
+					"name": "Fighter",
+					"summary": "Start every match with +5 of each resource. Opens the Fighter branch.",
+					"costs": [
+						1
+					],
+					"requires": "",
+					"requiresRank": 1,
+					"minLevel": 5,
+					"unlockLevel": 5,
+					"requiresName": ""
+				},
+				{
+					"id": "fight_health",
+					"branch": "FIGHTER",
+					"name": "Thick Furs",
+					"summary": "More max HP.",
+					"costs": [
+						1,
+						1,
+						2,
+						2,
+						3
+					],
+					"requires": "name_fighter",
+					"requiresRank": 1,
+					"minLevel": 5,
+					"unlockLevel": 5,
+					"requiresName": "Fighter"
+				},
+				{
+					"id": "fight_speed",
+					"branch": "FIGHTER",
+					"name": "Snow Stride",
+					"summary": "+10% move speed per rank.",
+					"costs": [
+						1,
+						1,
+						2,
+						2,
+						3
+					],
+					"requires": "fight_health",
+					"requiresRank": 1,
+					"minLevel": 6,
+					"unlockLevel": 6,
+					"requiresName": "Thick Furs"
+				},
+				{
+					"id": "fight_stomp",
+					"branch": "FIGHTER",
+					"name": "Stomp",
+					"summary": "Mining hits stomp nearby enemies.",
+					"costs": [
+						2
+					],
+					"requires": "fight_health",
+					"requiresRank": 1,
+					"minLevel": 6,
+					"unlockLevel": 6,
+					"requiresName": "Thick Furs"
+				},
+				{
+					"id": "fight_stompdmg",
+					"branch": "FIGHTER",
+					"name": "Heavy Boots",
+					"summary": "+10% stomp damage per rank.",
+					"costs": [
+						1,
+						1,
+						2,
+						2,
+						3
+					],
+					"requires": "fight_stomp",
+					"requiresRank": 1,
+					"minLevel": 9,
+					"unlockLevel": 9,
+					"requiresName": "Stomp"
+				},
+				{
+					"id": "fight_mend",
+					"branch": "FIGHTER",
+					"name": "Mend",
+					"summary": "Your heal ticks come 10% / 20% sooner.",
+					"costs": [
+						2,
+						3
+					],
+					"requires": "fight_speed",
+					"requiresRank": 1,
+					"minLevel": 30,
+					"unlockLevel": 30,
+					"requiresName": "Snow Stride"
+				}
+			]
+		},
+		{
+			"key": "POWER",
+			"name": "Power",
+			"slug": "power",
+			"advanced": false,
+			"unlockLevel": 8,
+			"summary": "Your own reactor and a faster hand-off to towers.",
+			"nodes": [
+				{
+					"id": "name_power",
+					"branch": "POWER",
+					"name": "Power",
+					"summary": "Start every match with +5 of each resource. Opens the Power branch.",
+					"costs": [
+						1
+					],
+					"requires": "",
+					"requiresRank": 1,
+					"minLevel": 8,
+					"unlockLevel": 8,
+					"requiresName": ""
+				},
+				{
+					"id": "pow_gen",
+					"branch": "POWER",
+					"name": "Personal Reactor",
+					"summary": "+10 POWER per second on your own, per rank.",
+					"costs": [
+						1,
+						1,
+						2,
+						2,
+						3
+					],
+					"requires": "name_power",
+					"requiresRank": 1,
+					"minLevel": 8,
+					"unlockLevel": 8,
+					"requiresName": "Power"
+				},
+				{
+					"id": "pow_conduit",
+					"branch": "POWER",
+					"name": "Conduit",
+					"summary": "+15% power transfer rate (hold F / auto-feed) per rank.",
+					"costs": [
+						1,
+						2,
+						2
+					],
+					"requires": "pow_gen",
+					"requiresRank": 1,
+					"minLevel": 11,
+					"unlockLevel": 11,
+					"requiresName": "Personal Reactor"
+				},
+				{
+					"id": "pow_store",
+					"branch": "POWER",
+					"name": "Deep Cells",
+					"summary": "Your towers and batteries store 5% more power per rank.",
+					"costs": [
+						1,
+						2,
+						3
+					],
+					"requires": "pow_gen",
+					"requiresRank": 1,
+					"minLevel": 18,
+					"unlockLevel": 18,
+					"requiresName": "Personal Reactor"
+				},
+				{
+					"id": "pow_wind",
+					"branch": "POWER",
+					"name": "Hot Windings",
+					"summary": "Your generators make 4% more power per rank.",
+					"costs": [
+						2,
+						2,
+						3
+					],
+					"requires": "pow_conduit",
+					"requiresRank": 1,
+					"minLevel": 35,
+					"unlockLevel": 35,
+					"requiresName": "Conduit"
+				}
+			]
+		},
+		{
+			"key": "ENGINEER",
+			"name": "Engineer",
+			"slug": "engineer",
+			"advanced": false,
+			"unlockLevel": 12,
+			"summary": "Stronger towers and a head start.",
+			"nodes": [
+				{
+					"id": "name_engineer",
+					"branch": "ENGINEER",
+					"name": "Engineer",
+					"summary": "Start every match with +5 of each resource. Opens the Engineer branch.",
+					"costs": [
+						1
+					],
+					"requires": "",
+					"requiresRank": 1,
+					"minLevel": 12,
+					"unlockLevel": 12,
+					"requiresName": ""
+				},
+				{
+					"id": "eng_damage",
+					"branch": "ENGINEER",
+					"name": "Calibrated Guns",
+					"summary": "+10% tower damage per rank.",
+					"costs": [
+						1,
+						2,
+						2,
+						3,
+						3
+					],
+					"requires": "name_engineer",
+					"requiresRank": 1,
+					"minLevel": 12,
+					"unlockLevel": 12,
+					"requiresName": "Engineer"
+				},
+				{
+					"id": "eng_health",
+					"branch": "ENGINEER",
+					"name": "Reinforced Frames",
+					"summary": "+10% tower health per rank.",
+					"costs": [
+						1,
+						2,
+						2,
+						3,
+						3
+					],
+					"requires": "eng_damage",
+					"requiresRank": 1,
+					"minLevel": 13,
+					"unlockLevel": 13,
+					"requiresName": "Calibrated Guns"
+				},
+				{
+					"id": "eng_safezone",
+					"branch": "ENGINEER",
+					"name": "Safe Zone Analysis",
+					"summary": "Once your Base is walled off from the enemy lanes, stops you mining a hole in that wall.",
+					"costs": [
+						2
+					],
+					"requires": "eng_damage",
+					"requiresRank": 1,
+					"minLevel": 13,
+					"unlockLevel": 13,
+					"requiresName": "Calibrated Guns"
+				},
+				{
+					"id": "eng_base",
+					"branch": "ENGINEER",
+					"name": "Prepared Landing",
+					"summary": "Your Base starts one level higher per rank.",
+					"costs": [
+						2,
+						2,
+						3,
+						3
+					],
+					"requires": "eng_health",
+					"requiresRank": 2,
+					"minLevel": 15,
+					"unlockLevel": 15,
+					"requiresName": "Reinforced Frames"
+				},
+				{
+					"id": "eng_mason",
+					"branch": "ENGINEER",
+					"name": "Masonry",
+					"summary": "Your walls get 5% more HP per rank.",
+					"costs": [
+						1,
+						2,
+						3
+					],
+					"requires": "eng_safezone",
+					"requiresRank": 1,
+					"minLevel": 16,
+					"unlockLevel": 16,
+					"requiresName": "Safe Zone Analysis"
+				}
+			]
+		},
+		{
+			"key": "PROSPECTOR",
+			"name": "Prospector",
+			"slug": "prospector",
+			"advanced": true,
+			"unlockLevel": 100,
+			"summary": "The Miner's master class.",
+			"nodes": [
+				{
+					"id": "name_prospector",
+					"branch": "PROSPECTOR",
+					"name": "Prospector",
+					"summary": "Start every match with +5 of each resource. The Miner's master class.",
+					"costs": [
+						1
+					],
+					"requires": "",
+					"requiresRank": 1,
+					"minLevel": 100,
+					"unlockLevel": 100,
+					"requiresName": ""
+				},
+				{
+					"id": "adv_pro_veins",
+					"branch": "PROSPECTOR",
+					"name": "Vein Sense",
+					"summary": "You read the vein: every crystal color mines 6% faster per rank (on top of your pick and Specialty).",
+					"costs": [
+						2,
+						3,
+						4
+					],
+					"requires": "name_prospector",
+					"requiresRank": 1,
+					"minLevel": 100,
+					"unlockLevel": 100,
+					"requiresName": "Prospector"
+				},
+				{
+					"id": "adv_pro_radar",
+					"branch": "PROSPECTOR",
+					"name": "Crystal Radar",
+					"summary": "Hidden crystal seams lie buried inside the rock. You sense them: they show on your minimap and shimmer for you within 30 cells. Break one open for 150 crystals.",
+					"costs": [
+						3
+					],
+					"requires": "adv_pro_veins",
+					"requiresRank": 1,
+					"minLevel": 104,
+					"unlockLevel": 104,
+					"requiresName": "Vein Sense"
+				},
+				{
+					"id": "adv_pro_double",
+					"branch": "PROSPECTOR",
+					"name": "Mother Lode",
+					"summary": "+5% chance per rank that a mining hit yields double.",
+					"costs": [
+						3,
+						4,
+						5
+					],
+					"requires": "adv_pro_veins",
+					"requiresRank": 1,
+					"minLevel": 110,
+					"unlockLevel": 110,
+					"requiresName": "Vein Sense"
+				},
+				{
+					"id": "adv_pro_heart",
+					"branch": "PROSPECTOR",
+					"name": "Heart of the Vein",
+					"summary": "A crystal node you mine out leaves a second Heartstone 25% of the time.",
+					"costs": [
+						5
+					],
+					"requires": "adv_pro_double",
+					"requiresRank": 1,
+					"minLevel": 125,
+					"unlockLevel": 125,
+					"requiresName": "Mother Lode"
+				}
+			]
+		},
+		{
+			"key": "WARDEN",
+			"name": "Warden",
+			"slug": "warden",
+			"advanced": true,
+			"unlockLevel": 100,
+			"summary": "The Fighter's master class.",
+			"nodes": [
+				{
+					"id": "name_warden",
+					"branch": "WARDEN",
+					"name": "Warden",
+					"summary": "Start every match with +5 of each resource. The Fighter's master class.",
+					"costs": [
+						1
+					],
+					"requires": "",
+					"requiresRank": 1,
+					"minLevel": 100,
+					"unlockLevel": 100,
+					"requiresName": ""
+				},
+				{
+					"id": "adv_war_taunt",
+					"branch": "WARDEN",
+					"name": "Taunt",
+					"summary": "Every 12 s, enemies within 3 cells turn on you for 2/3/4 s: they come at you and hit you, not the Base.",
+					"costs": [
+						2,
+						3,
+						4
+					],
+					"requires": "name_warden",
+					"requiresRank": 1,
+					"minLevel": 100,
+					"unlockLevel": 100,
+					"requiresName": "Warden"
+				},
+				{
+					"id": "adv_war_armour",
+					"branch": "WARDEN",
+					"name": "Frost Armor",
+					"summary": "Take 10% less damage per rank while you stand still.",
+					"costs": [
+						2,
+						3,
+						4
+					],
+					"requires": "name_warden",
+					"requiresRank": 1,
+					"minLevel": 104,
+					"unlockLevel": 104,
+					"requiresName": "Warden"
+				},
+				{
+					"id": "adv_war_last",
+					"branch": "WARDEN",
+					"name": "Last Stand",
+					"summary": "Once per wave, a killing blow leaves you at 1 HP, untouchable for 1.5 s.",
+					"costs": [
+						5
+					],
+					"requires": "adv_war_armour",
+					"requiresRank": 1,
+					"minLevel": 110,
+					"unlockLevel": 110,
+					"requiresName": "Frost Armor"
+				},
+				{
+					"id": "adv_war_bulwark",
+					"branch": "WARDEN",
+					"name": "Bulwark",
+					"summary": "Other players within 3 cells of you take 8% / 16% less damage (the best Warden nearby counts).",
+					"costs": [
+						3,
+						4
+					],
+					"requires": "adv_war_last",
+					"requiresRank": 1,
+					"minLevel": 125,
+					"unlockLevel": 125,
+					"requiresName": "Last Stand"
+				}
+			]
+		},
+		{
+			"key": "ARCHITECT",
+			"name": "Architect",
+			"slug": "architect",
+			"advanced": true,
+			"unlockLevel": 100,
+			"summary": "The Engineer's master class.",
+			"nodes": [
+				{
+					"id": "name_architect",
+					"branch": "ARCHITECT",
+					"name": "Architect",
+					"summary": "Start every match with +5 of each resource. The Engineer's master class.",
+					"costs": [
+						1
+					],
+					"requires": "",
+					"requiresRank": 1,
+					"minLevel": 100,
+					"unlockLevel": 100,
+					"requiresName": ""
+				},
+				{
+					"id": "adv_arc_overclock",
+					"branch": "ARCHITECT",
+					"name": "Overclock",
+					"summary": "Towers within 4 cells of you fire 10% faster per rank.",
+					"costs": [
+						2,
+						3,
+						4
+					],
+					"requires": "name_architect",
+					"requiresRank": 1,
+					"minLevel": 100,
+					"unlockLevel": 100,
+					"requiresName": "Architect"
+				},
+				{
+					"id": "adv_arc_cheap",
+					"branch": "ARCHITECT",
+					"name": "Lean Designs",
+					"summary": "Tower upgrades cost 5% less per rank.",
+					"costs": [
+						2,
+						3,
+						4
+					],
+					"requires": "name_architect",
+					"requiresRank": 1,
+					"minLevel": 104,
+					"unlockLevel": 104,
+					"requiresName": "Architect"
+				},
+				{
+					"id": "adv_arc_repair",
+					"branch": "ARCHITECT",
+					"name": "Field Repairs",
+					"summary": "Stand near damaged buildings: the most damaged within 3 cells regains 2% of its max HP a second, for 3 POWER a second.",
+					"costs": [
+						3
+					],
+					"requires": "adv_arc_cheap",
+					"requiresRank": 1,
+					"minLevel": 110,
+					"unlockLevel": 110,
+					"requiresName": "Lean Designs"
+				},
+				{
+					"id": "adv_arc_master",
+					"branch": "ARCHITECT",
+					"name": "Masterwork",
+					"summary": "Towers and walls cost 4% / 8% less to build.",
+					"costs": [
+						3,
+						4
+					],
+					"requires": "adv_arc_repair",
+					"requiresRank": 1,
+					"minLevel": 125,
+					"unlockLevel": 125,
+					"requiresName": "Field Repairs"
+				}
+			]
+		},
+		{
+			"key": "HUNTER",
+			"name": "Hunter",
+			"slug": "hunter",
+			"advanced": true,
+			"unlockLevel": 100,
+			"summary": "The roaming gun master class.",
+			"nodes": [
+				{
+					"id": "name_hunter",
+					"branch": "HUNTER",
+					"name": "Hunter",
+					"summary": "Start every match with +5 of each resource. The roaming gun master class.",
+					"costs": [
+						1
+					],
+					"requires": "",
+					"requiresRank": 1,
+					"minLevel": 100,
+					"unlockLevel": 100,
+					"requiresName": ""
+				},
+				{
+					"id": "adv_hun_marks",
+					"branch": "HUNTER",
+					"name": "Marksman",
+					"summary": "+8% carried-gun damage per rank.",
+					"costs": [
+						2,
+						3,
+						4
+					],
+					"requires": "name_hunter",
+					"requiresRank": 1,
+					"minLevel": 100,
+					"unlockLevel": 100,
+					"requiresName": "Hunter"
+				},
+				{
+					"id": "adv_hun_wolf",
+					"branch": "HUNTER",
+					"name": "Lone Wolf",
+					"summary": "+10% carried-gun damage per rank while you are 10+ cells from the Base.",
+					"costs": [
+						3,
+						4
+					],
+					"requires": "name_hunter",
+					"requiresRank": 1,
+					"minLevel": 104,
+					"unlockLevel": 104,
+					"requiresName": "Hunter"
+				},
+				{
+					"id": "adv_hun_crit",
+					"branch": "HUNTER",
+					"name": "Weak Spot",
+					"summary": "10% chance per rank that a carried-gun hit deals double.",
+					"costs": [
+						3,
+						4
+					],
+					"requires": "adv_hun_marks",
+					"requiresRank": 1,
+					"minLevel": 106,
+					"unlockLevel": 106,
+					"requiresName": "Marksman"
+				},
+				{
+					"id": "adv_hun_dress",
+					"branch": "HUNTER",
+					"name": "Field Dressing",
+					"summary": "A carried-gun kill heals 1 HP (at most once every 10 s).",
+					"costs": [
+						4
+					],
+					"requires": "adv_hun_wolf",
+					"requiresRank": 1,
+					"minLevel": 110,
+					"unlockLevel": 110,
+					"requiresName": "Lone Wolf"
+				},
+				{
+					"id": "adv_hun_biggame",
+					"branch": "HUNTER",
+					"name": "Big Game",
+					"summary": "+10% carried-gun damage per rank against bosses.",
+					"costs": [
+						3,
+						4
+					],
+					"requires": "adv_hun_dress",
+					"requiresRank": 1,
+					"minLevel": 125,
+					"unlockLevel": 125,
+					"requiresName": "Field Dressing"
+				}
+			]
+		},
+		{
+			"key": "QUARTERMASTER",
+			"name": "Quartermaster",
+			"slug": "quartermaster",
+			"advanced": true,
+			"unlockLevel": 100,
+			"summary": "The Generalist's master class: keeps the team supplied.",
+			"nodes": [
+				{
+					"id": "name_quartermaster",
+					"branch": "QUARTERMASTER",
+					"name": "Quartermaster",
+					"summary": "Start every match with +5 of each resource. The Generalist's master class: keeps the team supplied.",
+					"costs": [
+						1
+					],
+					"requires": "",
+					"requiresRank": 1,
+					"minLevel": 100,
+					"unlockLevel": 100,
+					"requiresName": ""
+				},
+				{
+					"id": "adv_qm_rations",
+					"branch": "QUARTERMASTER",
+					"name": "Shared Rations",
+					"summary": "Every player in the match starts with +10 / 20 / 30 of each resource.",
+					"costs": [
+						2,
+						3,
+						4
+					],
+					"requires": "name_quartermaster",
+					"requiresRank": 1,
+					"minLevel": 100,
+					"unlockLevel": 100,
+					"requiresName": "Quartermaster"
+				},
+				{
+					"id": "adv_qm_ledger",
+					"branch": "QUARTERMASTER",
+					"name": "Ledger",
+					"summary": "Every player in the match earns 4% / 8% / 12% more Rime Essence.",
+					"costs": [
+						2,
+						3,
+						4
+					],
+					"requires": "name_quartermaster",
+					"requiresRank": 1,
+					"minLevel": 105,
+					"unlockLevel": 105,
+					"requiresName": "Quartermaster"
+				},
+				{
+					"id": "adv_qm_kit",
+					"branch": "QUARTERMASTER",
+					"name": "Field Kit",
+					"summary": "Every player in the match starts with one free Repair Kit.",
+					"costs": [
+						3
+					],
+					"requires": "adv_qm_rations",
+					"requiresRank": 1,
+					"minLevel": 110,
+					"unlockLevel": 110,
+					"requiresName": "Shared Rations"
+				},
+				{
+					"id": "adv_qm_rally",
+					"branch": "QUARTERMASTER",
+					"name": "Rally",
+					"summary": "Downed players get back up 15% / 30% sooner.",
+					"costs": [
+						3,
+						4
+					],
+					"requires": "adv_qm_ledger",
+					"requiresRank": 1,
+					"minLevel": 120,
+					"unlockLevel": 120,
+					"requiresName": "Ledger"
+				}
+			]
+		},
+		{
+			"key": "STORMCALLER",
+			"name": "Stormcaller",
+			"slug": "stormcaller",
+			"advanced": true,
+			"unlockLevel": 115,
+			"summary": "The Power master class.",
+			"nodes": [
+				{
+					"id": "name_stormcaller",
+					"branch": "STORMCALLER",
+					"name": "Stormcaller",
+					"summary": "Start every match with +5 of each resource. The Power master class.",
+					"costs": [
+						1
+					],
+					"requires": "",
+					"requiresRank": 1,
+					"minLevel": 115,
+					"unlockLevel": 115,
+					"requiresName": ""
+				},
+				{
+					"id": "adv_sto_chain",
+					"branch": "STORMCALLER",
+					"name": "Chain Arcs",
+					"summary": "Every 2 s, each generator you own zaps the nearest enemy within 3 cells for 20 / 30 / 40 damage (no power cost).",
+					"costs": [
+						2,
+						3,
+						4
+					],
+					"requires": "name_stormcaller",
+					"requiresRank": 1,
+					"minLevel": 115,
+					"unlockLevel": 115,
+					"requiresName": "Stormcaller"
+				},
+				{
+					"id": "adv_sto_grid",
+					"branch": "STORMCALLER",
+					"name": "Live Grid",
+					"summary": "Your power links reach 1 cell further.",
+					"costs": [
+						3
+					],
+					"requires": "name_stormcaller",
+					"requiresRank": 1,
+					"minLevel": 118,
+					"unlockLevel": 118,
+					"requiresName": "Stormcaller"
+				},
+				{
+					"id": "adv_sto_surge",
+					"branch": "STORMCALLER",
+					"name": "Power Surge",
+					"summary": "When a wave starts, every tower you own tops up to 50% / 100% of its stored power.",
+					"costs": [
+						3,
+						4
+					],
+					"requires": "adv_sto_chain",
+					"requiresRank": 1,
+					"minLevel": 125,
+					"unlockLevel": 125,
+					"requiresName": "Chain Arcs"
+				},
+				{
+					"id": "adv_sto_over",
+					"branch": "STORMCALLER",
+					"name": "Overcharge",
+					"summary": "5% / 10% / 15% chance a shot from your towers costs no power.",
+					"costs": [
+						2,
+						3,
+						4
+					],
+					"requires": "adv_sto_grid",
+					"requiresRank": 1,
+					"minLevel": 135,
+					"unlockLevel": 135,
+					"requiresName": "Live Grid"
+				}
+			]
+		},
+		{
+			"key": "FROSTCALLER",
+			"name": "Frostcaller",
+			"slug": "frostcaller",
+			"advanced": true,
+			"unlockLevel": 130,
+			"summary": "A calling of ice and cold.",
+			"nodes": [
+				{
+					"id": "name_frostcaller",
+					"branch": "FROSTCALLER",
+					"name": "Frostcaller",
+					"summary": "Start every match with +5 of each resource. A calling of ice and cold.",
+					"costs": [
+						1
+					],
+					"requires": "",
+					"requiresRank": 1,
+					"minLevel": 130,
+					"unlockLevel": 130,
+					"requiresName": ""
+				},
+				{
+					"id": "adv_fro_vent",
+					"branch": "FROSTCALLER",
+					"name": "Deep Cold",
+					"summary": "Your Rime Vents slow movement and attacks 5% more per rank; rank 3 also widens their field by 1 cell.",
+					"costs": [
+						2,
+						3,
+						4
+					],
+					"requires": "name_frostcaller",
+					"requiresRank": 1,
+					"minLevel": 130,
+					"unlockLevel": 130,
+					"requiresName": "Frostcaller"
+				},
+				{
+					"id": "adv_fro_freeze",
+					"branch": "FROSTCALLER",
+					"name": "Flash Freeze",
+					"summary": "Every 20 s, if 4 or more enemies are within 3 cells of you, they freeze for 1 / 1.5 / 2 s (bosses are only slowed).",
+					"costs": [
+						3,
+						4,
+						5
+					],
+					"requires": "name_frostcaller",
+					"requiresRank": 1,
+					"minLevel": 135,
+					"unlockLevel": 135,
+					"requiresName": "Frostcaller"
+				},
+				{
+					"id": "adv_fro_shatter",
+					"branch": "FROSTCALLER",
+					"name": "Shatter",
+					"summary": "Enemies you froze or your Vents chill take 8% / 16% more damage from everyone.",
+					"costs": [
+						4,
+						5
+					],
+					"requires": "adv_fro_freeze",
+					"requiresRank": 1,
+					"minLevel": 145,
+					"unlockLevel": 145,
+					"requiresName": "Flash Freeze"
+				},
+				{
+					"id": "adv_fro_ward",
+					"branch": "FROSTCALLER",
+					"name": "Rime Ward",
+					"summary": "Enemies that hit your walls are chilled: 30% slower moving and attacking for 2 s.",
+					"costs": [
+						4
+					],
+					"requires": "adv_fro_vent",
+					"requiresRank": 1,
+					"minLevel": 150,
+					"unlockLevel": 150,
+					"requiresName": "Deep Cold"
+				}
+			]
+		}
+	],
+	"shops": [
+		{
+			"id": "shop_outfit",
+			"title": "OUTFITTER",
+			"sub": "COLD WEATHER GEAR",
+			"prompt": "helmets, boots, gloves and backpacks",
+			"items": [
+				{
+					"id": "out_helmet",
+					"shop": "shop_outfit",
+					"name": "Helmet - lamp mount, face guard",
+					"effect": "Cosmetic: a head lamp lights the way in front of you (everyone sees it).",
+					"essence": 60,
+					"heartstone": 0,
+					"max": 1,
+					"kind": "Cosmetic"
+				},
+				{
+					"id": "out_boots",
+					"shop": "shop_outfit",
+					"name": "Boots - crampons, insulated soles",
+					"effect": "Overloaded, you still walk at 60% speed instead of 50% (heavy Heartstone runs).",
+					"essence": 80,
+					"heartstone": 0,
+					"max": 1,
+					"kind": "Upgrade"
+				},
+				{
+					"id": "out_gloves",
+					"shop": "shop_outfit",
+					"name": "Gloves - grip, heated liners",
+					"effect": "Steadier aim: +5% damage with a carried gun.",
+					"essence": 80,
+					"heartstone": 0,
+					"max": 1,
+					"kind": "Upgrade"
+				},
+				{
+					"id": "out_pack",
+					"shop": "shop_outfit",
+					"name": "Backpack - more carrying weight",
+					"effect": "+250 carry weight per pack (a Heartstone weighs 50).",
+					"essence": 120,
+					"heartstone": 1,
+					"max": 3,
+					"kind": "Upgrade"
+				},
+				{
+					"id": "out_parka",
+					"shop": "shop_outfit",
+					"name": "Parka - fur-lined expedition coat",
+					"effect": "Cosmetic: the expedition parka, worn over the starter shirt (everyone sees it).",
+					"essence": 100,
+					"heartstone": 0,
+					"max": 1,
+					"kind": "Cosmetic"
+				},
+				{
+					"id": "out_trousers",
+					"shop": "shop_outfit",
+					"name": "Trousers - padded expedition legs",
+					"effect": "Cosmetic: padded expedition trousers instead of the starter canvas (everyone sees them).",
+					"essence": 70,
+					"heartstone": 0,
+					"max": 1,
+					"kind": "Cosmetic"
+				}
+			]
+		},
+		{
+			"id": "shop_pick",
+			"title": "PICK SMITH",
+			"sub": "PICKS & EDGES",
+			"prompt": "pickaxe upgrades",
+			"items": [
+				{
+					"id": "pick_tip_l",
+					"shop": "shop_pick",
+					"name": "Left tip - its own tier and focus",
+					"effect": "Each tier: +3% mining speed (+4% at tier 6) and more of the resource this tip focuses on.",
+					"essence": 150,
+					"heartstone": 1,
+					"max": 5,
+					"kind": "PickTip"
+				},
+				{
+					"id": "pick_tip_r",
+					"shop": "shop_pick",
+					"name": "Right tip - its own tier and focus",
+					"effect": "Each tier: +3% mining speed (+4% at tier 6) and more of the resource this tip focuses on.",
+					"essence": 150,
+					"heartstone": 1,
+					"max": 5,
+					"kind": "PickTip"
+				},
+				{
+					"id": "pick_handle_light",
+					"shop": "shop_pick",
+					"name": "Light handle - quick swings",
+					"effect": "Mines every piece 15% faster.",
+					"essence": 500,
+					"heartstone": 5,
+					"max": 1,
+					"kind": "PickHandle"
+				},
+				{
+					"id": "pick_handle_heavy",
+					"shop": "shop_pick",
+					"name": "Heavy handle - hits harder",
+					"effect": "Each hit bites off 25% more crystal (the node runs out sooner) and gray rock gives 25% more.",
+					"essence": 500,
+					"heartstone": 5,
+					"max": 1,
+					"kind": "PickHandle"
+				}
+			]
+		},
+		{
+			"id": "shop_tower",
+			"title": "TOWER WORKS",
+			"sub": "TOWER PARTS & PLANS",
+			"prompt": "tower upgrades",
+			"items": [
+				{
+					"id": "tw_barrels",
+					"shop": "shop_tower",
+					"name": "Rifled barrels - gun damage",
+					"effect": "+5% Turret, Artillery and Sniper damage per rank, docked or carried.",
+					"essence": 250,
+					"heartstone": 2,
+					"max": 3,
+					"kind": "Upgrade"
+				},
+				{
+					"id": "tw_coils",
+					"shop": "shop_tower",
+					"name": "Generator coils - more power",
+					"effect": "+5% generator output per rank.",
+					"essence": 250,
+					"heartstone": 2,
+					"max": 3,
+					"kind": "Upgrade"
+				},
+				{
+					"id": "tw_lenses",
+					"shop": "shop_tower",
+					"name": "Healer lenses - stronger repairs",
+					"effect": "+10% Healer repair per rank.",
+					"essence": 200,
+					"heartstone": 2,
+					"max": 3,
+					"kind": "Upgrade"
+				},
+				{
+					"id": "tw_emitters",
+					"shop": "shop_tower",
+					"name": "Wall bracing - sturdier walls",
+					"effect": "+8% HP on your walls (and Rime Vents) per rank.",
+					"essence": 200,
+					"heartstone": 2,
+					"max": 3,
+					"kind": "Upgrade"
+				}
+			]
+		},
+		{
+			"id": "shop_supply",
+			"title": "QUARTERMASTER",
+			"sub": "SUPPLIES & RATIONS",
+			"prompt": "supplies for your next match",
+			"items": [
+				{
+					"id": "sup_repair",
+					"shop": "shop_supply",
+					"name": "Repair kit - patch a building mid-wave",
+					"effect": "Supply: the first time one of your buildings drops under 30% HP (or would fall), it snaps back to full.",
+					"essence": 30,
+					"heartstone": 0,
+					"max": 5,
+					"kind": "Supply"
+				},
+				{
+					"id": "sup_cell",
+					"shop": "shop_supply",
+					"name": "Power cell - a burst of stored power",
+					"effect": "Supply: +250 max POWER for the match, starting full.",
+					"essence": 30,
+					"heartstone": 0,
+					"max": 5,
+					"kind": "Supply"
+				},
+				{
+					"id": "sup_flare",
+					"shop": "shop_supply",
+					"name": "Supply sled - a head start",
+					"effect": "Supply: +15 of each crystal at the start of the match.",
+					"essence": 25,
+					"heartstone": 0,
+					"max": 5,
+					"kind": "Supply"
+				},
+				{
+					"id": "sup_warmer",
+					"shop": "shop_supply",
+					"name": "Hand warmer - warmth in the cold",
+					"effect": "Supply: +3 max HP for the match.",
+					"essence": 20,
+					"heartstone": 0,
+					"max": 5,
+					"kind": "Supply"
+				}
+			]
+		}
+	],
+	"stations": [
+		{
+			"id": "gate",
+			"title": "SEALED GATE",
+			"prompt": "the Company's lower gate"
+		},
+		{
+			"id": "radio",
+			"title": "SIGNAL RELAY",
+			"prompt": "reach the other Hollows (host or join)"
+		},
+		{
+			"id": "lift",
+			"title": "SURFACE LIFT",
+			"prompt": "ride the cage up to the ice (solo)"
+		},
+		{
+			"id": "library",
+			"title": "LIBRARY",
+			"prompt": "read the Almanac and your relic collection"
+		},
+		{
+			"id": "trainer",
+			"title": "TRAINER",
+			"prompt": "spend skill points with your mentor"
+		},
+		{
+			"id": "records",
+			"title": "RECORDS",
+			"prompt": "your achievements"
+		},
+		{
+			"id": "stats",
+			"title": "STATS BOARD",
+			"prompt": "your lifetime stats"
+		},
+		{
+			"id": "survey",
+			"title": "SURVEY TABLE",
+			"prompt": "the Company's map and your next goals"
+		}
+	],
+	"pickTiers": [
+		"Basic pick",
+		"White pick",
+		"Verdant pick",
+		"Dusk pick",
+		"Prismatic pick",
+		"Heartstone pick"
+	],
+	"matchSettings": {
+		"presets": [
+			{
+				"name": "Tutorial",
+				"description": "A guided first match on shallow ice. 120 s prep, Obsidian-only upgrades."
+			},
+			{
+				"name": "Easy",
+				"description": "Shallow ice. 120 s prep, Obsidian-only upgrades."
+			},
+			{
+				"name": "Medium",
+				"description": "Deeper ice. 90 s prep, standard upgrade colors."
+			},
+			{
+				"name": "Hard",
+				"description": "Deep ice. 60 s prep, randomized upgrade colors."
+			},
+			{
+				"name": "Insane",
+				"description": "Right over the Sleeper. 30 s prep, randomized upgrade colors."
+			}
+		],
+		"lengths": [
+			{
+				"name": "Short",
+				"description": "A quick night. About 15 minutes: 12 waves that ramp up fast.",
+				"waves": 12
+			},
+			{
+				"name": "Standard",
+				"description": "A full night. About 30 minutes: 20 waves.",
+				"waves": 20
+			},
+			{
+				"name": "Long",
+				"description": "A long one. Pack boots. About 45 minutes: 28 waves with longer nights to build.",
+				"waves": 28
+			},
+			{
+				"name": "Endless",
+				"description": "The Long Night: the cage comes when the Base falls. After wave 10 the waves grow fast; survive wave 20 on Normal or harder to hold the Hollow. Your best wave is recorded.",
+				"waves": 0
+			}
+		],
+		"upgradeCost": [
+			{
+				"name": "Obsidian Only",
+				"description": "All player upgrades will only cost Obsidian crystals."
+			},
+			{
+				"name": "Standard",
+				"description": "Uses specific element per stat (Ex: Speed=Amber, Yield=Obsidian)."
+			},
+			{
+				"name": "Randomized",
+				"description": "The color required for an upgrade changes randomly every time."
+			}
+		],
+		"prepSeconds": [
+			120,
+			90,
+			60,
+			30
+		],
+		"safeZone": [
+			12,
+			16,
+			20
+		],
+		"coverage": [
+			60,
+			70,
+			80,
+			90
+		],
+		"crystals": [
+			3,
+			5,
+			8
+		]
+	},
+	"hints": [
+		{
+			"id": "Boss",
+			"text": "A BOSS wave: one huge enemy that shrugs off tower fire. Aim your own shots at its glowing weak spots - they hit for double."
+		},
+		{
+			"id": "GrayRock",
+			"text": "Gray rocks give a few crystals of a random color. Colored crystals always give their own color."
+		},
+		{
+			"id": "CarryWeight",
+			"text": "Your load is getting heavy. Past your carry limit you move at half speed: spend crystals on buildings, and bank Heartstone at your Base."
+		},
+		{
+			"id": "ShieldPower",
+			"text": "A Shield Wall's shield only works while it has power: keep it in reach of a Generator."
+		},
+		{
+			"id": "TowerNoPower",
+			"text": "A tower ran out of power and stopped firing. Build a Generator in its reach, or feed it your own POWER (F)."
+		},
+		{
+			"id": "Heartstone",
+			"text": "Heartstone! It is heavy, and it only counts once you bank it at your Base. Heartstone still in your pocket when the match ends is lost."
+		},
+		{
+			"id": "FeedPower",
+			"text": "This tower runs on POWER. Look at it and hold F to feed it yours (commander view: select it, FEED POWER). Your POWER refills at the Base."
+		},
+		{
+			"id": "NoWalls",
+			"text": "No walls yet. In a few nights the waves get big enough to reach your Base. Block the way in with Spike Walls so your towers can hold them."
+		}
+	],
+	"keybinds": [
+		{
+			"id": "Pause",
+			"action": "Pause menu (Esc always works too)",
+			"section": "GENERAL",
+			"key": "P"
+		},
+		{
+			"id": "ToggleView",
+			"action": "Switch first person / commander",
+			"section": "GENERAL",
+			"key": "Tab"
+		},
+		{
+			"id": "Build",
+			"action": "Build mode / build bar",
+			"section": "GENERAL",
+			"key": "B"
+		},
+		{
+			"id": "Help",
+			"action": "Show / hide the controls panel",
+			"section": "GENERAL",
+			"key": "H"
+		},
+		{
+			"id": "Chat",
+			"action": "Chat",
+			"section": "GENERAL",
+			"key": "Enter"
+		},
+		{
+			"id": "Ping",
+			"action": "Ping (twice: need help)",
+			"section": "GENERAL",
+			"key": "G"
+		},
+		{
+			"id": "AutoPower",
+			"action": "Auto-power on / off",
+			"section": "GENERAL",
+			"key": "V"
+		},
+		{
+			"id": "Surge",
+			"action": "Call a Frost Surge",
+			"section": "GENERAL",
+			"key": "K"
+		},
+		{
+			"id": "SkipDay",
+			"action": "Skip the day (start the next wave now)",
+			"section": "GENERAL",
+			"key": "J"
+		},
+		{
+			"id": "VoteYes",
+			"action": "Vote yes (team votes)",
+			"section": "GENERAL",
+			"key": "Y"
+		},
+		{
+			"id": "VoteNo",
+			"action": "Vote no (team votes)",
+			"section": "GENERAL",
+			"key": "N"
+		},
+		{
+			"id": "BaseMenu",
+			"action": "Base menu (player upgrades)",
+			"section": "GENERAL",
+			"key": "Home"
+		},
+		{
+			"id": "MineGuide",
+			"action": "Mine the objective crystal",
+			"section": "GENERAL",
+			"key": "M"
+		},
+		{
+			"id": "Rotate",
+			"action": "Rotate tower / respawn when down",
+			"section": "GENERAL",
+			"key": "R"
+		},
+		{
+			"id": "Upgrade",
+			"action": "Upgrade the selected tower",
+			"section": "GENERAL",
+			"key": "U"
+		},
+		{
+			"id": "Sell",
+			"action": "Sell the selected tower",
+			"section": "GENERAL",
+			"key": "X"
+		},
+		{
+			"id": "MoveForward",
+			"action": "Move forward",
+			"section": "FIRST PERSON",
+			"key": "W"
+		},
+		{
+			"id": "MoveBack",
+			"action": "Move back",
+			"section": "FIRST PERSON",
+			"key": "S"
+		},
+		{
+			"id": "MoveLeft",
+			"action": "Move left",
+			"section": "FIRST PERSON",
+			"key": "A"
+		},
+		{
+			"id": "MoveRight",
+			"action": "Move right",
+			"section": "FIRST PERSON",
+			"key": "D"
+		},
+		{
+			"id": "Jump",
+			"action": "Jump",
+			"section": "FIRST PERSON",
+			"key": "Space"
+		},
+		{
+			"id": "Sprint",
+			"action": "Sprint (hold)",
+			"section": "FIRST PERSON",
+			"key": "Shift"
+		},
+		{
+			"id": "Mine",
+			"action": "Mine / fire (hold)",
+			"section": "FIRST PERSON",
+			"key": "Left Mouse"
+		},
+		{
+			"id": "Aim",
+			"action": "Aim / scope (hold)",
+			"section": "FIRST PERSON",
+			"key": "Right Mouse"
+		},
+		{
+			"id": "FeedPower",
+			"action": "Feed power to a tower (hold; commander view: the selected tower)",
+			"section": "FIRST PERSON",
+			"key": "F"
+		},
+		{
+			"id": "Interact",
+			"action": "Use / tower menu / gun stand",
+			"section": "FIRST PERSON",
+			"key": "E"
+		},
+		{
+			"id": "TakeGun",
+			"action": "Take / return a tower's gun",
+			"section": "FIRST PERSON",
+			"key": "Q"
+		},
+		{
+			"id": "ShieldToggle",
+			"action": "Open / close a door; your Shield Wall's field",
+			"section": "FIRST PERSON",
+			"key": "T"
+		},
+		{
+			"id": "Slot1",
+			"action": "Build slot 1",
+			"section": "BUILD MODE (first person)",
+			"key": "1"
+		},
+		{
+			"id": "Slot2",
+			"action": "Build slot 2",
+			"section": "BUILD MODE (first person)",
+			"key": "2"
+		},
+		{
+			"id": "Slot3",
+			"action": "Build slot 3",
+			"section": "BUILD MODE (first person)",
+			"key": "3"
+		},
+		{
+			"id": "Slot4",
+			"action": "Build slot 4",
+			"section": "BUILD MODE (first person)",
+			"key": "4"
+		},
+		{
+			"id": "Slot5",
+			"action": "Build slot 5",
+			"section": "BUILD MODE (first person)",
+			"key": "5"
+		},
+		{
+			"id": "Place",
+			"action": "Place tower / inspect",
+			"section": "BUILD MODE (first person)",
+			"key": "Left Mouse"
+		},
+		{
+			"id": "Disarm",
+			"action": "Cancel the armed tower",
+			"section": "BUILD MODE (first person)",
+			"key": "Right Mouse"
+		},
+		{
+			"id": "FreeCursor",
+			"action": "Free the mouse (hold)",
+			"section": "BUILD MODE (first person)",
+			"key": "Alt"
+		},
+		{
+			"id": "PanUp",
+			"action": "Pan up",
+			"section": "COMMANDER (RTS view)",
+			"key": "W"
+		},
+		{
+			"id": "PanDown",
+			"action": "Pan down",
+			"section": "COMMANDER (RTS view)",
+			"key": "S"
+		},
+		{
+			"id": "PanLeft",
+			"action": "Pan left",
+			"section": "COMMANDER (RTS view)",
+			"key": "A"
+		},
+		{
+			"id": "PanRight",
+			"action": "Pan right",
+			"section": "COMMANDER (RTS view)",
+			"key": "D"
+		},
+		{
+			"id": "FastPan",
+			"action": "Pan faster (hold)",
+			"section": "COMMANDER (RTS view)",
+			"key": "Shift"
+		},
+		{
+			"id": "Select",
+			"action": "Select / place / pick",
+			"section": "COMMANDER (RTS view)",
+			"key": "Left Mouse"
+		},
+		{
+			"id": "Order",
+			"action": "Walk there / mine it",
+			"section": "COMMANDER (RTS view)",
+			"key": "Right Mouse"
+		},
+		{
+			"id": "RotateCamera",
+			"action": "Turn / tilt camera (hold + drag)",
+			"section": "COMMANDER (RTS view)",
+			"key": "Middle Mouse"
+		},
+		{
+			"id": "LockCamera",
+			"action": "Lock camera on your character",
+			"section": "COMMANDER (RTS view)",
+			"key": "L"
+		},
+		{
+			"id": "WalkRun",
+			"action": "Toggle walk / run",
+			"section": "COMMANDER (RTS view)",
+			"key": "Ctrl"
+		},
+		{
+			"id": "ClearOrders",
+			"action": "Cancel your character's orders",
+			"section": "COMMANDER (RTS view)",
+			"key": "Backspace"
+		},
+		{
+			"id": "ToAlert",
+			"action": "Jump camera to the latest alert",
+			"section": "COMMANDER (RTS view)",
+			"key": "Space"
 		}
 	]
 }

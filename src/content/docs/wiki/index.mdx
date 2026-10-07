@@ -1,6 +1,6 @@
 ---
 title: Firnreach Wiki
-description: The official Firnreach wiki. How to play, every tower, every enemy.
+description: The official Firnreach wiki. How to play, every building, enemy and boss, the skill tree, the Hollow's shops and achievements.
 sidebar:
   label: Wiki home
 ---
@@ -8,15 +8,38 @@ sidebar:
 import { CardGrid, LinkCard } from '@astrojs/starlight/components';
 import game from '../../../data/game.json';
 
-Welcome to the official wiki for **Firnreach**, the survival tower defense for 1 to 8 players.
-Tower and enemy pages are generated from the game's own data, so the numbers match the released build
-(currently **v{game.version}**).
+export const skillCount = game.skillBranches.reduce((n, b) => n + b.nodes.length, 0);
+
+Welcome to the official wiki for **Firnreach**, the survival tower defense for 1 to 8 players, solo or co-op.
+Its pages follow the game's own **Almanac** and menus, and are generated from the game's data, so names, text and
+numbers match the released build (currently **v{game.version}**).
+
+## Guides
 
 <CardGrid>
-	<LinkCard title="Getting started" href="/wiki/getting-started/" description="Your first day and night: mining, the Base, power and walls." />
+	<LinkCard title="Getting started" href="/wiki/getting-started/" description="Your first match: mining, the Base, power, walls and the night." />
 	<LinkCard title="Playing together online" href="/wiki/playing-online/" description="Hosting and joining with friends through Steam." />
-	<LinkCard title="Towers" href="/wiki/towers/" description={`All ${game.towers.length} buildings, with stats for every level.`} />
-	<LinkCard title="Enemies" href="/wiki/enemies/" description={`All ${game.enemies.length} enemies and bosses, and how to read their attacks.`} />
+	<LinkCard title="Controls" href="/wiki/controls/" description={`All ${game.keybinds.length} default key bindings.`} />
+	<LinkCard title="Difficulty and match settings" href="/wiki/match-settings/" description="Tutorial to Insane, Short to Endless, and the world options." />
+</CardGrid>
+
+## Almanac
+
+<CardGrid>
+	<LinkCard title="Player" href="/wiki/player/" description="The two views, first person, the commander view and survival." />
+	<LinkCard title="Buildings" href="/wiki/towers/" description={`All ${game.towers.length} buildings, with stats for every level.`} />
+	<LinkCard title="Enemies and bosses" href="/wiki/enemies/" description={`All ${game.enemies.length} enemies and bosses, and how to spot their attacks.`} />
+	<LinkCard title="Relics" href="/wiki/relics/" description={`The ${game.relics.length} relics hidden out on the ice (spoilers folded away).`} />
+	<LinkCard title="Crystals and resources" href="/wiki/resources/" description="Crystals, Heartstone, Rime Essence and power." />
+</CardGrid>
+
+## Progression
+
+<CardGrid>
+	<LinkCard title="Skill tree" href="/wiki/skills/" description={`${game.skillBranches.length} branches and master classes, ${skillCount} skills.`} />
+	<LinkCard title="The Hollow" href="/wiki/hollow/" description={`The street between matches: ${game.shops.length} shops and the stations.`} />
+	<LinkCard title="The pick" href="/wiki/picks/" description="Pick tiers, tip focus and handles." />
+	<LinkCard title="Achievements" href="/wiki/achievements/" description={`All ${game.achievements.length} achievements and their bonuses.`} />
 </CardGrid>
 
 :::note

@@ -9,7 +9,7 @@ export default defineConfig({
 	integrations: [
 		starlight({
 			title: 'Firnreach',
-			description: 'The official Firnreach wiki: towers, enemies, and how to play.',
+			description: 'The official Firnreach wiki: buildings, enemies, skills, the Hollow and how to play.',
 			favicon: '/favicon.svg',
 			customCss: [
 				'@fontsource/barlow/400.css',
@@ -33,10 +33,29 @@ export default defineConfig({
 					items: [
 						{ label: 'Getting started', slug: 'wiki/getting-started' },
 						{ label: 'Playing together online', slug: 'wiki/playing-online' },
+						{ label: 'Controls', slug: 'wiki/controls' },
+						{ label: 'Difficulty and match settings', slug: 'wiki/match-settings' },
 					],
 				},
-				{ label: 'Towers', collapsed: true, items: [{ autogenerate: { directory: 'wiki/towers' } }] },
-				{ label: 'Enemies', collapsed: true, items: [{ autogenerate: { directory: 'wiki/enemies' } }] },
+				{
+					label: 'Almanac',
+					items: [
+						{ label: 'Player', slug: 'wiki/player' },
+						{ label: 'Buildings', collapsed: true, items: [{ autogenerate: { directory: 'wiki/towers' } }] },
+						{ label: 'Enemies and bosses', collapsed: true, items: [{ autogenerate: { directory: 'wiki/enemies' } }] },
+						{ label: 'Relics', slug: 'wiki/relics' },
+						{ label: 'Crystals and resources', slug: 'wiki/resources' },
+					],
+				},
+				{
+					label: 'Progression',
+					items: [
+						{ label: 'Skill tree', collapsed: true, items: [{ autogenerate: { directory: 'wiki/skills' } }] },
+						{ label: 'The Hollow', collapsed: true, items: [{ autogenerate: { directory: 'wiki/hollow' } }] },
+						{ label: 'The pick', slug: 'wiki/picks' },
+						{ label: 'Achievements', slug: 'wiki/achievements' },
+					],
+				},
 			],
 		}),
 	],

@@ -125,3 +125,106 @@ h1#_top,
 .fr-nav-links a[aria-current='page'] {
 	color: var(--sl-color-accent-high);
 }
+
+/* Almanac entry card (src/components/AlmanacCard.astro): the in-game Almanac's card header */
+.almanac-card {
+	display: flex;
+	gap: 1.25rem;
+	align-items: center;
+	margin-block: 0.5rem 1.5rem;
+	padding: 1rem 1.25rem;
+	background: linear-gradient(180deg, rgb(21 38 60 / 0.85), rgb(14 26 43 / 0.85));
+	border: 1px solid var(--fr-hairline);
+	border-top: 2px solid var(--almanac-tone, var(--fr-rim));
+	clip-path: polygon(var(--fr-chamfer) 0, 100% 0, 100% calc(100% - var(--fr-chamfer)), calc(100% - var(--fr-chamfer)) 100%, 0 100%, 0 var(--fr-chamfer));
+	box-shadow: var(--fr-shadow);
+}
+:root[data-theme='light'] .almanac-card {
+	background: linear-gradient(180deg, #f3f8fc, #e8f1f8);
+	border-color: #c3d4e3;
+	border-top-color: var(--almanac-tone, #1670c2);
+	box-shadow: none;
+}
+.almanac-card.tone-defense { --almanac-tone: var(--fr-res-white); }
+.almanac-card.tone-power { --almanac-tone: var(--fr-res-red); }
+.almanac-card.tone-offense { --almanac-tone: var(--fr-res-purple); }
+.almanac-card.tone-utility { --almanac-tone: var(--fr-res-green); }
+.almanac-card.tone-boss { --almanac-tone: var(--fr-danger); }
+.almanac-card.tone-enemy { --almanac-tone: var(--fr-accent); }
+.almanac-art {
+	flex: 0 0 auto;
+	width: 240px;
+	max-width: 40%;
+}
+.sl-markdown-content .almanac-art img {
+	display: block;
+	width: 100%;
+	height: auto;
+	border: 1px solid var(--fr-hairline);
+	background: var(--fr-inset);
+}
+.almanac-head {
+	min-width: 0;
+}
+.sl-markdown-content .almanac-head p {
+	margin: 0;
+}
+.almanac-kicker {
+	font-family: var(--fr-font-display);
+	text-transform: uppercase;
+	letter-spacing: 0.12em;
+	font-size: var(--sl-text-sm);
+	color: var(--sl-color-gray-3);
+}
+.almanac-name {
+	font-family: var(--fr-font-display);
+	font-weight: 600;
+	text-transform: uppercase;
+	letter-spacing: 0.05em;
+	font-size: clamp(1.5rem, 4vw, 2.1rem);
+	line-height: 1.1;
+	color: var(--sl-color-white);
+	overflow-wrap: anywhere;
+}
+.sl-markdown-content .almanac-threat {
+	margin-top: 0.35rem;
+	font-size: var(--sl-text-sm);
+	color: var(--sl-color-gray-2);
+}
+.almanac-threat strong { color: var(--fr-reward); }
+.almanac-threat.threat-high strong { color: var(--fr-accent); }
+.almanac-threat.threat-extreme strong { color: var(--fr-danger); }
+:root[data-theme='light'] .almanac-threat strong { color: #8a5a00; }
+:root[data-theme='light'] .almanac-threat.threat-extreme strong { color: #b3262b; }
+@media (max-width: 40rem) {
+	.almanac-card.has-art {
+		flex-direction: column;
+		align-items: stretch;
+	}
+	.almanac-art {
+		width: 100%;
+		max-width: none;
+	}
+}
+/* Long descriptive table cells (skills, achievements, shops) wrap instead of scrolling forever */
+.sl-markdown-content .wrap-table td {
+	white-space: normal;
+}
+.sl-markdown-content .wrap-table td:nth-child(2) {
+	min-width: 14rem;
+}
+.sl-markdown-content details {
+	border: 1px solid var(--sl-color-hairline-light);
+	padding: 0.5rem 0.9rem;
+	margin-top: 0.75rem;
+}
+.sl-markdown-content summary {
+	cursor: pointer;
+	font-family: var(--fr-font-display);
+	text-transform: uppercase;
+	letter-spacing: 0.06em;
+	color: var(--sl-color-accent-high);
+}
+.sl-markdown-content .wrap-table td:first-child {
+	white-space: nowrap;
+}

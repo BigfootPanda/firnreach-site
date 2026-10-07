@@ -4,7 +4,7 @@ The website and official wiki for **Firnreach**: marketing pages (home, news, FA
 [Starlight](https://starlight.astro.build) wiki at `/wiki`, built with [Astro](https://astro.build) and served by a
 Cloudflare Worker with static assets.
 
-The site is **private** (Cloudflare Access on the custom domains) until the Steam store page is live.
+The site is **public** at https://firnreach.com.
 
 ## Develop
 
@@ -15,24 +15,40 @@ npm run build      # static build to dist/, then fails if the internal project n
 npm run preview    # serve dist/ locally
 ```
 
-## Game data (towers, enemies, news)
+## Game data (the wiki's Almanac pages, news)
 
-Tower, enemy and news pages are generated from the game repo at a **release tag**, so unreleased changes never reach
-the site:
+The wiki mirrors what players see in game: the Almanac (PLAYER / BUILDINGS / ENEMIES / RELICS), the build menu, the
+achievements screen, the trainer's skill tree, the Hollow's shops and stations, the pick, the match setup screen and
+the default key bindings. All of it is generated from the game repo at a **release tag**, so unreleased changes
+never reach the site:
 
 ```sh
 npm run export-data                                   # newest vX.Y.Z tag in the game repo (sibling folder by default)
-node scripts/export-game-data.mjs --tag v0.0.20       # a specific release
+node scripts/export-game-data.mjs --tag v0.0.21       # a specific release
 node scripts/export-game-data.mjs --repo "E:/path/to/game-repo"   # or set GAME_REPO
 ```
 
-It reads the DataTable CSV exports, the in-game Almanac and build-menu text, and `CHANGELOG.md` at that tag, and
-writes:
+It writes (do not edit by hand):
 
 - `src/data/game.json`, `src/data/news.json`
-- `src/content/docs/wiki/towers/*.md`, `src/content/docs/wiki/enemies/*.md` (do not edit by hand)
+- `src/content/docs/wiki/{towers,enemies,skills,hollow}/*.mdx`
+- `src/content/docs/wiki/{player,relics,achievements,resources,picks,match-settings,controls}.mdx`
 
-Commit the generated files: the site builds without the game repo. Run this after each release export.
+`getting-started.md`, `playing-online.md` and `index.mdx` are hand-written. Commit the generated files: the site
+builds without the game repo. Run this after each release export.
+
+### Pictures
+
+Entry pages lead with an Almanac-style card (`src/components/AlmanacCard.astro`). It shows a picture when
+`src/assets/wiki/<section>/<slug>.png` exists (sections: `towers`, `enemies`, `skills`, `hollow`, `resources`) and
+nothing otherwise; alt text comes from `src/assets/wiki/alt.json`. The home page picks up `src/assets/shots/`
+(`hero-*` = hero background, `commander-*` = commander panel, everything else = gallery; alt text in
+`src/assets/shots/alt.json`). To bring in a folder of captured shots (resized, alt text from its `manifest.json`):
+
+```sh
+npm run sync-shots                                    # from ../firnreach-site-shots
+node scripts/sync-shots.mjs --from "E:/somewhere/else"
+```
 
 ## Deploy (Cloudflare Workers static assets)
 

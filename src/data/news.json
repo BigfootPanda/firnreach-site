@@ -1,5 +1,19 @@
 [
 	{
+		"version": "0.0.21",
+		"title": "Solid Ground",
+		"date": "2026-10-08",
+		"slug": "v0-0-21",
+		"items": [
+			"Mining feels instant: your pick swings the moment you press and the rock breaks as the pick lands, even on a laggy connection",
+			"Faster picks swing faster: the swing follows your mining speed, down to a half-second minimum",
+			"Enemies flash when you hit them, toned down so big fights don't strobe",
+			"Mined rocks and new buildings sync more efficiently in big games, and players who join mid-match see the map correctly",
+			"When the host leaves, everyone is told why and returned to the Hollow instead of a dropped connection, and nobody can join a game that is closing",
+			"RETURN and PLAY AGAIN on the results screen no longer conflict"
+		]
+	},
+	{
 		"version": "0.0.20",
 		"title": "The long game",
 		"date": "2026-10-07",

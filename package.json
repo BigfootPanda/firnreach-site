@@ -8,7 +8,8 @@
     "build": "astro build && node scripts/check-public-name.mjs",
     "preview": "astro preview",
     "export-data": "node scripts/export-game-data.mjs",
-    "astro": "astro"
+    "astro": "astro",
+    "sync-shots": "node scripts/sync-shots.mjs"
   },
   "dependencies": {
     "@astrojs/starlight": "^0.42.5",

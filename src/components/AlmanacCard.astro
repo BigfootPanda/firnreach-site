@@ -1,0 +1,49 @@
+---
+// An Almanac-style card header for wiki entries: picture (when one exists), category line, name, threat.
+// Pictures are optional: drop src/assets/wiki/<section>/<slug>.png (or .jpg / .webp) and it appears on the next build.
+// Alt text comes from src/assets/wiki/alt.json ({ "<section>/<slug>": "alt text" }) when present, else the name.
+import { Image } from 'astro:assets';
+import type { ImageMetadata } from 'astro';
+
+interface Props {
+	name: string;
+	kicker: string;
+	section?: string;
+	slug?: string;
+	threat?: string;
+	tone?: string;
+	noImage?: boolean;
+}
+const { name, kicker, section, slug, threat, tone, noImage } = Astro.props;
+
+const images = import.meta.glob<{ default: ImageMetadata }>('../assets/wiki/**/*.{png,jpg,jpeg,webp}', { eager: true });
+const altFiles = import.meta.glob<Record<string, string>>('../assets/wiki/alt.json', { eager: true, import: 'default' });
+const alts: Record<string, string> = Object.values(altFiles)[0] ?? {};
+
+let img: ImageMetadata | undefined;
+if (!noImage && section && slug) {
+	for (const ext of ['png', 'jpg', 'jpeg', 'webp']) {
+		const hit = images[`../assets/wiki/${section}/${slug}.${ext}`];
+		if (hit) { img = hit.default; break; }
+	}
+}
+const alt = (section && slug && alts[`${section}/${slug}`]) || name;
+const threatLevel = threat ? (/extreme/i.test(threat) ? 'extreme' : /high/i.test(threat) ? 'high' : /medium/i.test(threat) ? 'medium' : 'low') : '';
+---
+
+<div class:list={['almanac-card', tone && `tone-${tone}`, img && 'has-art']} data-pagefind-ignore="all">
+	{img && (
+		<div class="almanac-art">
+			<Image src={img} alt={alt} widths={[240, 480, 720]} sizes="(min-width: 50rem) 240px, 100vw" />
+		</div>
+	)}
+	<div class="almanac-head">
+		<p class="almanac-kicker">{kicker}</p>
+		<p class="almanac-name">{name}</p>
+		{threat && (
+			<p class:list={['almanac-threat', `threat-${threatLevel}`]}>
+				Threat: <strong>{threat}</strong>
+			</p>
+		)}
+	</div>
+</div>

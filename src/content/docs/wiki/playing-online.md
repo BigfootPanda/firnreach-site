@@ -5,7 +5,7 @@ sidebar:
   order: 2
 ---
 
-Firnreach is built for **2 to 8 players** in co-op. Online play goes through **Steam**: no separate account,
+Firnreach is for **1 to 8 players**: play solo, or in co-op. Online play goes through **Steam**: no separate account,
 no port forwarding.
 
 ## Before you start

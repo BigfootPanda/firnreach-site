@@ -163,6 +163,14 @@ h1#_top,
 	border: 1px solid var(--fr-hairline);
 	background: var(--fr-inset);
 }
+.almanac-card.has-art {
+	flex-direction: column;
+	align-items: stretch;
+}
+.almanac-card.has-art .almanac-art {
+	width: 100%;
+	max-width: 100%;
+}
 .almanac-head {
 	min-width: 0;
 }

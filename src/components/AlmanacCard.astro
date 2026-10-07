@@ -34,7 +34,7 @@ const threatLevel = threat ? (/extreme/i.test(threat) ? 'extreme' : /high/i.test
 <div class:list={['almanac-card', tone && `tone-${tone}`, img && 'has-art']} data-pagefind-ignore="all">
 	{img && (
 		<div class="almanac-art">
-			<Image src={img} alt={alt} widths={[240, 480, 720]} sizes="(min-width: 50rem) 240px, 100vw" />
+			<Image src={img} alt={alt} widths={[480, 960, 1440]} sizes="(min-width: 50rem) 720px, 100vw" />
 		</div>
 	)}
 	<div class="almanac-head">

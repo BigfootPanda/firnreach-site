@@ -25,8 +25,8 @@ every other tower.
 
 | Tower | Main crystal | Build cost |
 |---|---|---|
-| [H. Generator](/wiki/towers/h-generator/) | Red | 30 Red |
-| [D. Generator](/wiki/towers/d-generator/) | Red | 40 Red |
+| [Heat Generator](/wiki/towers/heat-generator/) | Red | 30 Red |
+| [Distribution Generator](/wiki/towers/distribution-generator/) | Red | 40 Red |
 | [Battery](/wiki/towers/battery/) | Red | 30 Red |
 
 ## Offense
@@ -42,8 +42,8 @@ every other tower.
 | Tower | Main crystal | Build cost |
 |---|---|---|
 | [Healer](/wiki/towers/healer/) | Amber | 20 Amber |
-| [S. Projector](/wiki/towers/s-projector/) | Amber | 30 Amber |
-| [M. Siphon](/wiki/towers/m-siphon/) | Amber | 1000 Purple, 2000 Amber |
+| [Shield Projector](/wiki/towers/shield-projector/) | Amber | 30 Amber |
+| [Mana Siphon](/wiki/towers/mana-siphon/) | Amber | 1000 Purple, 2000 Amber |
 | [Base](/wiki/towers/base/) | All crystals | 10 Red, 10 Purple, 10 Amber, 10 Obsidian |
 
 :::note[Game data]

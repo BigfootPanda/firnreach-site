@@ -1306,8 +1306,8 @@
 		{
 			"id": 11,
 			"order": 5,
-			"name": "H. Generator",
-			"slug": "h-generator",
+			"name": "Heat Generator",
+			"slug": "heat-generator",
 			"category": "Power",
 			"primaryCrystal": "Red",
 			"description": "The Hearth: one big flame, one mouth to feed. A large amount of power for a single target.",
@@ -1566,8 +1566,8 @@
 		{
 			"id": 18,
 			"order": 6,
-			"name": "D. Generator",
-			"slug": "d-generator",
+			"name": "Distribution Generator",
+			"slug": "distribution-generator",
 			"category": "Power",
 			"primaryCrystal": "Red",
 			"description": "The Company's grid design: makes power and splits it across several targets at once.",
@@ -3126,8 +3126,8 @@
 		{
 			"id": 21,
 			"order": 12,
-			"name": "S. Projector",
-			"slug": "s-projector",
+			"name": "Shield Projector",
+			"slug": "shield-projector",
 			"category": "Utility",
 			"primaryCrystal": "Amber",
 			"description": "Recharges the shields of nearby structures. The Company's idea. Requires power.",
@@ -3386,8 +3386,8 @@
 		{
 			"id": 22,
 			"order": 13,
-			"name": "M. Siphon",
-			"slug": "m-siphon",
+			"name": "Mana Siphon",
+			"slug": "mana-siphon",
 			"category": "Utility",
 			"primaryCrystal": "Amber",
 			"description": "The siphon tags an enemy: it drops 5x resources on death and its Essence flies to you, five-fold. The tag is used up when it dies.",

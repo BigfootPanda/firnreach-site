@@ -1,6 +1,6 @@
 ---
-title: "H. Generator"
-description: "H. Generator: power building in Firnreach. Stats for every level."
+title: "Heat Generator"
+description: "Heat Generator: power building in Firnreach. Stats for every level."
 sidebar:
   order: 6
 ---

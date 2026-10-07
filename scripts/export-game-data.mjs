@@ -88,6 +88,13 @@ function parseCsv(text) {
 
 const num = (v) => (v === '' || v == null ? 0 : Number(v));
 const round = (v, d = 1) => Math.round(v * 10 ** d) / 10 ** d;
+// The game abbreviates some building names to fit its build menu; the wiki spells them out (Alex, 2026-10-08).
+const FULL_NAMES = {
+	'H. Generator': 'Heat Generator',
+	'D. Generator': 'Distribution Generator',
+	'S. Projector': 'Shield Projector',
+	'M. Siphon': 'Mana Siphon',
+};
 const slugify = (s) => s.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
 const cTextArgs = (s) => [...s.matchAll(/TEXT\("((?:[^"\\]|\\.)*)"\)/g)].map((m) => m[1].replace(/\\"/g, '"'));
 const mdEscape = (s) => String(s).replace(/</g, '&lt;').replace(/\|/g, '\\|');
@@ -191,7 +198,7 @@ const towers = almanacTowers
 			}));
 		if (!levels.length) return null;
 		const first = towerRows.find((r) => num(r.TowerId) === t.id);
-		const name = first.DisplayName;
+		const name = FULL_NAMES[first.DisplayName] ?? first.DisplayName;
 		return {
 			id: t.id,
 			order,

@@ -1,6 +1,6 @@
 ---
-title: "M. Siphon"
-description: "M. Siphon: utility building in Firnreach. Stats for every level."
+title: "Mana Siphon"
+description: "Mana Siphon: utility building in Firnreach. Stats for every level."
 sidebar:
   order: 14
 ---

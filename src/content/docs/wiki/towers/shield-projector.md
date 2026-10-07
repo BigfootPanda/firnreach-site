@@ -1,6 +1,6 @@
 ---
-title: "S. Projector"
-description: "S. Projector: utility building in Firnreach. Stats for every level."
+title: "Shield Projector"
+description: "Shield Projector: utility building in Firnreach. Stats for every level."
 sidebar:
   order: 13
 ---

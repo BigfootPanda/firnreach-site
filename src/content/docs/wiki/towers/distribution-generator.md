@@ -1,6 +1,6 @@
 ---
-title: "D. Generator"
-description: "D. Generator: power building in Firnreach. Stats for every level."
+title: "Distribution Generator"
+description: "Distribution Generator: power building in Firnreach. Stats for every level."
 sidebar:
   order: 7
 ---

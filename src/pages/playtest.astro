@@ -1,0 +1,46 @@
+---
+import Site from '../layouts/Site.astro';
+import { SITE } from '../site';
+---
+
+<Site title="Join the playtest" description="Request to join the Firnreach playtest.">
+	<div class="wrap">
+		<header class="page-head">
+			<p class="eyebrow">Playtest</p>
+			<h1>Request to join the playtest</h1>
+		</header>
+		<div class="prose playtest">
+			<p>
+				Firnreach is in active development. Until it's on Steam, playtest builds are shared with a small group through
+				Google Drive, and every request is reviewed by hand.
+			</p>
+			<p>
+				<a class="btn primary" href={SITE.playtestFormUrl} rel="noopener">Request to join the playtest</a>
+			</p>
+			<h2>What we ask for</h2>
+			<ul>
+				<li>An email for the download. A Google account (Gmail) works best, because the build is shared through Google Drive.</li>
+				<li>Your Steam name. Online play goes through Steam friends.</li>
+				<li>Your age range, country and time zone, a rough idea of your PC, and how you'd like to play.</li>
+			</ul>
+			<h2>What happens next</h2>
+			<ul>
+				<li>Requests are reviewed by hand, so it can take a few days.</li>
+				<li>If you're approved, Google emails you a link to the playtest folder.</li>
+				<li>You agree not to share the download or the game files, to ask before posting videos or screenshots, and to send feedback through the feedback form in the playtest folder.</li>
+			</ul>
+			<p class="muted">
+				We only use what you send to run the playtest. It isn't shared with anyone else.
+			</p>
+		</div>
+	</div>
+</Site>
+
+<style>
+	.playtest {
+		margin-bottom: 72px;
+	}
+	.playtest .btn {
+		margin-block: 8px 16px;
+	}
+</style>

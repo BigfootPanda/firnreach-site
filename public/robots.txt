@@ -1,3 +1,4 @@
-# Private preview: remove these two lines when the site goes public (Steam page live).
 User-agent: *
-Disallow: /
+Allow: /
+
+Sitemap: https://firnreach.com/sitemap-index.xml

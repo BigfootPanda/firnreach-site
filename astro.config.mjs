@@ -11,8 +11,6 @@ export default defineConfig({
 			title: 'Firnreach',
 			description: 'The official Firnreach wiki: towers, enemies, and how to play.',
 			favicon: '/favicon.svg',
-			// Private preview: keep out of search engines until launch.
-			head: [{ tag: 'meta', attrs: { name: 'robots', content: 'noindex, nofollow' } }],
 			customCss: [
 				'@fontsource/barlow/400.css',
 				'@fontsource/barlow/500.css',

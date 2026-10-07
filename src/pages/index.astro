@@ -4,10 +4,14 @@ import Site from '../layouts/Site.astro';
 import { SITE } from '../site';
 import news from '../data/news.json';
 import game from '../data/game.json';
-import nightDefense from '../assets/shots/night-defense.png';
-import generators from '../assets/shots/generators-night.png';
-import hollow from '../assets/shots/hollow-street.png';
-import commander from '../assets/shots/commander-view.png';
+import type { ImageMetadata } from 'astro';
+
+// Screenshots: only shots from the CURRENT build go here (Alex, 2026-10-08). Drop PNGs in src/assets/shots/
+// and list them below; the hero, commander panel and gallery each hide themselves while they have no shot.
+const heroShot: ImageMetadata | null = null;
+const commanderShot: ImageMetadata | null = null;
+const gallery: { src: ImageMetadata; alt: string }[] = [];
+const commanderAlt = 'Commander view from above.';
 
 const latest = news[0];
 
@@ -38,25 +42,19 @@ const features = [
 	},
 ];
 
-const gallery = [
-	{ src: nightDefense, alt: 'Night in Firnreach: gun towers fire across the snow under an aurora while ice creatures close in.' },
-	{ src: commander, alt: 'Commander view from above: a pack of crystal enemies inside gold and ice-blue aura rings.' },
-	{ src: generators, alt: 'Two caged power generators glow orange at night beside a wall of blue crystal spikes.' },
-	{ src: hollow, alt: 'The Hollow: a lamp-lit underground street of wooden shopfronts where players gather between matches.' },
-];
 ---
 
 <Site>
 	<section class="hero">
-		<Image
-			src={nightDefense}
+		{heroShot && <Image
+			src={heroShot}
 			alt=""
 			class="hero-bg"
 			widths={[640, 960, 1280]}
 			sizes="100vw"
 			loading="eager"
 			fetchpriority="high"
-		/>
+		/>}
 		<div class="hero-scrim"></div>
 		<div class="wrap hero-inner">
 			<p class="eyebrow">Co-op survival tower defense</p>
@@ -105,9 +103,11 @@ const gallery = [
 
 	<section class="section split-section">
 		<div class="wrap split">
-			<div class="split-media">
-				<Image src={commander} alt={gallery[1].alt} widths={[480, 800, 1100]} sizes="(min-width: 900px) 55vw, 100vw" />
-			</div>
+			{commanderShot && (
+				<div class="split-media">
+					<Image src={commanderShot} alt={commanderAlt} widths={[480, 800, 1100]} sizes="(min-width: 900px) 55vw, 100vw" />
+				</div>
+			)}
 			<div>
 				<p class="eyebrow">Switch at any time</p>
 				<h2>First person or commander</h2>
@@ -122,6 +122,7 @@ const gallery = [
 		</div>
 	</section>
 
+	{gallery.length > 0 && (
 	<section class="section">
 		<div class="wrap">
 			<p class="eyebrow">Screenshots</p>
@@ -138,6 +139,7 @@ const gallery = [
 			<p class="muted small">Work-in-progress footage. Trailer and key art coming with the Steam page.</p>
 		</div>
 	</section>
+	)}
 
 	{
 		latest && (

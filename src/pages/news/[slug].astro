@@ -1,0 +1,39 @@
+---
+import Site from '../../layouts/Site.astro';
+import news from '../../data/news.json';
+
+export function getStaticPaths() {
+	return news.map((n, i) => ({
+		params: { slug: n.slug },
+		props: { post: n, newer: news[i - 1], older: news[i + 1] },
+	}));
+}
+const { post, newer, older } = Astro.props;
+---
+
+<Site title={`v${post.version}: ${post.title}`} description={`Firnreach v${post.version} patch notes: ${post.title}.`}>
+	<div class="wrap">
+		<header class="page-head">
+			<p class="eyebrow"><a href="/news/">News</a> &middot; v{post.version} &middot; {post.date}</p>
+			<h1>{post.title}</h1>
+		</header>
+		<div class="prose">
+			<ul>
+				{post.items.map((i) => <li>{i}</li>)}
+			</ul>
+		</div>
+		<nav class="pager" aria-label="More updates">
+			{older ? <a class="btn" href={`/news/${older.slug}/`}>&larr; v{older.version}</a> : <span />}
+			{newer && <a class="btn" href={`/news/${newer.slug}/`}>v{newer.version} &rarr;</a>}
+		</nav>
+	</div>
+</Site>
+
+<style>
+	.pager {
+		display: flex;
+		justify-content: space-between;
+		gap: 12px;
+		margin: 40px 0 64px;
+	}
+</style>

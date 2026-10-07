@@ -1,0 +1,318 @@
+---
+import { Image } from 'astro:assets';
+import Site from '../layouts/Site.astro';
+import { SITE } from '../site';
+import news from '../data/news.json';
+import game from '../data/game.json';
+import nightDefense from '../assets/shots/night-defense.png';
+import generators from '../assets/shots/generators-night.png';
+import hollow from '../assets/shots/hollow-street.png';
+import commander from '../assets/shots/commander-view.png';
+
+const latest = news[0];
+
+const features = [
+	{
+		k: '01',
+		title: 'Co-op for 2 to 8',
+		body: 'Mine, build and hold the line together. Teammates share upgrades, chip in on the Base and vote on when the night comes.',
+		res: 'var(--fr-res-white)',
+	},
+	{
+		k: '02',
+		title: 'Mine by day',
+		body: 'Break rock and crystal seams for Red, Purple, Amber and Obsidian. Every crystal builds something different.',
+		res: 'var(--fr-res-red)',
+	},
+	{
+		k: '03',
+		title: 'Build and power',
+		body: 'Raise walls, guns and generators around your Base. Most towers run on power, so route it, store it, or feed it by hand.',
+		res: 'var(--fr-res-purple)',
+	},
+	{
+		k: '04',
+		title: 'Hold the night',
+		body: `Waves come out of the cold after dark: ${game.enemies.filter((e) => !e.boss).length} kinds of enemy and two colossal bosses, each with an attack you learn to read.`,
+		res: 'var(--fr-res-green)',
+	},
+];
+
+const gallery = [
+	{ src: nightDefense, alt: 'Night in Firnreach: gun towers fire across the snow under an aurora while ice creatures close in.' },
+	{ src: commander, alt: 'Commander view from above: a pack of crystal enemies inside gold and ice-blue aura rings.' },
+	{ src: generators, alt: 'Two caged power generators glow orange at night beside a wall of blue crystal spikes.' },
+	{ src: hollow, alt: 'The Hollow: a lamp-lit underground street of wooden shopfronts where players gather between matches.' },
+];
+---
+
+<Site>
+	<section class="hero">
+		<Image
+			src={nightDefense}
+			alt=""
+			class="hero-bg"
+			widths={[640, 960, 1280]}
+			sizes="100vw"
+			loading="eager"
+			fetchpriority="high"
+		/>
+		<div class="hero-scrim"></div>
+		<div class="wrap hero-inner">
+			<p class="eyebrow">Co-op survival tower defense</p>
+			<h1>FIRNREACH</h1>
+			<p class="hero-lede">
+				Mine crystals by day. Build and power your defenses. Hold the night together, in first person or from the
+				commander's view.
+			</p>
+			<div class="hero-cta">
+				{
+					SITE.steamUrl ? (
+						<a class="btn primary" href={SITE.steamUrl}>
+							Wishlist on Steam
+						</a>
+					) : (
+						<span class="btn primary" aria-disabled="true">
+							Steam page coming soon
+						</span>
+					)
+				}
+				<a class="btn" href="/wiki/">Read the wiki</a>
+			</div>
+			<p class="hero-meta">2 to 8 players &middot; Online through Steam &middot; PC</p>
+		</div>
+	</section>
+
+	<section class="section">
+		<div class="wrap">
+			<p class="eyebrow">The game</p>
+			<h2>Two halves of every day</h2>
+			<div class="features">
+				{
+					features.map((f) => (
+						<div class="plate-wrap">
+							<article class="plate feature" style={`--res:${f.res}`}>
+								<span class="feature-k">{f.k}</span>
+								<h3>{f.title}</h3>
+								<p>{f.body}</p>
+							</article>
+						</div>
+					))
+				}
+			</div>
+		</div>
+	</section>
+
+	<section class="section split-section">
+		<div class="wrap split">
+			<div class="split-media">
+				<Image src={commander} alt={gallery[1].alt} widths={[480, 800, 1100]} sizes="(min-width: 900px) 55vw, 100vw" />
+			</div>
+			<div>
+				<p class="eyebrow">Switch at any time</p>
+				<h2>First person or commander</h2>
+				<p>
+					Press one key to rise out of your character into a top-down commander view. Place towers on the grid, send
+					yourself to mine, and watch the waves come in. Drop back down to carry a gun to where it's needed.
+				</p>
+				<p class="muted">
+					Every gun tower has a weapon you can take off its stand. Carried guns can't be frozen by the bosses.
+				</p>
+			</div>
+		</div>
+	</section>
+
+	<section class="section">
+		<div class="wrap">
+			<p class="eyebrow">Screenshots</p>
+			<h2>From the current build</h2>
+			<div class="gallery">
+				{
+					gallery.map((g) => (
+						<figure>
+							<Image src={g.src} alt={g.alt} widths={[480, 800]} sizes="(min-width: 720px) 50vw, 100vw" />
+						</figure>
+					))
+				}
+			</div>
+			<p class="muted small">Work-in-progress footage. Trailer and key art coming with the Steam page.</p>
+		</div>
+	</section>
+
+	{
+		latest && (
+			<section class="section news-teaser">
+				<div class="wrap">
+					<p class="eyebrow">Latest update</p>
+					<div class="plate-wrap">
+						<article class="plate">
+							<h3>
+								v{latest.version} &mdash; {latest.title}
+							</h3>
+							<p class="muted">{latest.date}</p>
+							<ul>
+								{latest.items.slice(0, 4).map((i) => (
+									<li>{i}</li>
+								))}
+							</ul>
+							<a class="btn" href={`/news/${latest.slug}/`}>
+								Full patch notes
+							</a>
+						</article>
+					</div>
+				</div>
+			</section>
+		)
+	}
+</Site>
+
+<style>
+	.hero {
+		position: relative;
+		min-height: min(88vh, 760px);
+		display: flex;
+		align-items: flex-end;
+		overflow: hidden;
+		isolation: isolate;
+	}
+	.hero-bg {
+		position: absolute;
+		inset: 0;
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		object-position: 60% 40%;
+		z-index: -2;
+	}
+	.hero-scrim {
+		position: absolute;
+		inset: 0;
+		z-index: -1;
+		background:
+			linear-gradient(180deg, rgb(6 12 22 / 0.25) 0%, rgb(6 12 22 / 0.55) 45%, var(--fr-abyss) 100%),
+			linear-gradient(90deg, rgb(6 12 22 / 0.6) 0%, transparent 70%);
+	}
+	.hero-inner {
+		padding-top: 96px;
+		padding-bottom: 56px;
+	}
+	.hero h1 {
+		font-size: clamp(3.2rem, 15vw, 7.5rem);
+		letter-spacing: 0.14em;
+		margin-bottom: 0.25em;
+		text-shadow: 0 2px 24px rgb(6 12 22 / 0.8);
+	}
+	.hero-lede {
+		max-width: 34rem;
+		font-size: clamp(1.1rem, 2.6vw, 1.35rem);
+		color: var(--fr-text);
+		text-shadow: 0 1px 2px rgb(6 12 22 / 0.8);
+	}
+	.hero-cta {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 12px;
+		margin: 1.6rem 0 1rem;
+	}
+	.hero-meta {
+		font-family: var(--fr-font-display);
+		letter-spacing: 0.1em;
+		text-transform: uppercase;
+		color: var(--fr-text-2);
+		font-size: 0.95rem;
+	}
+
+	.features {
+		display: grid;
+		gap: 16px;
+		grid-template-columns: 1fr;
+	}
+	@media (min-width: 640px) {
+		.features {
+			grid-template-columns: 1fr 1fr;
+		}
+	}
+	@media (min-width: 1000px) {
+		.features {
+			grid-template-columns: repeat(4, 1fr);
+		}
+	}
+	.feature {
+		height: 100%;
+		padding: 24px 20px;
+	}
+	.feature h3 {
+		font-size: 1.45rem;
+		text-transform: uppercase;
+		letter-spacing: 0.05em;
+	}
+	.feature p {
+		color: var(--fr-text-2);
+		margin: 0;
+	}
+	.feature-k {
+		display: inline-block;
+		font-family: var(--fr-font-display);
+		font-weight: 600;
+		color: var(--res);
+		letter-spacing: 0.1em;
+		margin-bottom: 0.6rem;
+		padding-bottom: 0.2rem;
+		border-bottom: 2px solid var(--res);
+	}
+
+	.split-section {
+		background: linear-gradient(180deg, transparent, var(--fr-inset) 30%, var(--fr-inset) 70%, transparent);
+	}
+	.split {
+		display: grid;
+		gap: 28px;
+		align-items: center;
+	}
+	@media (min-width: 900px) {
+		.split {
+			grid-template-columns: 1.2fr 1fr;
+			gap: 48px;
+		}
+	}
+	.split-media img,
+	.gallery img {
+		width: 100%;
+		border: 1px solid var(--fr-hairline);
+		box-shadow: var(--fr-shadow);
+	}
+
+	.gallery {
+		display: grid;
+		gap: 12px;
+		grid-template-columns: 1fr;
+	}
+	@media (min-width: 720px) {
+		.gallery {
+			grid-template-columns: 1fr 1fr;
+			gap: 16px;
+		}
+	}
+	.gallery figure {
+		margin: 0;
+	}
+	.small {
+		font-size: 0.9rem;
+		margin-top: 1rem;
+	}
+
+	.news-teaser h3 {
+		font-size: 1.6rem;
+		margin-bottom: 0.2rem;
+	}
+	.news-teaser ul {
+		padding-left: 1.2rem;
+		color: var(--fr-text-2);
+	}
+	.news-teaser li {
+		margin-bottom: 0.4rem;
+	}
+	.news-teaser li::marker {
+		color: var(--fr-rim);
+	}
+</style>

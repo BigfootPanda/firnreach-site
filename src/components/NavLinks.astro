@@ -1,0 +1,15 @@
+---
+// Starlight SocialIcons override: the site-wide nav (Home / Wiki / News / FAQ) in the wiki header.
+import { NAV } from '../site';
+const path = Astro.url.pathname;
+---
+
+<nav class="fr-nav-links" aria-label="Site">
+	{
+		NAV.map(({ href, label }) => (
+			<a href={href} aria-current={(href === '/' ? path === '/' : path.startsWith(href)) ? 'page' : undefined}>
+				{label}
+			</a>
+		))
+	}
+</nav>

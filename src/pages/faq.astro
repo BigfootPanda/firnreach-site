@@ -1,0 +1,98 @@
+---
+import Site from '../layouts/Site.astro';
+import game from '../data/game.json';
+
+const faqs = [
+	{
+		q: 'What is Firnreach?',
+		a: 'A co-op survival tower defense. By day you mine crystals and build walls, guns and generators around your Base. By night waves of enemies come for it, and you hold them off together, in first person or from a top-down commander view.',
+	},
+	{
+		q: 'How many players?',
+		a: 'Firnreach is built for 2 to 8 players in co-op. You can also play solo.',
+	},
+	{
+		q: 'How do I play with friends?',
+		a: 'Online play goes through Steam: host a game for your friends or invite-only, and they join from an invite or your Steam friends list. LAN games work too. See the <a href="/wiki/playing-online/">online guide</a>.',
+	},
+	{
+		q: 'Is there PvP?',
+		a: 'No. Everyone is on the same team against the cold.',
+	},
+	{
+		q: 'When does it come out, and where?',
+		a: 'Firnreach is coming to Steam on PC. The store page and date will be announced here first.',
+	},
+	{
+		q: 'How long is a match?',
+		a: 'A normal match runs roughly 15 to 45 minutes depending on difficulty, and there is an endless mode for teams that want to see how long they can hold.',
+	},
+	{
+		q: 'Is there progression between matches?',
+		a: 'Yes. Between matches you return to the Hollow, an underground street of shops, to spend what you earned on gear and picks, and spend Rime Essence in the skill tree.',
+	},
+	{
+		q: 'Where do the numbers on the wiki come from?',
+		a: `They are exported straight from the game's data for each release, so they always match the latest released build (currently v${game.version}).`,
+	},
+];
+---
+
+<Site title="FAQ" description="Frequently asked questions about Firnreach.">
+	<div class="wrap">
+		<header class="page-head">
+			<p class="eyebrow">Questions</p>
+			<h1>FAQ</h1>
+		</header>
+		<div class="faq prose">
+			{
+				faqs.map((f) => (
+					<details>
+						<summary>{f.q}</summary>
+						<p set:html={f.a} />
+					</details>
+				))
+			}
+		</div>
+	</div>
+</Site>
+
+<style>
+	.faq {
+		margin-bottom: 72px;
+		border-top: 1px solid var(--fr-hairline);
+	}
+	details {
+		border-bottom: 1px solid var(--fr-hairline);
+	}
+	summary {
+		cursor: pointer;
+		list-style: none;
+		padding: 18px 2.2rem 18px 4px;
+		position: relative;
+		font-family: var(--fr-font-display);
+		font-weight: 600;
+		font-size: 1.3rem;
+		letter-spacing: 0.02em;
+		min-height: 48px;
+	}
+	summary::-webkit-details-marker {
+		display: none;
+	}
+	summary::after {
+		content: '+';
+		position: absolute;
+		right: 8px;
+		top: 50%;
+		transform: translateY(-50%);
+		color: var(--fr-rim);
+		font-size: 1.5rem;
+	}
+	details[open] summary::after {
+		content: '\2212';
+	}
+	details p {
+		color: var(--fr-text-2);
+		padding: 0 4px 12px;
+	}
+</style>

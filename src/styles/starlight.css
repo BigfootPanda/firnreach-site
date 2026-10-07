@@ -1,0 +1,127 @@
+/* Starlight (wiki) theme mapped onto the Firnreach tokens. Dark is the default; light is available. */
+:root {
+	--sl-font: var(--fr-font-body);
+	--sl-color-accent-low: #123a57;
+	--sl-color-accent: #4db6ff;
+	--sl-color-accent-high: #8fd4f5;
+	--sl-color-white: #eef5fb;
+	--sl-color-gray-1: #dde8f2;
+	--sl-color-gray-2: #a9bed2;
+	--sl-color-gray-3: #7d93aa;
+	--sl-color-gray-4: #4b6580;
+	--sl-color-gray-5: #2b4763;
+	--sl-color-gray-6: #0e1a2b;
+	--sl-color-black: #091320;
+	--sl-color-bg-nav: #0b1626;
+	--sl-color-bg-sidebar: #0b1626;
+	--sl-color-hairline: #1b2f46;
+	--sl-color-hairline-light: #2b4763;
+	--sl-color-orange: var(--fr-accent);
+	--sl-color-red: var(--fr-danger);
+	--sl-color-green: var(--fr-positive);
+}
+
+:root[data-theme='light'] {
+	--sl-color-accent-low: #d6eefb;
+	--sl-color-accent: #1670c2;
+	--sl-color-accent-high: #0e3f6b;
+	--sl-color-white: #0e1a2b;
+	--sl-color-gray-1: #15263c;
+	--sl-color-gray-2: #2b4763;
+	--sl-color-gray-3: #4b6580;
+	--sl-color-gray-4: #7d93aa;
+	--sl-color-gray-5: #c3d4e3;
+	--sl-color-gray-6: #e8f1f8;
+	--sl-color-gray-7: #f3f8fc;
+	--sl-color-black: #ffffff;
+	--sl-color-bg-nav: #f3f8fc;
+	--sl-color-bg-sidebar: #f8fbfd;
+}
+
+:root[data-theme='dark'] body,
+:root:not([data-theme]) body {
+	background:
+		radial-gradient(1200px 500px at 70% -10%, rgb(77 182 255 / 0.07), transparent 60%),
+		var(--sl-color-black);
+}
+
+/* Condensed caps headings, like the game's panel titles */
+.sl-markdown-content :is(h1, h2, h3),
+h1#_top,
+.site-title {
+	font-family: var(--fr-font-display);
+	font-weight: 600;
+	letter-spacing: 0.02em;
+}
+.sl-markdown-content h2 {
+	text-transform: uppercase;
+	letter-spacing: 0.06em;
+	font-size: var(--sl-text-h3);
+	border-bottom: 1px solid var(--sl-color-hairline-light);
+	padding-bottom: 0.3rem;
+}
+.site-title {
+	text-transform: uppercase;
+	letter-spacing: 0.14em;
+	color: var(--sl-color-white);
+}
+
+/* Tables read like in-game stat panels */
+.sl-markdown-content table {
+	display: block;
+	overflow-x: auto;
+	font-variant-numeric: tabular-nums;
+	border: 1px solid var(--sl-color-hairline-light);
+}
+.sl-markdown-content th {
+	font-family: var(--fr-font-display);
+	text-transform: uppercase;
+	letter-spacing: 0.06em;
+	font-weight: 600;
+	color: var(--sl-color-accent-high);
+	background: var(--sl-color-gray-6);
+	white-space: nowrap;
+}
+.sl-markdown-content :is(th, td) {
+	padding: 0.45rem 0.75rem;
+	white-space: nowrap;
+	vertical-align: middle;
+}
+.sl-markdown-content :is(th, td):first-child {
+	padding-inline-start: 0.75rem;
+}
+.sl-markdown-content tbody tr:nth-child(even) {
+	background: rgb(21 38 60 / 0.35);
+}
+/* two-column fact boxes (no header) may wrap their values */
+.sl-markdown-content table:has(thead th:empty) td {
+	white-space: normal;
+}
+.sl-markdown-content thead:has(th:empty) {
+	display: none;
+}
+.sl-markdown-content blockquote {
+	border-inline-start-color: var(--sl-color-accent-high);
+	font-style: italic;
+	color: var(--sl-color-gray-2);
+}
+
+/* Header nav links (SocialIcons override) */
+.fr-nav-links {
+	display: flex;
+	gap: 1.1rem;
+	align-items: center;
+}
+.fr-nav-links a {
+	font-family: var(--fr-font-display);
+	text-transform: uppercase;
+	letter-spacing: 0.1em;
+	font-weight: 600;
+	font-size: 0.95rem;
+	color: var(--sl-color-gray-2);
+	text-decoration: none;
+}
+.fr-nav-links a:hover,
+.fr-nav-links a[aria-current='page'] {
+	color: var(--sl-color-accent-high);
+}

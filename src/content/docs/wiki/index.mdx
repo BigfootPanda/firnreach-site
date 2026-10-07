@@ -1,0 +1,25 @@
+---
+title: Firnreach Wiki
+description: The official Firnreach wiki. How to play, every tower, every enemy.
+sidebar:
+  label: Wiki home
+---
+
+import { CardGrid, LinkCard } from '@astrojs/starlight/components';
+import game from '../../../data/game.json';
+
+Welcome to the official wiki for **Firnreach**, the co-op survival tower defense for 2 to 8 players.
+Tower and enemy pages are generated from the game's own data, so the numbers match the released build
+(currently **v{game.version}**).
+
+<CardGrid>
+	<LinkCard title="Getting started" href="/wiki/getting-started/" description="Your first day and night: mining, the Base, power and walls." />
+	<LinkCard title="Playing together online" href="/wiki/playing-online/" description="Hosting and joining with friends through Steam." />
+	<LinkCard title="Towers" href="/wiki/towers/" description={`All ${game.towers.length} buildings, with stats for every level.`} />
+	<LinkCard title="Enemies" href="/wiki/enemies/" description={`All ${game.enemies.length} enemies and bosses, and how to read their attacks.`} />
+</CardGrid>
+
+:::note
+This wiki is written by the developers. If something here doesn't match the game, the game is right; tell us
+and we'll fix the page.
+:::

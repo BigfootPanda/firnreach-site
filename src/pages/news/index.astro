@@ -1,0 +1,74 @@
+---
+import Site from '../../layouts/Site.astro';
+import news from '../../data/news.json';
+---
+
+<Site title="News" description="Firnreach patch notes and updates.">
+	<div class="wrap">
+		<header class="page-head">
+			<p class="eyebrow">Patch notes</p>
+			<h1>News</h1>
+		</header>
+		<div class="list">
+			{
+				news.map((n) => (
+					<a class="item" href={`/news/${n.slug}/`}>
+						<span class="ver">v{n.version}</span>
+						<span class="title">{n.title}</span>
+						<span class="date">{n.date}</span>
+					</a>
+				))
+			}
+		</div>
+	</div>
+</Site>
+
+<style>
+	.list {
+		display: flex;
+		flex-direction: column;
+		border-top: 1px solid var(--fr-hairline);
+		margin-bottom: 64px;
+	}
+	.item {
+		display: grid;
+		grid-template-columns: auto 1fr;
+		grid-template-areas: 'ver date' 'title title';
+		gap: 0.15rem 1rem;
+		padding: 18px 4px;
+		border-bottom: 1px solid var(--fr-hairline);
+		text-decoration: none;
+		color: var(--fr-text);
+	}
+	@media (min-width: 720px) {
+		.item {
+			grid-template-columns: 6rem 1fr auto;
+			grid-template-areas: 'ver title date';
+			align-items: baseline;
+		}
+	}
+	.item:hover {
+		background: var(--fr-plate);
+	}
+	.ver {
+		grid-area: ver;
+		font-family: var(--fr-font-display);
+		font-weight: 600;
+		color: var(--fr-rim);
+		letter-spacing: 0.06em;
+	}
+	.title {
+		grid-area: title;
+		font-family: var(--fr-font-display);
+		font-weight: 600;
+		font-size: 1.35rem;
+		text-transform: uppercase;
+		letter-spacing: 0.04em;
+	}
+	.date {
+		grid-area: date;
+		color: var(--fr-text-muted);
+		font-variant-numeric: tabular-nums;
+		justify-self: end;
+	}
+</style>

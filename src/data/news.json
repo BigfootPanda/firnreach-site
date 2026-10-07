@@ -1,0 +1,116 @@
+[
+	{
+		"version": "0.0.20",
+		"title": "The long game",
+		"date": "2026-10-07",
+		"slug": "v0-0-20",
+		"items": [
+			"Every player now earns Rime Essence when each day ends, and wisps pay out fairly in groups - progression is much faster, especially in co-op",
+			"Skill tree revamp: more levels, new early nodes, new advanced classes (Quartermaster, Stormcaller, Frostcaller), and locked nodes now show exactly what they need",
+			"New building: the Stone Door - a wall piece you can open and close; enemies path through it only while it is open",
+			"Skip the day: start the next wave early (instant solo, team vote in multiplayer)",
+			"Respawn at the Base with a countdown, and PLAY AGAIN on the results screen for the whole party",
+			"Base upgrades can be paid in over several trips, and teammates can chip in; anyone can upgrade a teammate's tower",
+			"Power is easier to learn: feed towers by holding F, or order it from the commander view",
+			"Hold the Hollow (Endless) gets brutal after wave 10, and The Deep is now as tough as surface Insane",
+			"Fixes: shop buttons, Esc closes shop screens, menu flicker, guns held properly in third person, RTS mining spots, Jack of All Trades, prices with discounts, resource sync in big games"
+		]
+	},
+	{
+		"version": "0.0.19",
+		"title": "Play together online",
+		"date": "2026-10-06",
+		"slug": "v0-0-19",
+		"items": [
+			"The host can now remove a player: KICK in the lobby or in pause > PLAYERS, with a confirm. The removed player is sent home with a message and can't rejoin that game.",
+			"Mute anyone: MUTE in the lobby or in pause > PLAYERS hides that player's chat on your screen until you leave the game.",
+			"Teammates can upgrade each other's towers (the one who upgrades pays); only the builder can sell.",
+			"Frost Surge is now a team vote (press Y or N), and only the builder can switch off a Shield Wall's field.",
+			"The Base can only be sold when no enemies are coming, and the \"I Can Read\" achievement needs a finished tutorial (with fireworks).",
+			"Winning the tutorial now shows its victory camera and fireworks before the results screen (hosts saw the results at once).",
+			"Slowed enemies wear a lighter coat of frost, and the Cryo Mage's orb swirls with violet light.",
+			"The Hollow's records wall reads clearly: NIGHTS HELD and \"WE KEEP THEIR LAMPS LIT\" are now painted lettering.",
+			"Safer saves: if a save file is locked by another program (antivirus, a sync tool), your newest progress is kept and picked up the next time you start, and a damaged file is always copied aside before anything is written."
+		]
+	},
+	{
+		"version": "0.0.18",
+		"title": "First hour",
+		"date": "2026-10-06",
+		"slug": "v0-0-18",
+		"items": [
+			"New tutorial map: you start next to a safe spot walled in by rock. Break the two gray rocks blocking the way in and build your Base inside.",
+			"An on-screen arrow now points to whatever the tutorial asks for (Obsidian, the rocks, the safe spot, your Base), with the distance in metres.",
+			"You can skip the tutorial mid-match, and replay the Hollow walkthrough or the first-time hints from Settings.",
+			"Your first Tutorial now pays full XP (no more level 3 cap). Replays give no XP.",
+			"The first-win bonus is now 150 Rime Essence, and Rime Essence wisps stay on the ground for 150 seconds.",
+			"New players are asked what their team should call them. Unnamed teammates show as 'Survivor N', and two players with the same name get '(2)'.",
+			"Plainer text: pick upgrades show seconds per hit, trainer points are 'skill points' everywhere, Heartstone sources are listed honestly, and prestige text only appears near the level cap.",
+			"After a match a goal points you to the Outfitter, and the end-screen BANKED tile is now CRYSTALS LEFT.",
+			"On Easy, a one-time tip warns you when wave 4 starts with no walls, and the wave banner no longer hides tips.",
+			"Safer saves: a reset profile stays reset, and a damaged settings or profile file is set aside instead of overwritten."
+		]
+	},
+	{
+		"version": "0.0.17",
+		"title": "Enemies come alive",
+		"date": "2026-10-06",
+		"slug": "v0-0-17",
+		"items": [
+			"Every regular enemy and both bosses are now fully animated: they walk, wind up, strike, flinch and die, and their hits land when the blow connects.",
+			"Readable attacks: enemies glow and swell as they wind up a hit (easy to spot from the commander view too), the Golem cracks as its armour wears, and boss specials line up with their warning rings.",
+			"Hit feedback: ice chips fly off where you hit, big hits stagger enemies, and slowed enemies frost over.",
+			"The Almanac's enemy pages show each enemy animated on a stand, with how to spot its attack.",
+			"Fixes: the Cryo Mage's hands stay on its arms, the Runner's bite looks natural, your pick swings in your right hand, and the original crystal icons are back.",
+			"Boss weak spots now register correctly for every player in co-op.",
+			"Big waves run smoother: about 66 fps with 300 enemies at High on an RTX 2080 Ti.",
+			"Hollow signs are easier to read, and the same map seed now gives the same waves.",
+			"Closed exploits: gun spam, off-map orders and stored-up cooldown bursts."
+		]
+	},
+	{
+		"version": "0.0.16",
+		"title": "Friends playtest fixes",
+		"date": "2026-10-05",
+		"slug": "v0-0-16",
+		"items": [
+			"The game is now called Firnreach",
+			"Build your Base first: other towers unlock once the team's Base is down",
+			"Mouse sensitivity default lowered, with finer 0.1 steps in Settings",
+			"Pause menu BROWSE: hover build cards and read tooltips while paused",
+			"Clicking a rock in commander view now mines exactly that rock",
+			"Animated Ice Brawler and Glacial Runner with readable attack wind-ups",
+			"New in the Hollow: Sealed Gate, lift room, records wall, abandoned passage, ice, street furniture and clearer station signs",
+			"First-win bonus; leaving a match counts as a loss; easier start on Easy",
+			"Key rebinding and accessibility options; new combat effects, snow and boss looks",
+			"Fixes: Hollow-return crash, memory leak, stuck bodies, Heartstone kiosk walk"
+		]
+	},
+	{
+		"version": "0.0.15",
+		"title": "Missing art fix",
+		"date": "2026-10-04",
+		"slug": "v0-0-15",
+		"items": [
+			"Fixed grey checkerboard textures: the Base, Hollow buildings, snow drifts and weapons now show their real art",
+			"Mountains render with their painted rock and snow again"
+		]
+	},
+	{
+		"version": "0.0.14",
+		"title": "Wardrobe & Pick Smith",
+		"date": "2026-10-04",
+		"slug": "v0-0-14",
+		"items": [
+			"New Outfitter fitting room: pick what you wear in each slot, with a free starter outfit",
+			"Pick smith rebuilt: choose two tips and a handle, with tiered upgrades",
+			"Crystal Radar now reveals hidden crystal seams",
+			"Artillery launcher: shells land where you look, with a landing marker",
+			"Enemy special attacks are much easier to read at a glance",
+			"Esc pauses during a match; adjustable commander pan speed (hold Shift for 2x)",
+			"Shop cards with item art, and pick prices rebalanced",
+			"Fixes for 8-player parties: everyone sees every enemy, late joiners get a body",
+			"New Battery look with visible charge, plus clearer lighting on towers"
+		]
+	}
+]

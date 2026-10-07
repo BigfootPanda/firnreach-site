@@ -1,0 +1,50 @@
+/*
+ * Firnreach design tokens - mirrors the game's UI colour tokens (FrostUIStyle, SG-10) in their navy/ice
+ * target values (V0022_UI_BUILD_SPEC 2.1). Keep the names in step with the game so a restyle there is a
+ * one-line change here.
+ */
+:root {
+	/* Surfaces */
+	--fr-abyss: #060c16; /* SurfaceAbyss: outer stroke, shadow, scrims */
+	--fr-plate: #0e1a2b; /* SurfacePlate: panel fill */
+	--fr-raised: #15263c; /* SurfaceRaised: cards, hovered rows */
+	--fr-inset: #091320; /* SurfaceInset: wells, troughs */
+	--fr-selected: #123a57; /* SurfaceSelected (Ice Deep) */
+
+	/* Borders */
+	--fr-hairline: #2b4763; /* BorderSubtle */
+	--fr-rim: #8fd4f5; /* BorderRim: ice rim light, focus */
+	--fr-rim-hi: #ddf4ff; /* BorderRimHi: specular glint */
+	--fr-crust-shadow: #3c6e96;
+
+	/* Text */
+	--fr-text: #eef5fb; /* TextPrimary */
+	--fr-text-2: #a9bed2; /* TextSecondary */
+	--fr-text-muted: #7d93aa; /* TextMuted (menus only) */
+	--fr-text-on-accent: #060c16;
+
+	/* Signals */
+	--fr-accent: #f2a93b; /* Amber: the one primary action */
+	--fr-danger: #f0555a;
+	--fr-positive: #7fd69a;
+	--fr-reward: #e6c873; /* Rime Gold */
+
+	/* Crystals (match the world) */
+	--fr-res-red: #ff5a57;
+	--fr-res-purple: #b77cff;
+	--fr-res-green: #6eeb85;
+	--fr-res-white: #eef4ff;
+
+	/* Bars */
+	--fr-hp: #b01e26;
+	--fr-power: #1670c2;
+
+	/* Type */
+	--fr-font-display: 'Barlow Condensed', 'Arial Narrow', system-ui, sans-serif;
+	--fr-font-body: 'Barlow', system-ui, -apple-system, 'Segoe UI', sans-serif;
+
+	/* Shape: chamfered (cut) corners, never pills */
+	--fr-chamfer: 10px;
+	--fr-chamfer-sm: 6px;
+	--fr-shadow: 0 2px 10px rgb(6 12 22 / 0.35);
+}

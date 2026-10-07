@@ -1,0 +1,64 @@
+---
+// Layout for the marketing pages (home, news, FAQ). The wiki uses Starlight's own layout with the same tokens.
+import '@fontsource/barlow/400.css';
+import '@fontsource/barlow/500.css';
+import '@fontsource/barlow/600.css';
+import '@fontsource/barlow-condensed/500.css';
+import '@fontsource/barlow-condensed/600.css';
+import '../styles/tokens.css';
+import '../styles/site.css';
+import { NAV, SITE } from '../site';
+
+interface Props {
+	title?: string;
+	description?: string;
+}
+const { title, description = SITE.description } = Astro.props;
+const fullTitle = title ? `${title} | ${SITE.name}` : `${SITE.name} | ${SITE.tagline}`;
+const path = Astro.url.pathname;
+const year = new Date().getFullYear();
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="color-scheme" content="dark" />
+		<meta name="theme-color" content="#060c16" />
+		<!-- Private preview: keep out of search engines until launch. -->
+		<meta name="robots" content="noindex, nofollow" />
+		<title>{fullTitle}</title>
+		<meta name="description" content={description} />
+		<meta property="og:title" content={fullTitle} />
+		<meta property="og:description" content={description} />
+		<link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+	</head>
+	<body>
+		<a class="skip" href="#main">Skip to content</a>
+		<header class="top">
+			<div class="top-inner">
+				<a class="wordmark" href="/" aria-label="Firnreach home">FIRNREACH</a>
+				<nav aria-label="Site">
+					{
+						NAV.map(({ href, label }) => (
+							<a href={href} aria-current={(href === '/' ? path === '/' : path.startsWith(href)) ? 'page' : undefined}>
+								{label}
+							</a>
+						))
+					}
+				</nav>
+			</div>
+		</header>
+		<main id="main">
+			<slot />
+		</main>
+		<footer class="foot">
+			<div class="foot-inner">
+				<span class="wordmark small">FIRNREACH</span>
+				<span>Co-op survival tower defense for 2 to 8 players.</span>
+				<span class="muted">&copy; {year} Firnreach. All rights reserved.</span>
+			</div>
+		</footer>
+	</body>
+</html>

@@ -1,0 +1,55 @@
+# firnreach-site
+
+The website and official wiki for **Firnreach**: marketing pages (home, news, FAQ) plus a
+[Starlight](https://starlight.astro.build) wiki at `/wiki`, built with [Astro](https://astro.build) and served by a
+Cloudflare Worker with static assets.
+
+The site is **private** (Cloudflare Access on the custom domains) until the Steam store page is live.
+
+## Develop
+
+```sh
+npm install
+npm run dev        # http://localhost:4321
+npm run build      # static build to dist/, then fails if the internal project name appears anywhere
+npm run preview    # serve dist/ locally
+```
+
+## Game data (towers, enemies, news)
+
+Tower, enemy and news pages are generated from the game repo at a **release tag**, so unreleased changes never reach
+the site:
+
+```sh
+npm run export-data                                   # newest vX.Y.Z tag in the game repo (sibling folder by default)
+node scripts/export-game-data.mjs --tag v0.0.20       # a specific release
+node scripts/export-game-data.mjs --repo "E:/path/to/game-repo"   # or set GAME_REPO
+```
+
+It reads the DataTable CSV exports, the in-game Almanac and build-menu text, and `CHANGELOG.md` at that tag, and
+writes:
+
+- `src/data/game.json`, `src/data/news.json`
+- `src/content/docs/wiki/towers/*.md`, `src/content/docs/wiki/enemies/*.md` (do not edit by hand)
+
+Commit the generated files: the site builds without the game repo. Run this after each release export.
+
+## Deploy (Cloudflare Workers static assets)
+
+Config: `wrangler.jsonc` (worker `firnreach-site`, assets from `dist/`, `worker/index.js` redirects
+`firnreach.dev` and `www.firnreach.com` to `https://firnreach.com`).
+
+- `workers_dev` and `preview_urls` are **off**: the `*.workers.dev` URL is not behind Cloudflare Access.
+- Custom domains are not in the config yet. Attach them only after Access covers them.
+
+```sh
+npm run build
+npx wrangler deploy
+```
+
+## Going public (when the Steam page is live)
+
+1. Remove the Access application for the domains.
+2. Delete the two `Disallow` lines in `public/robots.txt` and the `noindex` meta tags (`src/layouts/Site.astro`,
+   `astro.config.mjs` `head`).
+3. Set `steamUrl` in `src/site.ts` so the home page shows the Wishlist button.

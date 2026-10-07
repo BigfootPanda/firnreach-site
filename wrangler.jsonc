@@ -7,8 +7,13 @@
 	// hostnames. The *.workers.dev URL and preview URLs are NOT behind Access, so they stay off.
 	"workers_dev": false,
 	"preview_urls": false,
-	// Custom domains (firnreach.com, www.firnreach.com, firnreach.dev) are attached separately by the lead
-	// once Access is confirmed - see README "Deploy".
+	// Custom domains (Alex said go 2026-10-08). All are behind the Access app "Firnreach site (private)".
+	"routes": [
+		{ "pattern": "firnreach.com", "custom_domain": true },
+		{ "pattern": "www.firnreach.com", "custom_domain": true },
+		{ "pattern": "firnreach.dev", "custom_domain": true },
+		{ "pattern": "www.firnreach.dev", "custom_domain": true }
+	],
 	"assets": {
 		"directory": "./dist",
 		"binding": "ASSETS",

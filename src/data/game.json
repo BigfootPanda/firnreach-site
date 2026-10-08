@@ -1,6 +1,6 @@
 {
-	"version": "0.0.21",
-	"tag": "v0.0.21",
+	"version": "0.0.22",
+	"tag": "v0.0.22",
 	"releaseDate": "2026-10-08",
 	"towers": [
 		{
@@ -790,8 +790,8 @@
 			"slug": "stone-door",
 			"category": "Defense",
 			"primaryCrystal": "Obsidian",
-			"description": "A Stone Wall with a gate. Anyone presses T at it (or OPEN in the commander view) to open or close it. While it's open, enemies can walk through too. It shuts itself 6 s after you're clear. A little weaker than a plain wall.",
-			"upgrades": "+HP (anyone opens / closes it)",
+			"description": "A Stone Wall with a gate. Anyone presses T at it to open or close it (commander view: select it, then OPEN or T). While it's open, enemies can walk through too. It shuts itself 6 s after you're clear. A little weaker than a plain wall.",
+			"upgrades": "+HP (anyone opens / closes it: {ShieldToggle})",
 			"levels": [
 				{
 					"level": 1,
@@ -4070,7 +4070,7 @@
 		},
 		{
 			"title": "RTS VIEW",
-			"body": "WASD / screen edges pan, mouse wheel zooms.\nRight Mouse on the ground to walk there, on a rock or crystal to mine it.\nB opens the build bar: pick a tower, then Left Mouse on the grid to place (it stays armed; Shift-click queues). Esc puts it away; Backspace cancels your orders.\nLeft Mouse a placed tower to see its stats, upgrade it or sell it. On a tower that runs on power, FEED POWER (or F) sends your character to feed it; on a Stone Door, OPEN / CLOSE. Click the Base (or press Home) for the mining / move upgrades. Click a crystal to see how much is left.\nEsc (or P) opens the pause menu."
+			"body": "WASD / screen edges pan, mouse wheel zooms.\nRight Mouse on the ground to walk there, on a rock or crystal to mine it.\nB opens the build bar: pick a tower, then Left Mouse on the grid to place (it stays armed; Shift-click queues). Esc puts it away; Backspace cancels your orders.\nLeft Mouse a placed tower to see its stats, upgrade it or sell it. On a tower that runs on power, FEED POWER (or F) sends your character to feed it; on a Stone Door, OPEN / CLOSE (or T). Click the Base (or press Home) for the mining / move upgrades. Click a crystal to see how much is left.\nEsc (or P) opens the pause menu."
 		},
 		{
 			"title": "SURVIVAL",
@@ -5970,6 +5970,10 @@
 		{
 			"id": "FeedPower",
 			"text": "This tower runs on POWER. Look at it and hold F to feed it yours (commander view: select it, FEED POWER). Your POWER refills at the Base."
+		},
+		{
+			"id": "StoneDoor",
+			"text": "Stone Door: press T at it to open or close it (anyone can, even with a gun in hand). Open, it lets enemies through too; it shuts itself 6 s after you're clear."
 		},
 		{
 			"id": "NoWalls",

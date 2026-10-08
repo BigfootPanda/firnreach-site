@@ -1,5 +1,18 @@
 [
 	{
+		"version": "0.0.22",
+		"title": "Playtest fixes",
+		"date": "2026-10-08",
+		"slug": "v0-0-22",
+		"items": [
+			"Doors: a big [T] OPEN DOOR / CLOSE DOOR prompt shows when you face a Stone Door, even with a gun in hand, and T works on the selected door in the commander view",
+			"The Hollow: you use a station by looking at it from up close - no more using it with your back turned or from odd spots, and never through rock",
+			"UNSTUCK in the pause menu: hold still for 5 seconds to return to your Base (cancelled by moving or taking damage; not while carrying a Heartstone or overloaded)",
+			"No more falling out of the world: the map edges past the lanes are walled off, and anyone who does fall is put back at the Base",
+			"You can no longer stand on walls, guns or other buildings - you slide back off to the side you came from"
+		]
+	},
+	{
 		"version": "0.0.21",
 		"title": "Solid Ground",
 		"date": "2026-10-08",

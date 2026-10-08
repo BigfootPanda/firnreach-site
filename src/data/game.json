@@ -1,6 +1,6 @@
 {
-	"version": "0.0.22",
-	"tag": "v0.0.22",
+	"version": "0.0.23",
+	"tag": "v0.0.23",
 	"releaseDate": "2026-10-08",
 	"towers": [
 		{
@@ -3902,6 +3902,266 @@
 					}
 				}
 			]
+		},
+		{
+			"id": 27,
+			"order": 15,
+			"name": "Bank",
+			"slug": "bank",
+			"category": "Utility",
+			"primaryCrystal": "All crystals",
+			"description": "",
+			"upgrades": "+HP, +Storage: 1,000 / 2,500 / 5,000 / 10,000 / 20,000 / 35,000 / 60,000 / 90,000 of each colour. Deposit with {BankDeposit} facing it or {Interact} for its panel. Destroyed = everything inside is lost.",
+			"levels": [
+				{
+					"level": 1,
+					"hp": 600,
+					"shield": 0,
+					"shieldRecharge": 0,
+					"reflect": 0,
+					"damage": 0,
+					"rangeCells": 0,
+					"shotsPerSecond": 0,
+					"splashCells": 0,
+					"storedPower": 0,
+					"powerUse": 0,
+					"powerGen": 0,
+					"powerOut": 0,
+					"targets": 0,
+					"powerReachCells": 0,
+					"repair": 0,
+					"shieldHeal": 0,
+					"buildCost": {
+						"red": 12,
+						"purple": 12,
+						"amber": 12,
+						"obsidian": 12
+					},
+					"upgradeCost": {
+						"red": 0,
+						"purple": 0,
+						"amber": 0,
+						"obsidian": 0
+					}
+				},
+				{
+					"level": 2,
+					"hp": 1000,
+					"shield": 0,
+					"shieldRecharge": 0,
+					"reflect": 0,
+					"damage": 0,
+					"rangeCells": 0,
+					"shotsPerSecond": 0,
+					"splashCells": 0,
+					"storedPower": 0,
+					"powerUse": 0,
+					"powerGen": 0,
+					"powerOut": 0,
+					"targets": 0,
+					"powerReachCells": 0,
+					"repair": 0,
+					"shieldHeal": 0,
+					"buildCost": {
+						"red": 12,
+						"purple": 12,
+						"amber": 12,
+						"obsidian": 12
+					},
+					"upgradeCost": {
+						"red": 30,
+						"purple": 30,
+						"amber": 30,
+						"obsidian": 30
+					}
+				},
+				{
+					"level": 3,
+					"hp": 1600,
+					"shield": 0,
+					"shieldRecharge": 0,
+					"reflect": 0,
+					"damage": 0,
+					"rangeCells": 0,
+					"shotsPerSecond": 0,
+					"splashCells": 0,
+					"storedPower": 0,
+					"powerUse": 0,
+					"powerGen": 0,
+					"powerOut": 0,
+					"targets": 0,
+					"powerReachCells": 0,
+					"repair": 0,
+					"shieldHeal": 0,
+					"buildCost": {
+						"red": 12,
+						"purple": 12,
+						"amber": 12,
+						"obsidian": 12
+					},
+					"upgradeCost": {
+						"red": 60,
+						"purple": 60,
+						"amber": 60,
+						"obsidian": 60
+					}
+				},
+				{
+					"level": 4,
+					"hp": 2500,
+					"shield": 0,
+					"shieldRecharge": 0,
+					"reflect": 0,
+					"damage": 0,
+					"rangeCells": 0,
+					"shotsPerSecond": 0,
+					"splashCells": 0,
+					"storedPower": 0,
+					"powerUse": 0,
+					"powerGen": 0,
+					"powerOut": 0,
+					"targets": 0,
+					"powerReachCells": 0,
+					"repair": 0,
+					"shieldHeal": 0,
+					"buildCost": {
+						"red": 12,
+						"purple": 12,
+						"amber": 12,
+						"obsidian": 12
+					},
+					"upgradeCost": {
+						"red": 100,
+						"purple": 100,
+						"amber": 100,
+						"obsidian": 100
+					}
+				},
+				{
+					"level": 5,
+					"hp": 4000,
+					"shield": 0,
+					"shieldRecharge": 0,
+					"reflect": 0,
+					"damage": 0,
+					"rangeCells": 0,
+					"shotsPerSecond": 0,
+					"splashCells": 0,
+					"storedPower": 0,
+					"powerUse": 0,
+					"powerGen": 0,
+					"powerOut": 0,
+					"targets": 0,
+					"powerReachCells": 0,
+					"repair": 0,
+					"shieldHeal": 0,
+					"buildCost": {
+						"red": 12,
+						"purple": 12,
+						"amber": 12,
+						"obsidian": 12
+					},
+					"upgradeCost": {
+						"red": 160,
+						"purple": 160,
+						"amber": 160,
+						"obsidian": 160
+					}
+				},
+				{
+					"level": 6,
+					"hp": 6000,
+					"shield": 0,
+					"shieldRecharge": 0,
+					"reflect": 0,
+					"damage": 0,
+					"rangeCells": 0,
+					"shotsPerSecond": 0,
+					"splashCells": 0,
+					"storedPower": 0,
+					"powerUse": 0,
+					"powerGen": 0,
+					"powerOut": 0,
+					"targets": 0,
+					"powerReachCells": 0,
+					"repair": 0,
+					"shieldHeal": 0,
+					"buildCost": {
+						"red": 12,
+						"purple": 12,
+						"amber": 12,
+						"obsidian": 12
+					},
+					"upgradeCost": {
+						"red": 250,
+						"purple": 250,
+						"amber": 250,
+						"obsidian": 250
+					}
+				},
+				{
+					"level": 7,
+					"hp": 9000,
+					"shield": 0,
+					"shieldRecharge": 0,
+					"reflect": 0,
+					"damage": 0,
+					"rangeCells": 0,
+					"shotsPerSecond": 0,
+					"splashCells": 0,
+					"storedPower": 0,
+					"powerUse": 0,
+					"powerGen": 0,
+					"powerOut": 0,
+					"targets": 0,
+					"powerReachCells": 0,
+					"repair": 0,
+					"shieldHeal": 0,
+					"buildCost": {
+						"red": 12,
+						"purple": 12,
+						"amber": 12,
+						"obsidian": 12
+					},
+					"upgradeCost": {
+						"red": 375,
+						"purple": 375,
+						"amber": 375,
+						"obsidian": 375
+					}
+				},
+				{
+					"level": 8,
+					"hp": 13000,
+					"shield": 0,
+					"shieldRecharge": 0,
+					"reflect": 0,
+					"damage": 0,
+					"rangeCells": 0,
+					"shotsPerSecond": 0,
+					"splashCells": 0,
+					"storedPower": 0,
+					"powerUse": 0,
+					"powerGen": 0,
+					"powerOut": 0,
+					"targets": 0,
+					"powerReachCells": 0,
+					"repair": 0,
+					"shieldHeal": 0,
+					"buildCost": {
+						"red": 12,
+						"purple": 12,
+						"amber": 12,
+						"obsidian": 12
+					},
+					"upgradeCost": {
+						"red": 550,
+						"purple": 550,
+						"amber": 550,
+						"obsidian": 550
+					}
+				}
+			]
 		}
 	],
 	"enemies": [
@@ -4074,7 +4334,15 @@
 		},
 		{
 			"title": "SURVIVAL",
-			"body": "Mine Red / Purple / Amber / Obsidian crystals (gray rocks give +5 of a random color). Carrying more than your capacity slows you; twice your capacity stops you.\nPlace a Base early - it's what the enemies attack, and its level caps your upgrades.\nGenerators power nearby towers; batteries store and relay power.\nPrep is the short daylight. Then the dark comes once a match and stays; the quiet between waves is a night to rebuild. A boss walks every few waves (every 5th in a Standard match). Survive them all to win; if the base falls and everyone is down, you lose."
+			"body": "Mine Red / Purple / Amber / Obsidian crystals (gray rocks give +5 of a random color). Carrying more than your capacity slows you; twice your capacity stops you.\nPlace a Base early - it's what the enemies attack, and its level caps your upgrades.\nGenerators power nearby towers; batteries store and relay power.\nPrep is the short daylight. Then the dark comes once a match and stays; the quiet between waves is a night to rebuild. A wave is beaten once most of it is down: the next one comes soon after, or when the night runs out, and you can call it early. A boss walks every few waves (every 5th in a Standard match, and always on the last). Run past the match's time and it's OVERTIME: every wave comes faster and hits harder. Survive them all to win; if the base falls and everyone is down, you lose."
+		},
+		{
+			"title": "PINGS + MARKS",
+			"body": "No voice chat needed: tap Middle Mouse to mark what you aim at (a crystal: Mine here, an enemy: Enemy, a tower: Carry this, the ground: Go here). Hold Middle Mouse for the ping wheel and release on Build here, Carry this gun, Help me, Danger, Go here or On my way. In the commander view hold Alt and right-click (Right Mouse). Marks show your name and color, the distance, and an arrow at the screen edge; they last 8 seconds (2 at a time each)."
+		},
+		{
+			"title": "FIRST BUILDS + THE TEAM BANK",
+			"body": "Your first of each tower is free every match (not the Base or the Bank): the build bar marks those FREE. Upgrades always cost, and a free tower sells for nothing.\nThe Bank (UTILITY) is the team's shared store: deposit crystals there (Z facing it, or E for its panel; in the commander view select it) and they stop weighing you down. Each night you may take back your own deposits plus an equal share of what the others put in. Every deposit and withdrawal shows in the team feed."
 		}
 	],
 	"relics": [
@@ -5886,18 +6154,18 @@
 		"lengths": [
 			{
 				"name": "Short",
-				"description": "A quick night. About 15 minutes: 12 waves that ramp up fast.",
-				"waves": 12
+				"description": "A quick night. About 9 minutes: 6 waves that ramp up fast. Run past the time and it's OVERTIME: every wave comes faster and hits harder.",
+				"waves": 6
 			},
 			{
 				"name": "Standard",
-				"description": "A full night. About 30 minutes: 20 waves.",
-				"waves": 20
+				"description": "A full night. About 15 minutes: 10 waves, bosses on 5 and 10. Run past the time and it's OVERTIME: every wave comes faster and hits harder.",
+				"waves": 10
 			},
 			{
 				"name": "Long",
-				"description": "A long one. Pack boots. About 45 minutes: 28 waves with longer nights to build.",
-				"waves": 28
+				"description": "A long one. Pack boots. About 25 minutes: 15 waves with longer nights to build. Run past the time and it's OVERTIME.",
+				"waves": 15
 			},
 			{
 				"name": "Endless",
@@ -5976,6 +6244,22 @@
 			"text": "Stone Door: press T at it to open or close it (anyone can, even with a gun in hand). Open, it lets enemies through too; it shuts itself 6 s after you're clear."
 		},
 		{
+			"id": "FreeFirstBuild",
+			"text": "Your first of each tower is free this match (the Base and the Bank excepted): the build bar marks them FREE. Upgrades still cost."
+		},
+		{
+			"id": "Roles",
+			"text": "Roles: you build your role's towers (the others grey out, marked with the role that builds them); everyone builds the Base, Stone Wall and Bank. Jack of all trades builds the basics up to level 7. A Tank taunts with C."
+		},
+		{
+			"id": "TeamBank",
+			"text": "Bank crystals at the Bank for the team: press Z facing it (or E for its panel). Anyone can take their own back plus a fair share of the rest each night."
+		},
+		{
+			"id": "Ping",
+			"text": "Hold Middle Mouse to ping your team: release on Build here, Help me, Danger... Tap it to mark what you aim at. Commander view: Alt + Right Mouse."
+		},
+		{
 			"id": "NoWalls",
 			"text": "No walls yet. In a few nights the waves get big enough to reach your Base. Block the way in with Spike Walls so your towers can hold them."
 		}
@@ -6013,9 +6297,15 @@
 		},
 		{
 			"id": "Ping",
-			"action": "Ping (twice: need help)",
+			"action": "Ping: tap = mark what you aim at, hold = ping wheel",
 			"section": "GENERAL",
-			"key": "G"
+			"key": "Middle Mouse"
+		},
+		{
+			"id": "Taunt",
+			"action": "Taunt (Tank role): nearby enemies attack you",
+			"section": "GENERAL",
+			"key": "C"
 		},
 		{
 			"id": "AutoPower",
@@ -6052,6 +6342,12 @@
 			"action": "Base menu (player upgrades)",
 			"section": "GENERAL",
 			"key": "Home"
+		},
+		{
+			"id": "BankDeposit",
+			"action": "Deposit all your crystals in the team Bank (facing it / Bank selected)",
+			"section": "GENERAL",
+			"key": "Z"
 		},
 		{
 			"id": "MineGuide",
@@ -6268,6 +6564,12 @@
 			"action": "Jump camera to the latest alert",
 			"section": "COMMANDER (RTS view)",
 			"key": "Space"
+		},
+		{
+			"id": "CommanderPing",
+			"action": "Ping modifier: hold + right-click = mark the map (hold the click: wheel)",
+			"section": "COMMANDER (RTS view)",
+			"key": "Alt"
 		}
 	]
 }

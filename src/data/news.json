@@ -1,5 +1,22 @@
 [
 	{
+		"version": "0.0.23",
+		"title": "Fifteen Minutes",
+		"date": "2026-10-08",
+		"slug": "v0-0-23",
+		"items": [
+			"Matches are much shorter: Standard is about 15 minutes (10 waves), Short about 9-10, Long about 25. The forced wait at the end of each night is gone",
+			"When 80% of a wave is down you get a short break and a READY vote: most of the team presses J or Y to start the next wave early",
+			"Overtime: a match that runs long gets faster, harder waves until it ends. Bosses come every 5th wave and on the last wave",
+			"Party sync: in a group everyone's account bonuses are averaged, so a new player and a veteran play on equal footing. Veterans earn a mentor bonus, newer players earn catch-up XP",
+			"Roles: pick Miner, Tank, Healer, Damage or Jack of all trades in the lobby. Each role builds its own towers; Jack builds a basic kit up to level 7 and is recommended for new and solo players",
+			"Your first build of each tower type in a match is free",
+			"New Team Bank tower: deposit crystals for the whole team, withdraw your share, upgrade it to store up to 90,000 of each color. If enemies destroy it, everything inside is lost",
+			"Ping wheel: tap middle mouse to mark what you aim at, hold for a wheel (Help me, Danger, Go here...). In commander view use Left Alt + right-click",
+			"In commander view, a character that finishes a crystal now waits in place and tells you it is idle"
+		]
+	},
+	{
 		"version": "0.0.22",
 		"title": "Playtest fixes",
 		"date": "2026-10-08",

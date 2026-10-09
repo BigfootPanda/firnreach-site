@@ -133,6 +133,70 @@ p {
 	}
 }
 
+/* ---- Discord: header button, footer link (chat-bubble glyph, label hides on narrow screens) ---- */
+.top nav {
+	margin-left: auto;
+}
+.btn.discord {
+	gap: 0.5rem;
+	flex-shrink: 0;
+}
+.top-discord {
+	min-height: 40px;
+	padding: 0 0.85rem;
+	font-size: 0.95rem;
+}
+.fr-chat-icon {
+	flex-shrink: 0;
+	display: block;
+}
+.foot-discord {
+	display: inline-flex;
+	align-items: center;
+	gap: 0.45rem;
+	min-height: 44px;
+	font-family: var(--fr-font-display);
+	font-weight: 600;
+	letter-spacing: 0.08em;
+	text-transform: uppercase;
+	text-decoration: none;
+}
+@media (max-width: 480px) {
+	/* the wordmark already links home; dropping the Home link makes room for the Discord button */
+	.top nav a.nav-home {
+		display: none;
+	}
+}
+@media (max-width: 380px) {
+	.top-inner {
+		padding: 0 10px;
+	}
+	.top nav a {
+		padding-inline: 0.3rem;
+		letter-spacing: 0.04em;
+	}
+	.wordmark {
+		letter-spacing: 0.1em;
+	}
+}
+@media (max-width: 640px) {
+	.top-inner {
+		gap: 0.25rem;
+	}
+	.top-discord {
+		width: 40px;
+		padding: 0;
+	}
+	.discord-label {
+		position: absolute;
+		width: 1px;
+		height: 1px;
+		overflow: hidden;
+		clip-path: inset(50%);
+		white-space: nowrap;
+	}
+}
+
 /* ---- plates: chamfered navy panels with a top-left ice rim ---- */
 .plate {
 	position: relative;

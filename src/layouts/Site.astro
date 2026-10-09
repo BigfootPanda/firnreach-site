@@ -8,6 +8,7 @@ import '@fontsource/barlow-condensed/600.css';
 import '../styles/tokens.css';
 import '../styles/site.css';
 import { NAV, SITE } from '../site';
+import DiscordIcon from '../components/DiscordIcon.astro';
 
 interface Props {
 	title?: string;
@@ -16,6 +17,7 @@ interface Props {
 const { title, description = SITE.description } = Astro.props;
 const fullTitle = title ? `${title} | ${SITE.name}` : `${SITE.name} | ${SITE.tagline}`;
 const path = Astro.url.pathname;
+const canonical = new URL(path, Astro.site ?? Astro.url).href;
 const year = new Date().getFullYear();
 ---
 
@@ -26,11 +28,15 @@ const year = new Date().getFullYear();
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<meta name="color-scheme" content="dark" />
 		<meta name="theme-color" content="#060c16" />
-		<!-- Private preview: keep out of search engines until launch. -->
 		<title>{fullTitle}</title>
 		<meta name="description" content={description} />
+		<link rel="canonical" href={canonical} />
+		<meta property="og:type" content="website" />
+		<meta property="og:site_name" content={SITE.name} />
+		<meta property="og:url" content={canonical} />
 		<meta property="og:title" content={fullTitle} />
 		<meta property="og:description" content={description} />
+		<meta name="twitter:card" content="summary" />
 		<link rel="icon" href="/favicon.svg" type="image/svg+xml" />
 	</head>
 	<body>
@@ -41,12 +47,16 @@ const year = new Date().getFullYear();
 				<nav aria-label="Site">
 					{
 						NAV.map(({ href, label }) => (
-							<a href={href} aria-current={(href === '/' ? path === '/' : path.startsWith(href)) ? 'page' : undefined}>
+							<a href={href} class={href === '/' ? 'nav-home' : undefined} aria-current={(href === '/' ? path === '/' : path.startsWith(href)) ? 'page' : undefined}>
 								{label}
 							</a>
 						))
 					}
 				</nav>
+				<a class="btn discord top-discord" href={SITE.discordUrl} rel="noopener" aria-label="Join the Firnreach Discord">
+					<DiscordIcon size={18} />
+					<span class="discord-label">Discord</span>
+				</a>
 			</div>
 		</header>
 		<main id="main">
@@ -56,6 +66,10 @@ const year = new Date().getFullYear();
 			<div class="foot-inner">
 				<span class="wordmark small">FIRNREACH</span>
 				<span>Survival tower defense for 1 to 8 players.</span>
+				<a class="foot-discord" href={SITE.discordUrl} rel="noopener">
+					<DiscordIcon size={18} />
+					Join the Discord
+				</a>
 				<span class="muted">&copy; {year} Firnreach. All rights reserved.</span>
 			</div>
 		</footer>

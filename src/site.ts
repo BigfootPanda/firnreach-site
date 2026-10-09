@@ -7,6 +7,8 @@ export const SITE = {
 	// Filled in when the Steam store page goes live.
 	steamUrl: '',
 	// Public Google Form: "Request to join the Firnreach playtest" (requests land in Alex's review sheet).
+	// Official community Discord (permanent invite).
+	discordUrl: 'https://discord.gg/qxvktj29KX',
 	playtestFormUrl: 'https://docs.google.com/forms/d/e/1FAIpQLSf7_IHufbsqZlro4IulM6O1tjQE3T3wh0aKWoOpAZYrNB77WQ/viewform',
 };
 

@@ -1,6 +1,7 @@
 ---
 // Starlight SocialIcons override: the site-wide nav (Home / Wiki / News / FAQ) in the wiki header.
-import { NAV } from '../site';
+import { NAV, SITE } from '../site';
+import DiscordIcon from './DiscordIcon.astro';
 const path = Astro.url.pathname;
 ---
 
@@ -12,4 +13,7 @@ const path = Astro.url.pathname;
 			</a>
 		))
 	}
+	<a class="fr-nav-discord" href={SITE.discordUrl} rel="noopener" aria-label="Join the Firnreach Discord" title="Join the Discord">
+		<DiscordIcon size={20} />
+	</a>
 </nav>

@@ -1,6 +1,7 @@
 ---
 import Site from '../layouts/Site.astro';
 import { SITE } from '../site';
+import DiscordIcon from '../components/DiscordIcon.astro';
 ---
 
 <Site title="Join the playtest" description="Request to join the Firnreach playtest.">
@@ -32,6 +33,20 @@ import { SITE } from '../site';
 			<p class="muted">
 				We only use what you send to run the playtest. It isn't shared with anyone else.
 			</p>
+			<div class="plate-wrap community">
+				<section class="plate" aria-labelledby="community-h">
+					<h2 id="community-h">Hang out on Discord</h2>
+					<p>
+						The Firnreach Discord is where playtesters and anyone curious hang out: news and updates are posted
+						there, and it's the easiest place to ask questions, share ideas and talk to the developer. You don't need
+						to be in the playtest to join.
+					</p>
+					<a class="btn discord" href={SITE.discordUrl} rel="noopener">
+						<DiscordIcon />
+						Join the Discord
+					</a>
+				</section>
+			</div>
 		</div>
 	</div>
 </Site>
@@ -42,5 +57,17 @@ import { SITE } from '../site';
 	}
 	.playtest .btn {
 		margin-block: 8px 16px;
+	}
+	.community {
+		margin-top: 40px;
+	}
+	.community .plate {
+		padding: 24px 20px 8px;
+	}
+	.community h2 {
+		font-size: clamp(1.3rem, 3.5vw, 1.6rem);
+	}
+	.community p {
+		color: var(--fr-text-2);
 	}
 </style>

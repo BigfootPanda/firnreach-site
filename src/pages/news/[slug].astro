@@ -9,9 +9,13 @@ export function getStaticPaths() {
 	}));
 }
 const { post, newer, older } = Astro.props;
+// Meta/OG description: the version and title plus the first patch-note line, so shared links preview what changed.
+const lead = post.items[0] ?? '';
+const summary = `Firnreach v${post.version} patch notes: ${post.title}. ${lead}`;
+const description = summary.length > 160 ? `${summary.slice(0, 157).replace(/\s+\S*$/, '')}...` : summary;
 ---
 
-<Site title={`v${post.version}: ${post.title}`} description={`Firnreach v${post.version} patch notes: ${post.title}.`}>
+<Site title={`v${post.version}: ${post.title}`} description={description}>
 	<div class="wrap">
 		<header class="page-head">
 			<p class="eyebrow"><a href="/news/">News</a> &middot; v{post.version} &middot; {post.date}</p>

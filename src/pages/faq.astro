@@ -1,6 +1,14 @@
 ---
 import Site from '../layouts/Site.astro';
 import game from '../data/game.json';
+import { SITE } from '../site';
+
+// Match lengths come straight from the exported game data so the FAQ can't drift from the build.
+const lengths = game.matchSettings.lengths;
+const timed = lengths
+	.filter((l) => l.waves > 0)
+	.map((l) => `${l.name} is about ${l.description.match(/About (\d+) minutes/)?.[1] ?? '?'} minutes (${l.waves} waves)`);
+const lengthSentence = timed.length > 1 ? `${timed.slice(0, -1).join(', ')} and ${timed[timed.length - 1]}` : timed.join('');
 
 const faqs = [
 	{
@@ -25,7 +33,7 @@ const faqs = [
 	},
 	{
 		q: 'How long is a match?',
-		a: 'You choose. Short is about 15 minutes (12 waves), Standard about 30 (20 waves) and Long about 45 (28 waves). Endless keeps going until the Base falls, and records your best wave. Difficulty (Easy, Medium, Hard, Insane) is a separate choice; see <a href="/wiki/match-settings/">match settings</a>.',
+		a: `You choose. ${lengthSentence}. A match that runs past its time goes into Overtime, with faster, harder waves until it ends. Endless keeps going until the Base falls, and records your best wave. Difficulty (Easy, Medium, Hard, Insane) is a separate choice; see <a href="/wiki/match-settings/">match settings</a>.`,
 	},
 	{
 		q: 'Is there progression between matches?',
@@ -34,6 +42,10 @@ const faqs = [
 	{
 		q: 'Is there a tutorial?',
 		a: 'Yes. A new profile starts with the Tutorial selected: three gentle waves that teach mining, the Base, walls, power and guns step by step. The <a href="/wiki/getting-started/">getting started guide</a> covers the same ground.',
+	},
+	{
+		q: 'Is there a community?',
+		a: `Yes: the official <a href="${SITE.discordUrl}" rel="noopener">Firnreach Discord</a>. It's the place to hang out, catch the latest news and talk to the developer directly. Anyone can join, playtester or not.`,
 	},
 	{
 		q: 'Where do the numbers on the wiki come from?',

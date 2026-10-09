@@ -8,12 +8,16 @@ import news from '../../data/news.json';
 		<header class="page-head">
 			<p class="eyebrow">Patch notes</p>
 			<h1>News</h1>
+			<p class="muted lede">Every playtest build, newest first. Each one lists what changed in the game.</p>
 		</header>
 		<div class="list">
 			{
-				news.map((n) => (
+				news.map((n, i) => (
 					<a class="item" href={`/news/${n.slug}/`}>
-						<span class="ver">v{n.version}</span>
+						<span class="ver">
+							v{n.version}
+							{i === 0 && <span class="latest">Latest</span>}
+						</span>
 						<span class="title">{n.title}</span>
 						<span class="date">{n.date}</span>
 					</a>
@@ -42,7 +46,7 @@ import news from '../../data/news.json';
 	}
 	@media (min-width: 720px) {
 		.item {
-			grid-template-columns: 6rem 1fr auto;
+			grid-template-columns: 9.5rem 1fr auto;
 			grid-template-areas: 'ver title date';
 			align-items: baseline;
 		}
@@ -56,6 +60,20 @@ import news from '../../data/news.json';
 		font-weight: 600;
 		color: var(--fr-rim);
 		letter-spacing: 0.06em;
+	}
+	.latest {
+		display: inline-block;
+		margin-left: 0.5rem;
+		padding: 0 0.4rem;
+		font-size: 0.8rem;
+		letter-spacing: 0.1em;
+		text-transform: uppercase;
+		color: var(--fr-text-on-accent);
+		background: var(--fr-accent);
+		vertical-align: 0.1em;
+	}
+	.lede {
+		max-width: 40rem;
 	}
 	.title {
 		grid-area: title;

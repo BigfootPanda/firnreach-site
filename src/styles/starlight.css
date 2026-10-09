@@ -125,6 +125,18 @@ h1#_top,
 .fr-nav-links a[aria-current='page'] {
 	color: var(--sl-color-accent-high);
 }
+.fr-nav-links .fr-nav-discord {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	min-width: 36px;
+	min-height: 36px;
+	border: 1.5px solid var(--sl-color-gray-4);
+	clip-path: polygon(6px 0, 100% 0, 100% calc(100% - 6px), calc(100% - 6px) 100%, 0 100%, 0 6px);
+}
+.fr-nav-links .fr-nav-discord:hover {
+	border-color: var(--sl-color-accent-high);
+}
 
 /* Almanac entry card (src/components/AlmanacCard.astro): the in-game Almanac's card header */
 .almanac-card {

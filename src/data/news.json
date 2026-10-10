@@ -1,5 +1,23 @@
 [
 	{
+		"version": "0.0.24",
+		"title": "Choices, Not Power",
+		"date": "2026-10-10",
+		"slug": "v0-0-24",
+		"items": [
+			"Your level now unlocks choices instead of raw power: permanent bonuses are capped, so a veteran and a new player are close in strength. Prepared Landing is retired, and Rich Seams is now Tithe (part of what you mine goes straight into the team Bank). Existing profiles get a free full respec",
+			"New unlocks as you level: an alternate perk for each role, loadouts at level 8, and tower variants at the Tower Works bench (Rampart, Burst, Long Line, Frost Shell, Triage, Spotter)",
+			"Role mastery 1-20 for every role, shown on your lobby card, with titles and 16 new achievements. Pick Smith prices are halved",
+			"The build bar and the objectives now only show what your role can build",
+			"Building feels better: towers rise out of the snow, upgrades flash and show level pips, and the placement ghost tells you why a spot won't work",
+			"New results screen: everyone's stats, MVP badges and a wave-by-wave timeline of where the base took hits",
+			"New look: navy and ice panels, new health bars that show the damage you just took, compact tower tooltips and Base / Bank panels (hold Alt for full details), and match setup fits without scrolling (extra settings fold under ADVANCED)",
+			"Team Bank: take out 100, 1,000 or ALL at once",
+			"Fixes: achievement notices (like The Great Wall) always show and appear on the results screen, the skill tree no longer jumps to the top, players no longer get stuck on top of buildings, and your role label updates when you switch roles",
+			"Smoother late waves in the commander view, no hitch when a boss arrives, and something new hums in the generator room"
+		]
+	},
+	{
 		"version": "0.0.23",
 		"title": "Fifteen Minutes",
 		"date": "2026-10-08",

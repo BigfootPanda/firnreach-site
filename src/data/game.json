@@ -1,7 +1,7 @@
 {
-	"version": "0.0.23",
-	"tag": "v0.0.23",
-	"releaseDate": "2026-10-08",
+	"version": "0.0.24",
+	"tag": "v0.0.24",
+	"releaseDate": "2026-10-10",
 	"towers": [
 		{
 			"id": 10,
@@ -4741,6 +4741,134 @@
 			"objective": "Survive Endless wave 20 on Normal or harder.",
 			"bonus": "Lights the first lamp on the Company's machine in the deep workshop. Story only.",
 			"tracked": true
+		},
+		{
+			"category": "Mastery",
+			"id": "mastery_miner_5",
+			"name": "Apprentice Miner",
+			"objective": "Reach role mastery 5 as Miner.",
+			"bonus": "Cosmetic only: shown on your role card.",
+			"tracked": true
+		},
+		{
+			"category": "Mastery",
+			"id": "mastery_miner_10",
+			"name": "Master Miner",
+			"objective": "Reach role mastery 10 as Miner.",
+			"bonus": "Cosmetic only: shown on your role card.",
+			"tracked": true
+		},
+		{
+			"category": "Mastery",
+			"id": "mastery_miner_20",
+			"name": "Grandmaster Miner",
+			"objective": "Reach role mastery 20 as Miner.",
+			"bonus": "Cosmetic only: shown on your role card.",
+			"tracked": true
+		},
+		{
+			"category": "Mastery",
+			"id": "mastery_tank_5",
+			"name": "Apprentice Tank",
+			"objective": "Reach role mastery 5 as Tank.",
+			"bonus": "Cosmetic only: shown on your role card.",
+			"tracked": true
+		},
+		{
+			"category": "Mastery",
+			"id": "mastery_tank_10",
+			"name": "Master Tank",
+			"objective": "Reach role mastery 10 as Tank.",
+			"bonus": "Cosmetic only: shown on your role card.",
+			"tracked": true
+		},
+		{
+			"category": "Mastery",
+			"id": "mastery_tank_20",
+			"name": "Grandmaster Tank",
+			"objective": "Reach role mastery 20 as Tank.",
+			"bonus": "Cosmetic only: shown on your role card.",
+			"tracked": true
+		},
+		{
+			"category": "Mastery",
+			"id": "mastery_healer_5",
+			"name": "Apprentice Healer",
+			"objective": "Reach role mastery 5 as Healer.",
+			"bonus": "Cosmetic only: shown on your role card.",
+			"tracked": true
+		},
+		{
+			"category": "Mastery",
+			"id": "mastery_healer_10",
+			"name": "Master Healer",
+			"objective": "Reach role mastery 10 as Healer.",
+			"bonus": "Cosmetic only: shown on your role card.",
+			"tracked": true
+		},
+		{
+			"category": "Mastery",
+			"id": "mastery_healer_20",
+			"name": "Grandmaster Healer",
+			"objective": "Reach role mastery 20 as Healer.",
+			"bonus": "Cosmetic only: shown on your role card.",
+			"tracked": true
+		},
+		{
+			"category": "Mastery",
+			"id": "mastery_damage_5",
+			"name": "Apprentice Damage",
+			"objective": "Reach role mastery 5 as Damage.",
+			"bonus": "Cosmetic only: shown on your role card.",
+			"tracked": true
+		},
+		{
+			"category": "Mastery",
+			"id": "mastery_damage_10",
+			"name": "Master Damage",
+			"objective": "Reach role mastery 10 as Damage.",
+			"bonus": "Cosmetic only: shown on your role card.",
+			"tracked": true
+		},
+		{
+			"category": "Mastery",
+			"id": "mastery_damage_20",
+			"name": "Grandmaster Damage",
+			"objective": "Reach role mastery 20 as Damage.",
+			"bonus": "Cosmetic only: shown on your role card.",
+			"tracked": true
+		},
+		{
+			"category": "Mastery",
+			"id": "mastery_jack_5",
+			"name": "Apprentice Jack",
+			"objective": "Reach role mastery 5 as Jack of all trades.",
+			"bonus": "Cosmetic only: shown on your role card.",
+			"tracked": true
+		},
+		{
+			"category": "Mastery",
+			"id": "mastery_jack_10",
+			"name": "Master Jack",
+			"objective": "Reach role mastery 10 as Jack of all trades.",
+			"bonus": "Cosmetic only: shown on your role card.",
+			"tracked": true
+		},
+		{
+			"category": "Mastery",
+			"id": "mastery_jack_20",
+			"name": "Grandmaster Jack",
+			"objective": "Reach role mastery 20 as Jack of all trades.",
+			"bonus": "Cosmetic only: shown on your role card.",
+			"tracked": true
+		},
+		{
+			"category": "Mastery",
+			"id": "mastery_all_20",
+			"name": "Master of Every Trade",
+			"objective": "Reach role mastery 20 in every role.",
+			"bonus": "Cosmetic only: a gold frame on your role card.",
+			"tracked": true
 		}
 	],
 	"skillBranches": [
@@ -4756,7 +4884,7 @@
 					"id": "name_generalist",
 					"branch": "GENERALIST",
 					"name": "Generalist",
-					"summary": "Start every match with +5 of each resource. Opens the Generalist branch.",
+					"summary": "Opens the Generalist branch. Earns the title \"Generalist\".",
 					"costs": [
 						1
 					],
@@ -4855,7 +4983,7 @@
 					"id": "name_miner",
 					"branch": "MINER",
 					"name": "Miner",
-					"summary": "Start every match with +5 of each resource. Opens the Miner branch.",
+					"summary": "Opens the Miner branch. Earns the title \"Miner\".",
 					"costs": [
 						1
 					],
@@ -4886,14 +5014,12 @@
 				{
 					"id": "miner_yield",
 					"branch": "MINER",
-					"name": "Rich Seams",
-					"summary": "+2 crystal per mining hit per rank.",
+					"name": "Tithe",
+					"summary": "A share of every crystal you mine goes straight into the team Bank (10% / 18% / 25%). No Bank built yet: it stays in your pack.",
 					"costs": [
 						1,
-						2,
-						2,
-						3,
-						3
+						1,
+						2
 					],
 					"requires": "miner_speed",
 					"requiresRank": 1,
@@ -4931,7 +5057,7 @@
 					"requiresRank": 1,
 					"minLevel": 10,
 					"unlockLevel": 10,
-					"requiresName": "Rich Seams"
+					"requiresName": "Tithe"
 				},
 				{
 					"id": "miner_stone",
@@ -4963,7 +5089,7 @@
 					"id": "name_fighter",
 					"branch": "FIGHTER",
 					"name": "Fighter",
-					"summary": "Start every match with +5 of each resource. Opens the Fighter branch.",
+					"summary": "Opens the Fighter branch. Earns the title \"Fighter\".",
 					"costs": [
 						1
 					],
@@ -5070,7 +5196,7 @@
 					"id": "name_power",
 					"branch": "POWER",
 					"name": "Power",
-					"summary": "Start every match with +5 of each resource. Opens the Power branch.",
+					"summary": "Opens the Power branch. Earns the title \"Power\".",
 					"costs": [
 						1
 					],
@@ -5160,7 +5286,7 @@
 					"id": "name_engineer",
 					"branch": "ENGINEER",
 					"name": "Engineer",
-					"summary": "Start every match with +5 of each resource. Opens the Engineer branch.",
+					"summary": "Opens the Engineer branch. Earns the title \"Engineer\".",
 					"costs": [
 						1
 					],
@@ -5221,23 +5347,6 @@
 					"requiresName": "Calibrated Guns"
 				},
 				{
-					"id": "eng_base",
-					"branch": "ENGINEER",
-					"name": "Prepared Landing",
-					"summary": "Your Base starts one level higher per rank.",
-					"costs": [
-						2,
-						2,
-						3,
-						3
-					],
-					"requires": "eng_health",
-					"requiresRank": 2,
-					"minLevel": 15,
-					"unlockLevel": 15,
-					"requiresName": "Reinforced Frames"
-				},
-				{
 					"id": "eng_mason",
 					"branch": "ENGINEER",
 					"name": "Masonry",
@@ -5261,13 +5370,13 @@
 			"slug": "prospector",
 			"advanced": true,
 			"unlockLevel": 100,
-			"summary": "The Miner's master class.",
+			"summary": "The Miner's master class. Earns the title \"Prospector\".",
 			"nodes": [
 				{
 					"id": "name_prospector",
 					"branch": "PROSPECTOR",
 					"name": "Prospector",
-					"summary": "Start every match with +5 of each resource. The Miner's master class.",
+					"summary": "The Miner's master class. Earns the title \"Prospector\".",
 					"costs": [
 						1
 					],
@@ -5345,13 +5454,13 @@
 			"slug": "warden",
 			"advanced": true,
 			"unlockLevel": 100,
-			"summary": "The Fighter's master class.",
+			"summary": "The Fighter's master class. Earns the title \"Warden\".",
 			"nodes": [
 				{
 					"id": "name_warden",
 					"branch": "WARDEN",
 					"name": "Warden",
-					"summary": "Start every match with +5 of each resource. The Fighter's master class.",
+					"summary": "The Fighter's master class. Earns the title \"Warden\".",
 					"costs": [
 						1
 					],
@@ -5430,13 +5539,13 @@
 			"slug": "architect",
 			"advanced": true,
 			"unlockLevel": 100,
-			"summary": "The Engineer's master class.",
+			"summary": "The Engineer's master class. Earns the title \"Architect\".",
 			"nodes": [
 				{
 					"id": "name_architect",
 					"branch": "ARCHITECT",
 					"name": "Architect",
-					"summary": "Start every match with +5 of each resource. The Engineer's master class.",
+					"summary": "The Engineer's master class. Earns the title \"Architect\".",
 					"costs": [
 						1
 					],
@@ -5515,13 +5624,13 @@
 			"slug": "hunter",
 			"advanced": true,
 			"unlockLevel": 100,
-			"summary": "The roaming gun master class.",
+			"summary": "The roaming gun master class. Earns the title \"Hunter\".",
 			"nodes": [
 				{
 					"id": "name_hunter",
 					"branch": "HUNTER",
 					"name": "Hunter",
-					"summary": "Start every match with +5 of each resource. The roaming gun master class.",
+					"summary": "The roaming gun master class. Earns the title \"Hunter\".",
 					"costs": [
 						1
 					],
@@ -5614,13 +5723,13 @@
 			"slug": "quartermaster",
 			"advanced": true,
 			"unlockLevel": 100,
-			"summary": "The Generalist's master class: keeps the team supplied.",
+			"summary": "The Generalist's master class: keeps the team supplied. Earns the title \"Quartermaster\".",
 			"nodes": [
 				{
 					"id": "name_quartermaster",
 					"branch": "QUARTERMASTER",
 					"name": "Quartermaster",
-					"summary": "Start every match with +5 of each resource. The Generalist's master class: keeps the team supplied.",
+					"summary": "The Generalist's master class: keeps the team supplied. Earns the title \"Quartermaster\".",
 					"costs": [
 						1
 					],
@@ -5699,13 +5808,13 @@
 			"slug": "stormcaller",
 			"advanced": true,
 			"unlockLevel": 115,
-			"summary": "The Power master class.",
+			"summary": "The Power master class. Earns the title \"Stormcaller\".",
 			"nodes": [
 				{
 					"id": "name_stormcaller",
 					"branch": "STORMCALLER",
 					"name": "Stormcaller",
-					"summary": "Start every match with +5 of each resource. The Power master class.",
+					"summary": "The Power master class. Earns the title \"Stormcaller\".",
 					"costs": [
 						1
 					],
@@ -5784,13 +5893,13 @@
 			"slug": "frostcaller",
 			"advanced": true,
 			"unlockLevel": 130,
-			"summary": "A calling of ice and cold.",
+			"summary": "A calling of ice and cold. Earns the title \"Frostcaller\".",
 			"nodes": [
 				{
 					"id": "name_frostcaller",
 					"branch": "FROSTCALLER",
 					"name": "Frostcaller",
-					"summary": "Start every match with +5 of each resource. A calling of ice and cold.",
+					"summary": "A calling of ice and cold. Earns the title \"Frostcaller\".",
 					"costs": [
 						1
 					],
@@ -5944,7 +6053,7 @@
 					"shop": "shop_pick",
 					"name": "Left tip - its own tier and focus",
 					"effect": "Each tier: +3% mining speed (+4% at tier 6) and more of the resource this tip focuses on.",
-					"essence": 150,
+					"essence": 75,
 					"heartstone": 1,
 					"max": 5,
 					"kind": "PickTip"
@@ -5954,7 +6063,7 @@
 					"shop": "shop_pick",
 					"name": "Right tip - its own tier and focus",
 					"effect": "Each tier: +3% mining speed (+4% at tier 6) and more of the resource this tip focuses on.",
-					"essence": 150,
+					"essence": 75,
 					"heartstone": 1,
 					"max": 5,
 					"kind": "PickTip"
@@ -5964,8 +6073,8 @@
 					"shop": "shop_pick",
 					"name": "Light handle - quick swings",
 					"effect": "Mines every piece 15% faster.",
-					"essence": 500,
-					"heartstone": 5,
+					"essence": 250,
+					"heartstone": 3,
 					"max": 1,
 					"kind": "PickHandle"
 				},
@@ -5974,8 +6083,8 @@
 					"shop": "shop_pick",
 					"name": "Heavy handle - hits harder",
 					"effect": "Each hit bites off 25% more crystal (the node runs out sooner) and gray rock gives 25% more.",
-					"essence": 500,
-					"heartstone": 5,
+					"essence": 250,
+					"heartstone": 3,
 					"max": 1,
 					"kind": "PickHandle"
 				}
@@ -6079,6 +6188,11 @@
 		}
 	],
 	"stations": [
+		{
+			"id": "terminal",
+			"title": "USE TERMINAL",
+			"prompt": "type in an access code"
+		},
 		{
 			"id": "gate",
 			"title": "SEALED GATE",

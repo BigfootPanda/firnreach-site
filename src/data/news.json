@@ -1,5 +1,23 @@
 [
 	{
+		"version": "0.0.25",
+		"title": "Clear Sight",
+		"date": "2026-10-12",
+		"slug": "v0-0-25",
+		"items": [
+			"New HUD: shaded, ice-framed panels; health in chunks that grow as your max HP grows; stamina and backpack load always on screen. Commander view gets a full-width console (health left, bigger minimap right) and a top line with your crystals, Base health in the center and Rime / Heartstone",
+			"Press H for a small hot-keys panel at the side of the screen (it stays up while paused); the full list is in Settings > Controls. Settings now use sliders and option buttons instead of click-to-cycle",
+			"Match rules: if the Base is destroyed you have 3 minutes to rebuild it before the match is lost; with no Base after 5 minutes a countdown gives you until 8 minutes to place one. Only your first build of the match is free. Objectives follow a build order for your role and count towers your teammates already built",
+			"Carry rework: backpacks hold far more (up to 36,000 when maxed) with six sizes at the Outfitter, and strength skills keep you fast under a heavy load",
+			"Shops in the Hollow grow as you spend at them, and the Quartermaster's third stage restocks your supplies automatically after every match",
+			"Healer perks now help the whole team: Second Wind and Work Song give nearby players a speed or mining boost (look for the green ring)",
+			"New match look: rebuilt crystals, rock (four new rock shapes) and snow-weighted pines. At night crystals glow softly from inside with a faint pool of color on the snow",
+			"Tips now live in the Almanac by enemy, building and topic; the pause menu shows one tip at a time with OPEN IN ALMANAC",
+			"Stone Doors open with E; fixed a door trick that sealed enemies out; you no longer get shoved into rocks off tower tops",
+			"Smoother late waves, and the High graphics preset runs faster"
+		]
+	},
+	{
 		"version": "0.0.24",
 		"title": "Choices, Not Power",
 		"date": "2026-10-10",

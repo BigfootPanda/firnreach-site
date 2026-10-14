@@ -1,7 +1,7 @@
 {
-	"version": "0.0.24",
-	"tag": "v0.0.24",
-	"releaseDate": "2026-10-10",
+	"version": "0.0.25",
+	"tag": "v0.0.25",
+	"releaseDate": "2026-10-12",
 	"towers": [
 		{
 			"id": 10,
@@ -790,8 +790,8 @@
 			"slug": "stone-door",
 			"category": "Defense",
 			"primaryCrystal": "Obsidian",
-			"description": "A Stone Wall with a gate. Anyone presses T at it to open or close it (commander view: select it, then OPEN or T). While it's open, enemies can walk through too. It shuts itself 6 s after you're clear. A little weaker than a plain wall.",
-			"upgrades": "+HP (anyone opens / closes it: {ShieldToggle})",
+			"description": "A Stone Wall with a gate. Anyone presses E at it to open or close it (commander view: select it, then OPEN or E). While it's open, enemies can walk through too. It shuts itself 6 s after you're clear. A little weaker than a plain wall.",
+			"upgrades": "+HP (anyone opens / closes it: {Interact})",
 			"levels": [
 				{
 					"level": 1,
@@ -3911,7 +3911,7 @@
 			"category": "Utility",
 			"primaryCrystal": "All crystals",
 			"description": "",
-			"upgrades": "+HP, +Storage: 1,000 / 2,500 / 5,000 / 10,000 / 20,000 / 35,000 / 60,000 / 90,000 of each colour. Deposit with {BankDeposit} facing it or {Interact} for its panel. Destroyed = everything inside is lost.",
+			"upgrades": "+HP, +Storage: 1,000 / 2,500 / 5,000 / 10,000 / 20,000 / 35,000 / 60,000 / 90,000 of each color. Deposit with {BankDeposit} facing it or {Interact} for its panel. Destroyed = everything inside is lost.",
 			"levels": [
 				{
 					"level": 1,
@@ -4326,15 +4326,15 @@
 		},
 		{
 			"title": "FIRST PERSON",
-			"body": "WASD move, mouse look, Space jump.\nHold Left Mouse facing a rock or crystal to mine it.\nHold F facing a tower to feed it your personal power - Healers, Batteries, Shield Projectors and Siphons run on it (look at one: its amber bar is its store). V: auto-feed the nearest tower that needs it.\nPress T at a Stone Door to open or close it (anyone can).\nWalk up to a tower, look at it and press E for its menu (upgrade, sell, take its gun). B opens build mode."
+			"body": "WASD move, mouse look, Space jump.\nHold Left Mouse facing a rock or crystal to mine it.\nHold F facing a tower to feed it your personal power - Healers, Batteries, Shield Projectors and Siphons run on it (look at one: its amber bar is its store). V: auto-feed the nearest tower that needs it.\nPress E at a Stone Door to open or close it (anyone can).\nWalk up to a tower, look at it and press E for its menu (upgrade, sell, take its gun). B opens build mode."
 		},
 		{
 			"title": "RTS VIEW",
-			"body": "WASD / screen edges pan, mouse wheel zooms.\nRight Mouse on the ground to walk there, on a rock or crystal to mine it.\nB opens the build bar: pick a tower, then Left Mouse on the grid to place (it stays armed; Shift-click queues). Esc puts it away; Backspace cancels your orders.\nLeft Mouse a placed tower to see its stats, upgrade it or sell it. On a tower that runs on power, FEED POWER (or F) sends your character to feed it; on a Stone Door, OPEN / CLOSE (or T). Click the Base (or press Home) for the mining / move upgrades. Click a crystal to see how much is left.\nEsc (or P) opens the pause menu."
+			"body": "WASD / screen edges pan, mouse wheel zooms.\nRight Mouse on the ground to walk there, on a rock or crystal to mine it.\nB opens the build bar: pick a tower, then Left Mouse on the grid to place (it stays armed; Shift-click queues). Esc puts it away; Backspace cancels your orders.\nLeft Mouse a placed tower to see its stats, upgrade it or sell it. On a tower that runs on power, FEED POWER (or F) sends your character to feed it; on a Stone Door, OPEN / CLOSE (or E). Click the Base (or press Home) for the mining / move upgrades. Click a crystal to see how much is left.\nEsc (or P) opens the pause menu."
 		},
 		{
 			"title": "SURVIVAL",
-			"body": "Mine Red / Purple / Amber / Obsidian crystals (gray rocks give +5 of a random color). Carrying more than your capacity slows you; twice your capacity stops you.\nPlace a Base early - it's what the enemies attack, and its level caps your upgrades.\nGenerators power nearby towers; batteries store and relay power.\nPrep is the short daylight. Then the dark comes once a match and stays; the quiet between waves is a night to rebuild. A wave is beaten once most of it is down: the next one comes soon after, or when the night runs out, and you can call it early. A boss walks every few waves (every 5th in a Standard match, and always on the last). Run past the match's time and it's OVERTIME: every wave comes faster and hits harder. Survive them all to win; if the base falls and everyone is down, you lose."
+			"body": "Mine Red / Purple / Amber / Obsidian crystals (gray rocks give +5 of a random color). Your backpack sets how much you can carry; past your strength a heavy load slows you, past the capacity you crawl, and at twice it you stop.\nPlace a Base early - it's what the enemies attack, and its level caps your upgrades.\nGenerators power nearby towers; batteries store and relay power.\nPrep is the short daylight. Then the dark comes once a match and stays; the quiet between waves is a night to rebuild. A wave is beaten once most of it is down: the next one comes soon after, or when the night runs out, and you can call it early. A boss walks every few waves (every 5th in a Standard match, and always on the last). Run past the match's time and it's OVERTIME: every wave comes faster and hits harder. Survive them all to win; if the base falls and everyone is down, you lose."
 		},
 		{
 			"title": "PINGS + MARKS",
@@ -4342,7 +4342,7 @@
 		},
 		{
 			"title": "FIRST BUILDS + THE TEAM BANK",
-			"body": "Your first of each tower is free every match (not the Base or the Bank): the build bar marks those FREE. Upgrades always cost, and a free tower sells for nothing.\nThe Bank (UTILITY) is the team's shared store: deposit crystals there (Z facing it, or E for its panel; in the commander view select it) and they stop weighing you down. Each night you may take back your own deposits plus an equal share of what the others put in. Every deposit and withdrawal shows in the team feed."
+			"body": "Your first tower each match is free, any type (not the Base or the Bank): the build bar marks it FREE. Upgrades always cost, and a free tower sells for nothing.\nThe Bank (UTILITY) is the team's shared store: deposit crystals there (Z facing it, or E for its panel; in the commander view select it) and they stop weighing you down. Each night you may take back your own deposits plus an equal share of what the others put in. Every deposit and withdrawal shows in the team feed."
 		}
 	],
 	"relics": [
@@ -4958,7 +4958,7 @@
 					"id": "gen_frame",
 					"branch": "GENERALIST",
 					"name": "Pack Frame",
-					"summary": "Overloaded, you still walk at 55% / 60% of your speed instead of 50%.",
+					"summary": "Per rank: you carry 12.5% more of your backpack at full speed, and overloaded you still walk at 55% / 60% instead of 50%.",
 					"costs": [
 						2,
 						3
@@ -5031,7 +5031,7 @@
 					"id": "miner_carry",
 					"branch": "MINER",
 					"name": "Deep Pockets",
-					"summary": "Carry +100 more per rank before you slow down (rank 5 doubles the base 500).",
+					"summary": "A stronger back, per rank: +100 carry, and you carry 10% more of your backpack at full speed (heavy loads slow you less).",
 					"costs": [
 						1,
 						1,
@@ -6013,11 +6013,11 @@
 				{
 					"id": "out_pack",
 					"shop": "shop_outfit",
-					"name": "Backpack - more carrying weight",
-					"effect": "+250 carry weight per pack (a Heartstone weighs 50).",
+					"name": "Backpack - how much you can carry",
+					"effect": "Each tier replaces the last: a bigger pack holds more (a crystal weighs 1, a Heartstone 50).",
 					"essence": 120,
 					"heartstone": 1,
-					"max": 3,
+					"max": null,
 					"kind": "Upgrade"
 				},
 				{
@@ -6335,7 +6335,7 @@
 		},
 		{
 			"id": "CarryWeight",
-			"text": "Your load is getting heavy. Past your carry limit you move at half speed: spend crystals on buildings, and bank Heartstone at your Base."
+			"text": "Your load is getting heavy. Past your carry limit you move at half speed: spend crystals on buildings, bank Heartstone at your Base, and buy a bigger backpack at the Outfitter."
 		},
 		{
 			"id": "ShieldPower",
@@ -6355,11 +6355,11 @@
 		},
 		{
 			"id": "StoneDoor",
-			"text": "Stone Door: press T at it to open or close it (anyone can, even with a gun in hand). Open, it lets enemies through too; it shuts itself 6 s after you're clear."
+			"text": "Stone Door: press E at it to open or close it (anyone can, even with a gun in hand). Open, it lets enemies through too; it shuts itself 6 s after you're clear."
 		},
 		{
 			"id": "FreeFirstBuild",
-			"text": "Your first of each tower is free this match (the Base and the Bank excepted): the build bar marks them FREE. Upgrades still cost."
+			"text": "Your first tower this match is free, any type (the Base and the Bank excepted): the build bar marks it FREE. Upgrades still cost."
 		},
 		{
 			"id": "Roles",
@@ -6543,7 +6543,7 @@
 		},
 		{
 			"id": "Interact",
-			"action": "Use / tower menu / gun stand",
+			"action": "Use / open or close a door / tower menu / gun stand",
 			"section": "FIRST PERSON",
 			"key": "E"
 		},
@@ -6555,7 +6555,7 @@
 		},
 		{
 			"id": "ShieldToggle",
-			"action": "Open / close a door; your Shield Wall's field",
+			"action": "Your Shield Wall's field on / off",
 			"section": "FIRST PERSON",
 			"key": "T"
 		},

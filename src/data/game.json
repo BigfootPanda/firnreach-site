@@ -1,7 +1,7 @@
 {
-	"version": "0.0.25",
-	"tag": "v0.0.25",
-	"releaseDate": "2026-10-12",
+	"version": "0.0.26",
+	"tag": "v0.0.26",
+	"releaseDate": "2026-10-14",
 	"towers": [
 		{
 			"id": 10,
@@ -3650,7 +3650,7 @@
 			"slug": "base",
 			"category": "Utility",
 			"primaryCrystal": "All crystals",
-			"description": "The camp's furnace, with a Heartstone core: it's what the enemies go for, and where Heartstones are banked. Upgrading it unlocks higher levels for towers and player skills.",
+			"description": "The camp's furnace, with a Heart Stone core: it's what the enemies go for, and where Heart Stones are banked. Upgrading it unlocks higher levels for towers and player skills.",
 			"upgrades": "+HP (the Base also raises every upgrade cap)",
 			"levels": [
 				{
@@ -4869,6 +4869,46 @@
 			"objective": "Reach role mastery 20 in every role.",
 			"bonus": "Cosmetic only: a gold frame on your role card.",
 			"tracked": true
+		},
+		{
+			"category": "Mastery",
+			"id": "mastery_miner_15",
+			"name": "Elder Miner",
+			"objective": "Reach role mastery 15 as Miner.",
+			"bonus": "Cosmetic only: shown on your role card.",
+			"tracked": true
+		},
+		{
+			"category": "Mastery",
+			"id": "mastery_tank_15",
+			"name": "Elder Tank",
+			"objective": "Reach role mastery 15 as Tank.",
+			"bonus": "Cosmetic only: shown on your role card.",
+			"tracked": true
+		},
+		{
+			"category": "Mastery",
+			"id": "mastery_healer_15",
+			"name": "Elder Healer",
+			"objective": "Reach role mastery 15 as Healer.",
+			"bonus": "Cosmetic only: shown on your role card.",
+			"tracked": true
+		},
+		{
+			"category": "Mastery",
+			"id": "mastery_damage_15",
+			"name": "Elder Damage",
+			"objective": "Reach role mastery 15 as Damage.",
+			"bonus": "Cosmetic only: shown on your role card.",
+			"tracked": true
+		},
+		{
+			"category": "Mastery",
+			"id": "mastery_jack_15",
+			"name": "Elder Jack",
+			"objective": "Reach role mastery 15 as Jack of all trades.",
+			"bonus": "Cosmetic only: shown on your role card.",
+			"tracked": true
 		}
 	],
 	"skillBranches": [
@@ -5063,7 +5103,7 @@
 					"id": "miner_stone",
 					"branch": "MINER",
 					"name": "Stone Sense",
-					"summary": "Gray rocks drop a Heartstone 3.5% / 4% / 4.5% of the time (3% without it).",
+					"summary": "Gray rocks drop a Heart Stone 3.5% / 4% / 4.5% of the time (3% without it).",
 					"costs": [
 						2,
 						2,
@@ -5436,7 +5476,7 @@
 					"id": "adv_pro_heart",
 					"branch": "PROSPECTOR",
 					"name": "Heart of the Vein",
-					"summary": "A crystal node you mine out leaves a second Heartstone 25% of the time.",
+					"summary": "A crystal node you mine out leaves a second Heart Stone 25% of the time.",
 					"costs": [
 						5
 					],
@@ -5994,7 +6034,7 @@
 					"id": "out_boots",
 					"shop": "shop_outfit",
 					"name": "Boots - crampons, insulated soles",
-					"effect": "Overloaded, you still walk at 60% speed instead of 50% (heavy Heartstone runs).",
+					"effect": "Overloaded, you still walk at 60% speed instead of 50% (heavy Heart Stone runs).",
 					"essence": 80,
 					"heartstone": 0,
 					"max": 1,
@@ -6014,7 +6054,7 @@
 					"id": "out_pack",
 					"shop": "shop_outfit",
 					"name": "Backpack - how much you can carry",
-					"effect": "Each tier replaces the last: a bigger pack holds more (a crystal weighs 1, a Heartstone 50).",
+					"effect": "Each tier replaces the last: a bigger pack holds more (a crystal weighs 1, a Heart Stone 50).",
 					"essence": 120,
 					"heartstone": 1,
 					"max": null,
@@ -6240,7 +6280,7 @@
 		"Verdant pick",
 		"Dusk pick",
 		"Prismatic pick",
-		"Heartstone pick"
+		"Heart Stone pick"
 	],
 	"matchSettings": {
 		"presets": [
@@ -6294,11 +6334,15 @@
 			},
 			{
 				"name": "Standard",
-				"description": "Uses specific element per stat (Ex: Speed=Amber, Yield=Obsidian)."
+				"description": "Each upgrade has its own color: Mine Speed costs Amber, Mine Yield costs Obsidian, Move Speed costs Red."
 			},
 			{
-				"name": "Randomized",
-				"description": "The color required for an upgrade changes randomly every time."
+				"name": "Per Color Yield",
+				"description": "Mine Yield is bought separately for each crystal color and paid in that color. Mine Speed costs Amber, Move Speed costs Red."
+			},
+			{
+				"name": "Per Color",
+				"description": "Mine Yield and Mine Speed are bought separately for each crystal color, each paid in its own color. Move Speed costs Red."
 			}
 		],
 		"prepSeconds": [
@@ -6335,7 +6379,7 @@
 		},
 		{
 			"id": "CarryWeight",
-			"text": "Your load is getting heavy. Past your carry limit you move at half speed: spend crystals on buildings, bank Heartstone at your Base, and buy a bigger backpack at the Outfitter."
+			"text": "Your load is getting heavy. Past your carry limit you move at half speed: spend crystals on buildings, bank Heart Stone at your Base, and buy a bigger backpack at the Outfitter."
 		},
 		{
 			"id": "ShieldPower",
@@ -6347,7 +6391,7 @@
 		},
 		{
 			"id": "Heartstone",
-			"text": "Heartstone! It is heavy, and it only counts once you bank it at your Base. Heartstone still in your pocket when the match ends is lost."
+			"text": "Heart Stone! It is heavy, and it only counts once you bank it at your Base. Heart Stone still in your pocket when the match ends is lost."
 		},
 		{
 			"id": "FeedPower",

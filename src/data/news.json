@@ -1,5 +1,33 @@
 [
 	{
+		"version": "0.0.26",
+		"title": "Color by Color",
+		"date": "2026-10-14",
+		"slug": "v0-0-26",
+		"items": [
+			"Hard and Insane: mining upgrades now work per crystal color and are paid in that color. Hard upgrades yield per color; Insane upgrades yield and speed per color. The random color pick is gone.",
+			"Easy: selling a building during Prep or after a wave is cleared refunds 100% of what you paid.",
+			"The title screen shows your Steam name, and a Patch Notes tab under your profile card shows what changed in each version.",
+			"Heartstone is now written Heart Stone.",
+			"If you disconnect or crash mid-match you no longer lose that match's rewards: you're paid as if you had left.",
+			"First launch compiles shaders behind the loading screen with a progress bar, so your first match doesn't stutter.",
+			"A destroyed Base now collapses into rubble that frees its space, and crystal glow stays steady when nearby rocks break.",
+			"Matches can't be joined after they start, and lobbies hold up to 8 players.",
+			"The Hollow and the title menu use the new crystals, rocks and pines. Rebirth no longer adds bonus match XP.",
+			"Fixes: HUD panels no longer overlap at any screen size or UI scale; Steam names ending in numbers are no longer cut off; tower and enemy info panels update right away."
+		],
+		"images": [
+			{
+				"src": "v0-0-26/per-color-mining-upgrades.jpg",
+				"caption": "On Insane, Mine Yield and Mine Speed are upgraded separately for each crystal color, and each color pays for its own upgrades."
+			},
+			{
+				"src": "v0-0-26/per-color-yield-hard.jpg",
+				"caption": "On Hard, Mine Yield is upgraded per crystal color and paid in that color, while Mine Speed stays one upgrade for every color."
+			}
+		]
+	},
+	{
 		"version": "0.0.25",
 		"title": "Clear Sight",
 		"date": "2026-10-12",

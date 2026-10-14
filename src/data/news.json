@@ -15,6 +15,38 @@
 			"Tips now live in the Almanac by enemy, building and topic; the pause menu shows one tip at a time with OPEN IN ALMANAC",
 			"Stone Doors open with E; fixed a door trick that sealed enemies out; you no longer get shoved into rocks off tower tops",
 			"Smoother late waves, and the High graphics preset runs faster"
+		],
+		"images": [
+			{
+				"src": "v0-0-25/hud-first-person.jpg",
+				"caption": "The new first-person HUD: shaded, ice-framed panels, health in chunks, and stamina and backpack load always on screen.",
+				"note": 0
+			},
+			{
+				"src": "v0-0-25/hud-commander-view.jpg",
+				"caption": "Commander view: a full-width console along the bottom and a top line with your crystals, Base health and the wave timer.",
+				"note": 0
+			},
+			{
+				"src": "v0-0-25/hotkeys-side-panel.jpg",
+				"caption": "Press H for a small hot-keys panel at the side of the screen.",
+				"note": 1
+			},
+			{
+				"src": "v0-0-25/new-crystals-and-rock.jpg",
+				"caption": "Rebuilt red crystal and the new dark rock, in daylight.",
+				"note": 6
+			},
+			{
+				"src": "v0-0-25/new-rock-shapes.jpg",
+				"caption": "One of the four new rock shapes, with a gold crystal behind it.",
+				"note": 6
+			},
+			{
+				"src": "v0-0-25/crystal-glow-at-night.jpg",
+				"caption": "At night, crystals glow softly from inside and leave a faint pool of color on the snow.",
+				"note": 6
+			}
 		]
 	},
 	{

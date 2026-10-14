@@ -24,9 +24,11 @@
  *   Menu/FrostHubScene.cpp       - Hollow station names and prompts, shop signs
  *   Player/FrostSpecialty.h      - which crystal builds what, mining specialty
  *   CHANGELOG.md                 - news / patch notes
+ *   Docs/Release/PatchShots/vX.Y.Z/ - patch-note pictures + shots.json (repo root; read at the tag, or at HEAD for a
+ *                                  version whose pictures were added after its tag)
  *
  * Writes (all generated - do not edit by hand):
- *   src/data/game.json, src/data/news.json
+ *   src/data/game.json, src/data/news.json, src/assets/news/<slug>/* (patch-note pictures)
  *   src/content/docs/wiki/towers/*.mdx, enemies/*.mdx, skills/*.mdx, hollow/*.mdx
  *   src/content/docs/wiki/{player,relics,achievements,resources,picks,match-settings,controls}.mdx
  *
@@ -452,6 +454,55 @@ for (const sec of changelog.split(/^## /m).slice(1)) {
 	if (!m) continue;
 	const items = rest.map((l) => l.match(/^\s*-\s+(.*)$/)?.[1]).filter(Boolean);
 	news.push({ version: m[1], title: m[2], date: m[3], slug: `v${m[1].replace(/\./g, '-')}`, items });
+}
+
+// ---------------------------------------------------------------- news pictures (patch shots)
+// Docs/Release/PatchShots/vX.Y.Z/ holds the pictures for a release and a shots.json of
+// [{ file, caption, note? }] (export_steam.ps1 moves them there from PatchShots/next/ when it tags the release).
+// Read at the release tag; a version whose pictures were added later (backfill) is read from HEAD. Copied to
+// src/assets/news/<slug>/ so Astro optimizes them; posts without pictures get no `images` key at all.
+const SHOTS_DIR = 'Docs/Release/PatchShots';
+const NEWS_ASSETS = join(ROOT, 'src/assets/news');
+const gitBuf = (...a) => execFileSync('git', ['-C', REPO, ...a], { maxBuffer: 256 * 1024 * 1024 });
+function shotsRef(dir) {
+	for (const ref of [TAG, 'HEAD']) {
+		try {
+			execFileSync('git', ['-C', REPO, 'cat-file', '-e', `${ref}:${dir}/shots.json`], { stdio: 'ignore' });
+			return ref;
+		} catch { /* not at this ref */ }
+	}
+	return null;
+}
+rmSync(NEWS_ASSETS, { recursive: true, force: true });
+let shotCount = 0;
+for (const post of news) {
+	const dir = `${SHOTS_DIR}/v${post.version}`;
+	const ref = shotsRef(dir);
+	if (!ref) continue;
+	let list;
+	try { list = JSON.parse(git('show', `${ref}:${dir}/shots.json`)); } catch (e) { throw new Error(`Bad ${dir}/shots.json at ${ref}: ${e.message}`); }
+	if (!Array.isArray(list)) throw new Error(`${dir}/shots.json must be a JSON array`);
+	const images = [];
+	for (const shot of list) {
+		const file = String(shot?.file ?? '');
+		const caption = String(shot?.caption ?? '').trim();
+		if (!/^[\w.-]+\.(jpe?g|png|webp)$/i.test(file)) throw new Error(`${dir}/shots.json: bad picture file name "${file}"`);
+		if (!caption) throw new Error(`${dir}/shots.json: "${file}" has no caption`);
+		if (INTERNAL_NAME.test(file) || INTERNAL_NAME.test(caption)) throw new Error(`${dir}/shots.json: internal project name in "${file}"`);
+		let bytes;
+		// --filters runs the smudge filter: the game repo keeps images in Git LFS, so plain `git show` gives a pointer.
+		try { bytes = gitBuf('cat-file', '--filters', `${ref}:${dir}/${file}`); } catch { throw new Error(`${dir}/${file} is listed in shots.json but missing at ${ref}`); }
+		if (bytes.subarray(0, 40).toString('latin1').startsWith('version https://git-lfs')) {
+			throw new Error(`${dir}/${file} is only a Git LFS pointer - run \`git lfs pull\` in the game repo`);
+		}
+		mkdirSync(join(NEWS_ASSETS, post.slug), { recursive: true });
+		writeFileSync(join(NEWS_ASSETS, post.slug, file), bytes);
+		const img = { src: `${post.slug}/${file}`, caption };
+		if (shot.note !== undefined && shot.note !== null && shot.note !== '') img.note = shot.note;
+		images.push(img);
+	}
+	if (images.length) { post.images = images; shotCount += images.length; }
+	if (ref !== TAG) console.log(`  (pictures for v${post.version} read from HEAD - not in ${TAG})`);
 }
 
 // ---------------------------------------------------------------- guard + write data
@@ -1050,4 +1101,4 @@ ${versionAside}
 console.log(`Exported from ${TAG} (${tagDate}): ${towers.length} buildings, ${enemies.length} enemies, ${relics.length} relics, `
 	+ `${achievements.length} achievements, ${skillDefs.length} skills in ${skillBranches.length} branches, ${shopItems.length} shop items `
 	+ `in ${shopSign.length} shops, ${stations.length} stations, ${keybinds.length} key bindings, ${hints.length} hints, `
-	+ `${ms.presets.length} presets, ${news.length} news posts.`);
+	+ `${ms.presets.length} presets, ${news.length} news posts, ${shotCount} news pictures.`);

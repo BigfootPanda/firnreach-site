@@ -45,6 +45,11 @@ nothing otherwise; alt text comes from `src/assets/wiki/alt.json`. The home page
 (`hero-*` = hero background, `commander-*` = commander panel, everything else = gallery; alt text in
 `src/assets/shots/alt.json`). To bring in a folder of captured shots (resized, alt text from its `manifest.json`):
 
+News posts show the release's patch shots under the notes (grid, click for full size, caption = alt text). They come
+from the game repo's `Docs/Release/PatchShots/vX.Y.Z/` (`shots.json` + images; see `PatchShots/next/README.md` there):
+`export-data` copies them to `src/assets/news/<slug>/` and lists them as `images` in `news.json`. It reads them at the
+release tag, or at the game repo's HEAD for pictures added after the tag. Posts without pictures render as before.
+
 ```sh
 npm run sync-shots                                    # from ../firnreach-site-shots
 node scripts/sync-shots.mjs --from "E:/somewhere/else"

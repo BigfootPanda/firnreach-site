@@ -1,5 +1,24 @@
 [
 	{
+		"version": "0.1.0",
+		"title": "Mountain Front & the New Hollow",
+		"date": "2026-10-21",
+		"slug": "v0-1-0",
+		"items": [
+			"Every match is now on Mountain Front. You start at the mountain mouth, and enemies come from one direction. Open Ice is retired for now. The tutorial still runs there.",
+			"The cave kiosk is your Base. Base upgrades, your own upgrades (Mine Speed, Mine Yield, Move Speed) and the team Bank are all in one panel at the cave.",
+			"A 90-second quiet start: mining near home won't wake the enemies right away.",
+			"Bigger, brighter crystals in the outer rings at night. Heart Stone runs and relics now always spawn.",
+			"The Hollow is rebuilt: new rock halls with snow and ice, a rebuilt lift and street props, shops with their goods on display, and a new Tailor with a Defender cape quest.",
+			"The Gatewright now walks the Hollow and greets you as you pass.",
+			"New looks for towers: Stone Wall, Door, Spike Wall, Shield Wall, Healer and Shield Projector, with stone bases that upgrade to steel at level 4.",
+			"The Glacial Runner is reborn as the Glacier Hound, a new model and new animations.",
+			"A new sky, weather and tower effects, on by default.",
+			"Smoother 8-player games: faster hosting, fewer enemy pops, better network handling.",
+			"Fixes: banked Heart Stones are kept when you drop and rejoin, the camera starts in the right place, saves are separate for each Steam account, and a clear warning if a save ever fails."
+		]
+	},
+	{
 		"version": "0.0.26",
 		"title": "Color by Color",
 		"date": "2026-10-14",

@@ -1,7 +1,7 @@
 {
-	"version": "0.0.26",
-	"tag": "v0.0.26",
-	"releaseDate": "2026-10-14",
+	"version": "0.1.0",
+	"tag": "v0.1.0",
+	"releaseDate": "2026-10-21",
 	"towers": [
 		{
 			"id": 10,
@@ -10,7 +10,7 @@
 			"slug": "shield-wall",
 			"category": "Defense",
 			"primaryCrystal": "Obsidian",
-			"description": "Plates under a white-light shield that regrows over time. Requires power: the shield only stands while the wall holds power - unpowered, the field drops and enemies walk through the gap. Build plenty, with a generator or battery in reach.",
+			"description": "",
 			"upgrades": "+HP, +Shield, +Shield Recharge",
 			"levels": [
 				{
@@ -270,7 +270,7 @@
 			"slug": "spike-wall",
 			"category": "Defense",
 			"primaryCrystal": "Obsidian",
-			"description": "The Thorn Row: a heavy wall of purple-cored spikes. Whatever hits it gets a little of its own force back.",
+			"description": "",
 			"upgrades": "+HP, +Spike Damage",
 			"levels": [
 				{
@@ -530,7 +530,7 @@
 			"slug": "stone-wall",
 			"category": "Defense",
 			"primaryCrystal": "Obsidian",
-			"description": "A plain 2-cell wall of fitted stone blocks. No power, no shield: it just blocks the way. Cheap - wall off a lane early.",
+			"description": "",
 			"upgrades": "+HP",
 			"levels": [
 				{
@@ -790,7 +790,7 @@
 			"slug": "stone-door",
 			"category": "Defense",
 			"primaryCrystal": "Obsidian",
-			"description": "A Stone Wall with a gate. Anyone presses E at it to open or close it (commander view: select it, then OPEN or E). While it's open, enemies can walk through too. It shuts itself 6 s after you're clear. A little weaker than a plain wall.",
+			"description": "",
 			"upgrades": "+HP (anyone opens / closes it: {Interact})",
 			"levels": [
 				{
@@ -1310,7 +1310,7 @@
 			"slug": "heat-generator",
 			"category": "Power",
 			"primaryCrystal": "Red",
-			"description": "The Hearth: one big flame, one mouth to feed. A large amount of power for a single target.",
+			"description": "",
 			"upgrades": "+HP, +Power Gen, +Stored Power, +Range",
 			"levels": [
 				{
@@ -1570,7 +1570,7 @@
 			"slug": "distribution-generator",
 			"category": "Power",
 			"primaryCrystal": "Red",
-			"description": "The Company's grid design: makes power and splits it across several targets at once.",
+			"description": "",
 			"upgrades": "+HP, +Power Gen, +Targets, +Range",
 			"levels": [
 				{
@@ -1830,7 +1830,7 @@
 			"slug": "battery",
 			"category": "Power",
 			"primaryCrystal": "Red",
-			"description": "A jar of power: stores a large amount and passes it on to nearby structures.",
+			"description": "",
 			"upgrades": "+HP, +Stored Power, +Power Out, +Targets, +Range",
 			"levels": [
 				{
@@ -2090,7 +2090,7 @@
 			"slug": "turret",
 			"category": "Offense",
 			"primaryCrystal": "Purple",
-			"description": "Standard gun on a stand: fires at enemies in range. Requires power. In first person press Q at the stand to take the carbine and aim it yourself.",
+			"description": "",
 			"upgrades": "+HP, +Damage, +Range, +Fire Rate, +Stored Power",
 			"levels": [
 				{
@@ -2350,7 +2350,7 @@
 			"slug": "artillery",
 			"category": "Offense",
 			"primaryCrystal": "Purple",
-			"description": "Slowly lobs shells that splash an area. Keep it back; it was never meant for close work. Requires power. Press Q at the stand to shoulder the launcher.",
+			"description": "",
 			"upgrades": "+HP, +Damage, +Range, +Splash Radius, +Stored Power",
 			"levels": [
 				{
@@ -2610,7 +2610,7 @@
 			"slug": "sniper",
 			"category": "Offense",
 			"primaryCrystal": "Purple",
-			"description": "Long glass: extreme range and damage, very slow fire; its purple-cored rounds pierce a line of enemies. Requires power. In first person press Q at the stand to take its rifle (Right Mouse scope).",
+			"description": "",
 			"upgrades": "+HP, +Damage, +Range, +Stored Power",
 			"levels": [
 				{
@@ -2870,7 +2870,7 @@
 			"slug": "healer",
 			"category": "Utility",
 			"primaryCrystal": "Amber",
-			"description": "Green light, focused: mends one damaged friendly structure at a time. Requires power.",
+			"description": "",
 			"upgrades": "+HP, +Heal Amount, +Range, +Stored Power",
 			"levels": [
 				{
@@ -3130,7 +3130,7 @@
 			"slug": "shield-projector",
 			"category": "Utility",
 			"primaryCrystal": "Amber",
-			"description": "Recharges the shields of nearby structures. The Company's idea. Requires power.",
+			"description": "",
 			"upgrades": "+HP, +Shield Heal, +Range, +Stored Power",
 			"levels": [
 				{
@@ -3390,7 +3390,7 @@
 			"slug": "mana-siphon",
 			"category": "Utility",
 			"primaryCrystal": "Amber",
-			"description": "The siphon tags an enemy: it drops 5x resources on death and its Essence flies to you, five-fold. The tag is used up when it dies.",
+			"description": "",
 			"upgrades": "+HP, +Range, +Stored Power",
 			"levels": [
 				{
@@ -3650,7 +3650,7 @@
 			"slug": "base",
 			"category": "Utility",
 			"primaryCrystal": "All crystals",
-			"description": "The camp's furnace, with a Heart Stone core: it's what the enemies go for, and where Heart Stones are banked. Upgrading it unlocks higher levels for towers and player skills.",
+			"description": "",
 			"upgrades": "+HP (the Base also raises every upgrade cap)",
 			"levels": [
 				{
@@ -4334,7 +4334,7 @@
 		},
 		{
 			"title": "SURVIVAL",
-			"body": "Mine Red / Purple / Amber / Obsidian crystals (gray rocks give +5 of a random color). Your backpack sets how much you can carry; past your strength a heavy load slows you, past the capacity you crawl, and at twice it you stop.\nPlace a Base early - it's what the enemies attack, and its level caps your upgrades.\nGenerators power nearby towers; batteries store and relay power.\nPrep is the short daylight. Then the dark comes once a match and stays; the quiet between waves is a night to rebuild. A wave is beaten once most of it is down: the next one comes soon after, or when the night runs out, and you can call it early. A boss walks every few waves (every 5th in a Standard match, and always on the last). Run past the match's time and it's OVERTIME: every wave comes faster and hits harder. Survive them all to win; if the base falls and everyone is down, you lose."
+			"body": "Mine Red / Purple / Amber / Obsidian crystals (gray rocks give +5 of a random color). Your backpack sets how much you can carry; past your strength a heavy load slows you, past the capacity you crawl, and at twice it you stop.\nPlace a Base early - it's what the enemies attack, and its level caps your upgrades.\nGenerators power nearby towers; batteries store and relay power.\nPrep is the short daylight. Then the dark comes once a match and stays; the quiet between waves is a night to rebuild. A wave is beaten once most of it is down: the next one comes soon after, or when the night runs out, and you can call it early. A boss walks every few waves (every 5th in a Standard match, and always on the last). Run past the match's time and it's OVERTIME: every wave comes faster and hits harder. Survive them all to win; if the Base falls and everyone is down, you lose."
 		},
 		{
 			"title": "PINGS + MARKS",
@@ -4362,7 +4362,7 @@
 			"name": "Surveyor's Log",
 			"lore": "Water-stained pages in the Company surveyor's hand. The last entry: \"The deep light sings at night. The colossi walk toward the song, not toward us. We are the ones making it louder. We sealed the lower gate.\"",
 			"hint": "After the first night, a survey stake glows far out past the landing site. The log lies beside it.",
-			"reward": "The survey table is restored and the map of the old tunnels goes up on the Hollow's wall.",
+			"reward": "The Survey Table is restored and the map of the old tunnels goes up on the Hollow's wall.",
 			"book": {
 				"title": "Survey Notes, year three",
 				"text": "A careful sketch of a colossus mid-stride, its head turned away from the camp. Under it, in the surveyor's hand: \"toward the song.\""
@@ -4373,7 +4373,7 @@
 			"name": "Heart of the Hollow",
 			"lore": "A shard of blue ice, warm in the hand, humming the note the deep light sings. The echo stones were keeping it. It fits the socket in the Company's gate.",
 			"hint": "Three echo stones hum somewhere in the maze. Wake all three in one match and follow the sound.",
-			"reward": "The sealed gate beneath the Hollow opens.",
+			"reward": "The Sealed Gate beneath the Hollow opens.",
 			"book": {
 				"title": "On Sealing a Gate",
 				"text": "The Company's instructions, half washed out: \"...white light, bled cold, poured in the socket... the Heart holds it... do not drill below the second bench.\""
@@ -4381,536 +4381,7 @@
 		}
 	],
 	"relicIntro": "Skarnholt left things in the ice. Walk into one to bring it home: each survivor earns their own, once per profile. Relics restore the Hollow and tell you what happened here. They never change your stats.",
-	"achievements": [
-		{
-			"category": "Building & Defense",
-			"id": "master_architect",
-			"name": "Master Architect",
-			"objective": "Build a total of 500 buildings across all playthroughs.",
-			"bonus": "All buildings cost 10% fewer resources to construct (rounded down).",
-			"tracked": true
-		},
-		{
-			"category": "Building & Defense",
-			"id": "peak_performance",
-			"name": "Peak Performance",
-			"objective": "Upgrade any single building to its maximum level (Level 8).",
-			"bonus": "Upgrading buildings costs 5% fewer resources.",
-			"tracked": true
-		},
-		{
-			"category": "Building & Defense",
-			"id": "fort_knox",
-			"name": "Fort Knox",
-			"objective": "Have a single Battery store over 100,000 power.",
-			"bonus": "All Batteries have their maximum power storage increased by 10%.",
-			"tracked": true
-		},
-		{
-			"category": "Building & Defense",
-			"id": "flawless_defense",
-			"name": "Flawless Defense",
-			"objective": "Survive an entire wave (after wave 5) without losing a single building.",
-			"bonus": "All buildings start with +5% maximum health.",
-			"tracked": true
-		},
-		{
-			"category": "Building & Defense",
-			"id": "jack_of_all_trades",
-			"name": "Jack of All Trades",
-			"objective": "Build every type of building AND upgrade each type to level 5 in a single match.",
-			"bonus": "Permanently start with +55 of each resource.",
-			"tracked": true
-		},
-		{
-			"category": "Building & Defense",
-			"id": "generator_who",
-			"name": "Generator who?",
-			"objective": "generate 100,000 total power from your character across all playthroughs.",
-			"bonus": "Start every match with an extra +500 personal power capacity.",
-			"tracked": true
-		},
-		{
-			"category": "Building & Defense",
-			"id": "maze_master",
-			"name": "Maze Master",
-			"objective": "Build a maze that forces a single enemy to walk at least 50 tiles further than its direct route to reach your base.",
-			"bonus": "Wall maximum health is increased by 15%.",
-			"tracked": true
-		},
-		{
-			"category": "Building & Defense",
-			"id": "glass_cannon",
-			"name": "Glass Cannon",
-			"objective": "Survive to wave 10 without building any defensive Walls.",
-			"bonus": "Offensive towers cost 10% less power to fire.",
-			"tracked": true
-		},
-		{
-			"category": "Building & Defense",
-			"id": "the_great_wall",
-			"name": "The Great Wall",
-			"objective": "Have 50 Wall structures active simultaneously in a single match.",
-			"bonus": "Walls passively repair themselves for 1 HP every 3 seconds.",
-			"tracked": true
-		},
-		{
-			"category": "Building & Defense",
-			"id": "sentry_duty",
-			"name": "Sentry Duty",
-			"objective": "Upgrade a single tower to Level 5 before Wave 5 begins.",
-			"bonus": "Level 1 towers start with +10% base damage.",
-			"tracked": true
-		},
-		{
-			"category": "Building & Defense",
-			"id": "overcharged",
-			"name": "Overcharged",
-			"objective": "Keep 10 of your towers at maximum power capacity for an entire wave (its whole day).",
-			"bonus": "Towers have a 5% chance to not consume any power when they fire.",
-			"tracked": true
-		},
-		{
-			"category": "Building & Defense",
-			"id": "demolition_expert",
-			"name": "Demolition Expert",
-			"objective": "Sell 250 buildings across all playthroughs.",
-			"bonus": "Selling a building now refunds an additional 5% of its total cost.",
-			"tracked": true
-		},
-		{
-			"category": "Combat & Kill",
-			"id": "exterminator",
-			"name": "Exterminator",
-			"objective": "Kill 1,000 normal enemies across all playthroughs.",
-			"bonus": "Turrets deal +5% damage to normal (non-boss) enemies.",
-			"tracked": true
-		},
-		{
-			"category": "Combat & Kill",
-			"id": "legendary_hunter",
-			"name": "Legendary Hunter",
-			"objective": "Defeat 25 bosses across all playthroughs.",
-			"bonus": "Turrets deal +10% damage to boss enemies.",
-			"tracked": true
-		},
-		{
-			"category": "Combat & Kill",
-			"id": "blitzkrieg",
-			"name": "Blitzkrieg",
-			"objective": "Kill a Cryo-Mage within 5 seconds of it spawning, before its aura can take full effect.",
-			"bonus": "All of your towers have a 5% chance per second to ignore the \"chill\" slowing effect from Cryo-Mages.",
-			"tracked": true
-		},
-		{
-			"category": "Combat & Kill",
-			"id": "retaliator",
-			"name": "Retaliator",
-			"objective": "Defeat 50 total enemies using the reflected damage from Spike Walls.",
-			"bonus": "Spike Walls permanently reflect an additional 5% of incoming damage.",
-			"tracked": true
-		},
-		{
-			"category": "Combat & Kill",
-			"id": "sniper",
-			"name": "Sniper",
-			"objective": "Kill 500 enemies from long range using long-range towers (Snipers).",
-			"bonus": "All offensive towers gain +5% attack range.",
-			"tracked": true
-		},
-		{
-			"category": "Combat & Kill",
-			"id": "david_and_goliath",
-			"name": "David & Goliath",
-			"objective": "Deal 10,000 total damage to bosses using only your character's Stomp ability.",
-			"bonus": "Stomp ability radius is permanently increased by 50%.",
-			"tracked": true
-		},
-		{
-			"category": "Combat & Kill",
-			"id": "crowd_control",
-			"name": "Crowd Control",
-			"objective": "Kill 10 enemies within a 1-second window.",
-			"bonus": "Splash damage radius on all explosive weapons is increased by 5%.",
-			"tracked": true
-		},
-		{
-			"category": "Combat & Kill",
-			"id": "icebreaker",
-			"name": "Icebreaker",
-			"objective": "Kill 250 FrostMites.",
-			"bonus": "FrostMites move 5% slower permanently.",
-			"tracked": true
-		},
-		{
-			"category": "Combat & Kill",
-			"id": "giant_slayer",
-			"name": "Giant Slayer",
-			"objective": "Defeat a boss while your character has less than 20% health.",
-			"bonus": "Deal +10% Stomp damage when your character is below 50% health.",
-			"tracked": true
-		},
-		{
-			"category": "Combat & Kill",
-			"id": "no_mans_land",
-			"name": "No Man's Land",
-			"objective": "Kill 100 enemies within 3 seconds of them spawning.",
-			"bonus": "Towers deal +10% bonus damage to enemies at 100% full health.",
-			"tracked": true
-		},
-		{
-			"category": "Mining & Economic",
-			"id": "strip_miner",
-			"name": "Strip Miner",
-			"objective": "Mine a total of 50,000 resources across all playthroughs.",
-			"bonus": "Start every match with +1 permanent mining yield.",
-			"tracked": true
-		},
-		{
-			"category": "Mining & Economic",
-			"id": "resource_hoarder",
-			"name": "Resource Hoarder",
-			"objective": "Hold more than 25,000 of a single resource type (e.g., 25,001 Red) at one time.",
-			"bonus": "Your personal resource carrying capacity is permanently increased by 500",
-			"tracked": true
-		},
-		{
-			"category": "Mining & Economic",
-			"id": "industrialist",
-			"name": "Industrialist",
-			"objective": "Generate 1,000,000 total power from Generators across all playthroughs.",
-			"bonus": "All Generators (H. and D. types) produce 5% more power per second.",
-			"tracked": true
-		},
-		{
-			"category": "Mining & Economic",
-			"id": "energy_independence",
-			"name": "Energy Independence",
-			"objective": "Win a match without building any Power Generators (Batteries and personal power are allowed).",
-			"bonus": "Your personal power generation from the gear upgrade is increased by 10%.",
-			"tracked": true
-		},
-		{
-			"category": "Mining & Economic",
-			"id": "maximum_efficiency",
-			"name": "Maximum Efficiency",
-			"objective": "Reach the hard cap for mining speed (200ms) in any match.",
-			"bonus": "Gain a permanent +1 bonus to your base player movement speed.",
-			"tracked": true
-		},
-		{
-			"category": "Mining & Economic",
-			"id": "time_to_start_hiking",
-			"name": "Time to start Hiking",
-			"objective": "Become so over-encumbered that you can not move.",
-			"bonus": "Start every match with an extra +500 personal carry capacity.",
-			"tracked": true
-		},
-		{
-			"category": "Mining & Economic",
-			"id": "spectrum_miner",
-			"name": "Spectrum Miner",
-			"objective": "Mine 100,000 of Red, Purple, Green, and White resources each.",
-			"bonus": "5% chance to get double resources on every successful mine.",
-			"tracked": true
-		},
-		{
-			"category": "Mining & Economic",
-			"id": "speed_demon",
-			"name": "Speed Demon",
-			"objective": "Maintain maximum movement speed for 60 consecutive seconds.",
-			"bonus": "Movement speed penalty when carrying heavy resources is reduced by 5%.",
-			"tracked": true
-		},
-		{
-			"category": "Mining & Economic",
-			"id": "penny_pincher",
-			"name": "Penny Pincher",
-			"objective": "Spend exactly 0 resources for the first 3 waves of a match.",
-			"bonus": "STOMP ability damage is permanently doubled.",
-			"tracked": true
-		},
-		{
-			"category": "Mining & Economic",
-			"id": "philanthropist",
-			"name": "Philanthropist",
-			"objective": "Transfer 50,000 total power to buildings from your character (hold F).",
-			"bonus": "Your personal power transfer rate to buildings is 20% faster.",
-			"tracked": true
-		},
-		{
-			"category": "Survival & Milestone",
-			"id": "hardened_survivor",
-			"name": "Hardened Survivor",
-			"objective": "Successfully win a match on \"Hard\" difficulty.",
-			"bonus": "Gain +0.5 additional skill point every time you level up.",
-			"tracked": true
-		},
-		{
-			"category": "Survival & Milestone",
-			"id": "frost-born",
-			"name": "Frost-Born",
-			"objective": "Successfully win a match on \"Insane\" difficulty.",
-			"bonus": "Gain +0.25 additional skill point every time you level up.",
-			"tracked": true
-		},
-		{
-			"category": "Survival & Milestone",
-			"id": "close_one",
-			"name": "Close one",
-			"objective": "Finish a match with health missing.",
-			"bonus": "Your passive health regeneration outside of combat is slightly increased.",
-			"tracked": true
-		},
-		{
-			"category": "Survival & Milestone",
-			"id": "capitalist",
-			"name": "Capitalist",
-			"objective": "End a match with over 50,000 total resources remaining in your inventory.",
-			"bonus": "You get a 10% higher refund when selling buildings.",
-			"tracked": true
-		},
-		{
-			"category": "Survival & Milestone",
-			"id": "gear_head",
-			"name": "Gear Head",
-			"objective": "Fully unlock and max out every single permanent gear upgrade",
-			"bonus": "Rainbow outline around character?",
-			"tracked": true
-		},
-		{
-			"category": "Survival & Milestone",
-			"id": "untouched",
-			"name": "Untouched",
-			"objective": "Complete the first 5 waves of a match without your character taking a single step.",
-			"bonus": "map wide placement of buildings, you don't need to move anyways. ",
-			"tracked": true
-		},
-		{
-			"category": "Survival & Milestone",
-			"id": "close_call",
-			"name": "Close Call",
-			"objective": "Survive a wave with you at exactly 1 HP.",
-			"bonus": "The very first time your base takes fatal damage in a match, it doesn't die. Instead, it drops to exactly 1 HP and gets a 3-second invulnerability shield.",
-			"tracked": true
-		},
-		{
-			"category": "Survival & Milestone",
-			"id": "marathon_runner",
-			"name": "Marathon Runner",
-			"objective": "Play the game for a total of 10 hours.",
-			"bonus": "All resource storage limits in buildings are increased by 15%.",
-			"tracked": true
-		},
-		{
-			"category": "Survival & Milestone",
-			"id": "the_first_step",
-			"name": "The First Step",
-			"objective": "Successfully complete Wave 1 for the very first time.",
-			"bonus": "Start every match with +1 maximum Player HP.",
-			"tracked": true
-		},
-		{
-			"category": "Survival & Milestone",
-			"id": "perfectionist",
-			"name": "Perfectionist",
-			"objective": "Win a match without repairing any buildings.",
-			"bonus": "All buildings gain a permanent +5% innate damage reduction armor.",
-			"tracked": true
-		},
-		{
-			"category": "Survival & Milestone",
-			"id": "i_can_read",
-			"name": "I Can Read!",
-			"objective": "Successfully complete the tutorial.",
-			"bonus": "Gain 1 permanent skill point and start every match with +20 of each resource.",
-			"tracked": true
-		},
-		{
-			"category": "Survival & Milestone",
-			"id": "made_you_look",
-			"name": "Made You Look",
-			"objective": "Scroll to the very bottom of the achievement list.",
-			"bonus": "Unlocks the Stats page from the main menu.",
-			"tracked": true
-		},
-		{
-			"category": "Survival & Milestone",
-			"id": "hold_the_hollow",
-			"name": "Hold the Hollow",
-			"objective": "Survive Endless wave 20 on Normal or harder.",
-			"bonus": "Lights the first lamp on the Company's machine in the deep workshop. Story only.",
-			"tracked": true
-		},
-		{
-			"category": "Mastery",
-			"id": "mastery_miner_5",
-			"name": "Apprentice Miner",
-			"objective": "Reach role mastery 5 as Miner.",
-			"bonus": "Cosmetic only: shown on your role card.",
-			"tracked": true
-		},
-		{
-			"category": "Mastery",
-			"id": "mastery_miner_10",
-			"name": "Master Miner",
-			"objective": "Reach role mastery 10 as Miner.",
-			"bonus": "Cosmetic only: shown on your role card.",
-			"tracked": true
-		},
-		{
-			"category": "Mastery",
-			"id": "mastery_miner_20",
-			"name": "Grandmaster Miner",
-			"objective": "Reach role mastery 20 as Miner.",
-			"bonus": "Cosmetic only: shown on your role card.",
-			"tracked": true
-		},
-		{
-			"category": "Mastery",
-			"id": "mastery_tank_5",
-			"name": "Apprentice Tank",
-			"objective": "Reach role mastery 5 as Tank.",
-			"bonus": "Cosmetic only: shown on your role card.",
-			"tracked": true
-		},
-		{
-			"category": "Mastery",
-			"id": "mastery_tank_10",
-			"name": "Master Tank",
-			"objective": "Reach role mastery 10 as Tank.",
-			"bonus": "Cosmetic only: shown on your role card.",
-			"tracked": true
-		},
-		{
-			"category": "Mastery",
-			"id": "mastery_tank_20",
-			"name": "Grandmaster Tank",
-			"objective": "Reach role mastery 20 as Tank.",
-			"bonus": "Cosmetic only: shown on your role card.",
-			"tracked": true
-		},
-		{
-			"category": "Mastery",
-			"id": "mastery_healer_5",
-			"name": "Apprentice Healer",
-			"objective": "Reach role mastery 5 as Healer.",
-			"bonus": "Cosmetic only: shown on your role card.",
-			"tracked": true
-		},
-		{
-			"category": "Mastery",
-			"id": "mastery_healer_10",
-			"name": "Master Healer",
-			"objective": "Reach role mastery 10 as Healer.",
-			"bonus": "Cosmetic only: shown on your role card.",
-			"tracked": true
-		},
-		{
-			"category": "Mastery",
-			"id": "mastery_healer_20",
-			"name": "Grandmaster Healer",
-			"objective": "Reach role mastery 20 as Healer.",
-			"bonus": "Cosmetic only: shown on your role card.",
-			"tracked": true
-		},
-		{
-			"category": "Mastery",
-			"id": "mastery_damage_5",
-			"name": "Apprentice Damage",
-			"objective": "Reach role mastery 5 as Damage.",
-			"bonus": "Cosmetic only: shown on your role card.",
-			"tracked": true
-		},
-		{
-			"category": "Mastery",
-			"id": "mastery_damage_10",
-			"name": "Master Damage",
-			"objective": "Reach role mastery 10 as Damage.",
-			"bonus": "Cosmetic only: shown on your role card.",
-			"tracked": true
-		},
-		{
-			"category": "Mastery",
-			"id": "mastery_damage_20",
-			"name": "Grandmaster Damage",
-			"objective": "Reach role mastery 20 as Damage.",
-			"bonus": "Cosmetic only: shown on your role card.",
-			"tracked": true
-		},
-		{
-			"category": "Mastery",
-			"id": "mastery_jack_5",
-			"name": "Apprentice Jack",
-			"objective": "Reach role mastery 5 as Jack of all trades.",
-			"bonus": "Cosmetic only: shown on your role card.",
-			"tracked": true
-		},
-		{
-			"category": "Mastery",
-			"id": "mastery_jack_10",
-			"name": "Master Jack",
-			"objective": "Reach role mastery 10 as Jack of all trades.",
-			"bonus": "Cosmetic only: shown on your role card.",
-			"tracked": true
-		},
-		{
-			"category": "Mastery",
-			"id": "mastery_jack_20",
-			"name": "Grandmaster Jack",
-			"objective": "Reach role mastery 20 as Jack of all trades.",
-			"bonus": "Cosmetic only: shown on your role card.",
-			"tracked": true
-		},
-		{
-			"category": "Mastery",
-			"id": "mastery_all_20",
-			"name": "Master of Every Trade",
-			"objective": "Reach role mastery 20 in every role.",
-			"bonus": "Cosmetic only: a gold frame on your role card.",
-			"tracked": true
-		},
-		{
-			"category": "Mastery",
-			"id": "mastery_miner_15",
-			"name": "Elder Miner",
-			"objective": "Reach role mastery 15 as Miner.",
-			"bonus": "Cosmetic only: shown on your role card.",
-			"tracked": true
-		},
-		{
-			"category": "Mastery",
-			"id": "mastery_tank_15",
-			"name": "Elder Tank",
-			"objective": "Reach role mastery 15 as Tank.",
-			"bonus": "Cosmetic only: shown on your role card.",
-			"tracked": true
-		},
-		{
-			"category": "Mastery",
-			"id": "mastery_healer_15",
-			"name": "Elder Healer",
-			"objective": "Reach role mastery 15 as Healer.",
-			"bonus": "Cosmetic only: shown on your role card.",
-			"tracked": true
-		},
-		{
-			"category": "Mastery",
-			"id": "mastery_damage_15",
-			"name": "Elder Damage",
-			"objective": "Reach role mastery 15 as Damage.",
-			"bonus": "Cosmetic only: shown on your role card.",
-			"tracked": true
-		},
-		{
-			"category": "Mastery",
-			"id": "mastery_jack_15",
-			"name": "Elder Jack",
-			"objective": "Reach role mastery 15 as Jack of all trades.",
-			"bonus": "Cosmetic only: shown on your role card.",
-			"tracked": true
-		}
-	],
+	"achievements": [],
 	"skillBranches": [
 		{
 			"key": "GENERALIST",
@@ -6013,265 +5484,12 @@
 			]
 		}
 	],
-	"shops": [
-		{
-			"id": "shop_outfit",
-			"title": "OUTFITTER",
-			"sub": "COLD WEATHER GEAR",
-			"prompt": "helmets, boots, gloves and backpacks",
-			"items": [
-				{
-					"id": "out_helmet",
-					"shop": "shop_outfit",
-					"name": "Helmet - lamp mount, face guard",
-					"effect": "Cosmetic: a head lamp lights the way in front of you (everyone sees it).",
-					"essence": 60,
-					"heartstone": 0,
-					"max": 1,
-					"kind": "Cosmetic"
-				},
-				{
-					"id": "out_boots",
-					"shop": "shop_outfit",
-					"name": "Boots - crampons, insulated soles",
-					"effect": "Overloaded, you still walk at 60% speed instead of 50% (heavy Heart Stone runs).",
-					"essence": 80,
-					"heartstone": 0,
-					"max": 1,
-					"kind": "Upgrade"
-				},
-				{
-					"id": "out_gloves",
-					"shop": "shop_outfit",
-					"name": "Gloves - grip, heated liners",
-					"effect": "Steadier aim: +5% damage with a carried gun.",
-					"essence": 80,
-					"heartstone": 0,
-					"max": 1,
-					"kind": "Upgrade"
-				},
-				{
-					"id": "out_pack",
-					"shop": "shop_outfit",
-					"name": "Backpack - how much you can carry",
-					"effect": "Each tier replaces the last: a bigger pack holds more (a crystal weighs 1, a Heart Stone 50).",
-					"essence": 120,
-					"heartstone": 1,
-					"max": null,
-					"kind": "Upgrade"
-				},
-				{
-					"id": "out_parka",
-					"shop": "shop_outfit",
-					"name": "Parka - fur-lined expedition coat",
-					"effect": "Cosmetic: the expedition parka, worn over the starter shirt (everyone sees it).",
-					"essence": 100,
-					"heartstone": 0,
-					"max": 1,
-					"kind": "Cosmetic"
-				},
-				{
-					"id": "out_trousers",
-					"shop": "shop_outfit",
-					"name": "Trousers - padded expedition legs",
-					"effect": "Cosmetic: padded expedition trousers instead of the starter canvas (everyone sees them).",
-					"essence": 70,
-					"heartstone": 0,
-					"max": 1,
-					"kind": "Cosmetic"
-				}
-			]
-		},
-		{
-			"id": "shop_pick",
-			"title": "PICK SMITH",
-			"sub": "PICKS & EDGES",
-			"prompt": "pickaxe upgrades",
-			"items": [
-				{
-					"id": "pick_tip_l",
-					"shop": "shop_pick",
-					"name": "Left tip - its own tier and focus",
-					"effect": "Each tier: +3% mining speed (+4% at tier 6) and more of the resource this tip focuses on.",
-					"essence": 75,
-					"heartstone": 1,
-					"max": 5,
-					"kind": "PickTip"
-				},
-				{
-					"id": "pick_tip_r",
-					"shop": "shop_pick",
-					"name": "Right tip - its own tier and focus",
-					"effect": "Each tier: +3% mining speed (+4% at tier 6) and more of the resource this tip focuses on.",
-					"essence": 75,
-					"heartstone": 1,
-					"max": 5,
-					"kind": "PickTip"
-				},
-				{
-					"id": "pick_handle_light",
-					"shop": "shop_pick",
-					"name": "Light handle - quick swings",
-					"effect": "Mines every piece 15% faster.",
-					"essence": 250,
-					"heartstone": 3,
-					"max": 1,
-					"kind": "PickHandle"
-				},
-				{
-					"id": "pick_handle_heavy",
-					"shop": "shop_pick",
-					"name": "Heavy handle - hits harder",
-					"effect": "Each hit bites off 25% more crystal (the node runs out sooner) and gray rock gives 25% more.",
-					"essence": 250,
-					"heartstone": 3,
-					"max": 1,
-					"kind": "PickHandle"
-				}
-			]
-		},
-		{
-			"id": "shop_tower",
-			"title": "TOWER WORKS",
-			"sub": "TOWER PARTS & PLANS",
-			"prompt": "tower upgrades",
-			"items": [
-				{
-					"id": "tw_barrels",
-					"shop": "shop_tower",
-					"name": "Rifled barrels - gun damage",
-					"effect": "+5% Turret, Artillery and Sniper damage per rank, docked or carried.",
-					"essence": 250,
-					"heartstone": 2,
-					"max": 3,
-					"kind": "Upgrade"
-				},
-				{
-					"id": "tw_coils",
-					"shop": "shop_tower",
-					"name": "Generator coils - more power",
-					"effect": "+5% generator output per rank.",
-					"essence": 250,
-					"heartstone": 2,
-					"max": 3,
-					"kind": "Upgrade"
-				},
-				{
-					"id": "tw_lenses",
-					"shop": "shop_tower",
-					"name": "Healer lenses - stronger repairs",
-					"effect": "+10% Healer repair per rank.",
-					"essence": 200,
-					"heartstone": 2,
-					"max": 3,
-					"kind": "Upgrade"
-				},
-				{
-					"id": "tw_emitters",
-					"shop": "shop_tower",
-					"name": "Wall bracing - sturdier walls",
-					"effect": "+8% HP on your walls (and Rime Vents) per rank.",
-					"essence": 200,
-					"heartstone": 2,
-					"max": 3,
-					"kind": "Upgrade"
-				}
-			]
-		},
-		{
-			"id": "shop_supply",
-			"title": "QUARTERMASTER",
-			"sub": "SUPPLIES & RATIONS",
-			"prompt": "supplies for your next match",
-			"items": [
-				{
-					"id": "sup_repair",
-					"shop": "shop_supply",
-					"name": "Repair kit - patch a building mid-wave",
-					"effect": "Supply: the first time one of your buildings drops under 30% HP (or would fall), it snaps back to full.",
-					"essence": 30,
-					"heartstone": 0,
-					"max": 5,
-					"kind": "Supply"
-				},
-				{
-					"id": "sup_cell",
-					"shop": "shop_supply",
-					"name": "Power cell - a burst of stored power",
-					"effect": "Supply: +250 max POWER for the match, starting full.",
-					"essence": 30,
-					"heartstone": 0,
-					"max": 5,
-					"kind": "Supply"
-				},
-				{
-					"id": "sup_flare",
-					"shop": "shop_supply",
-					"name": "Supply sled - a head start",
-					"effect": "Supply: +15 of each crystal at the start of the match.",
-					"essence": 25,
-					"heartstone": 0,
-					"max": 5,
-					"kind": "Supply"
-				},
-				{
-					"id": "sup_warmer",
-					"shop": "shop_supply",
-					"name": "Hand warmer - warmth in the cold",
-					"effect": "Supply: +3 max HP for the match.",
-					"essence": 20,
-					"heartstone": 0,
-					"max": 5,
-					"kind": "Supply"
-				}
-			]
-		}
-	],
+	"shops": [],
 	"stations": [
 		{
 			"id": "terminal",
 			"title": "USE TERMINAL",
 			"prompt": "type in an access code"
-		},
-		{
-			"id": "gate",
-			"title": "SEALED GATE",
-			"prompt": "the Company's lower gate"
-		},
-		{
-			"id": "radio",
-			"title": "SIGNAL RELAY",
-			"prompt": "reach the other Hollows (host or join)"
-		},
-		{
-			"id": "lift",
-			"title": "SURFACE LIFT",
-			"prompt": "ride the cage up to the ice (solo)"
-		},
-		{
-			"id": "library",
-			"title": "LIBRARY",
-			"prompt": "read the Almanac and your relic collection"
-		},
-		{
-			"id": "trainer",
-			"title": "TRAINER",
-			"prompt": "spend skill points with your mentor"
-		},
-		{
-			"id": "records",
-			"title": "RECORDS",
-			"prompt": "your achievements"
-		},
-		{
-			"id": "stats",
-			"title": "STATS BOARD",
-			"prompt": "your lifetime stats"
-		},
-		{
-			"id": "survey",
-			"title": "SURVEY TABLE",
-			"prompt": "the Company's map and your next goals"
 		}
 	],
 	"pickTiers": [
@@ -6286,23 +5504,23 @@
 		"presets": [
 			{
 				"name": "Tutorial",
-				"description": "A guided first match on shallow ice. 120 s prep, Obsidian-only upgrades."
+				"description": ""
 			},
 			{
 				"name": "Easy",
-				"description": "Shallow ice. 120 s prep, Obsidian-only upgrades."
+				"description": ""
 			},
 			{
 				"name": "Medium",
-				"description": "Deeper ice. 90 s prep, standard upgrade colors."
+				"description": ""
 			},
 			{
 				"name": "Hard",
-				"description": "Deep ice. 60 s prep, randomized upgrade colors."
+				"description": ""
 			},
 			{
 				"name": "Insane",
-				"description": "Right over the Sleeper. 30 s prep, randomized upgrade colors."
+				"description": ""
 			}
 		],
 		"lengths": [
@@ -6323,7 +5541,7 @@
 			},
 			{
 				"name": "Endless",
-				"description": "The Long Night: the cage comes when the Base falls. After wave 10 the waves grow fast; survive wave 20 on Normal or harder to hold the Hollow. Your best wave is recorded.",
+				"description": "The Long Night: the cage comes when the Base falls. After wave 10 the waves grow fast; survive wave 20 on Medium or harder to hold the Hollow. Your best wave is recorded.",
 				"waves": 0
 			}
 		],
@@ -6407,7 +5625,7 @@
 		},
 		{
 			"id": "Roles",
-			"text": "Roles: you build your role's towers (the others grey out, marked with the role that builds them); everyone builds the Base, Stone Wall and Bank. Jack of all trades builds the basics up to level 7. A Tank taunts with C."
+			"text": "Roles: you build your role's towers (the others gray out, marked with the role that builds them); everyone builds the Base, Stone Wall and Bank. Jack of All Trades builds the basics up to level 7. A Tank taunts with C."
 		},
 		{
 			"id": "TeamBank",

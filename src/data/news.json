@@ -1,5 +1,63 @@
 [
 	{
+		"version": "0.1.1",
+		"title": "Hunted",
+		"date": "2026-10-23",
+		"slug": "v0-1-1",
+		"items": [
+			"Enemies now notice you. Walk close to a passing enemy and it may leave its path to come for you. Most enemies spot you at about 4-7 m, and carried Heart Stones make you easier to spot. Outrun them, break their line of sight, or step behind a wall, and they give up. Chasers never break a wall to get at you. Bosses and the Cryo Mage stay on their path but hit anyone within reach. While you're being chased, a HUNTED badge shows how many (above your crosshair in first person, top center in commander view).",
+			"Heart Stone carriers glow. You give off a cold violet light that gets brighter with every Heart Stone you carry. Everyone can see it, and it goes out when you bank.",
+			"New match option: Long night. The host turns it on in match setup. Each night is five waves in the dark and ends on a boss. Kill the boss and you get 120 seconds of daylight to explore, mine and push your walls out before the next night falls. Short, Standard and Long are 1, 2 and 3 nights; Endless keeps going. If the boss isn't down after 6 minutes, the sun comes up anyway. Off by default.",
+			"Rejoin after a drop. Lose your connection mid-match and a 10-second countdown rejoins you (F5 to go now, Esc to stay). If the game closed, a LAST MATCH card on the title screen and in the Hollow lets you rejoin. Your seat is held until the match ends, and you come back with your crystals.",
+			"New enemy looks. The Ice Brawler has a new body with rigid ice armor. The Glacier Hound has shorter legs and a new trot, gallop and walk.",
+			"Your hero's feet no longer slide, and he now runs facing where he's going instead of slightly sideways.",
+			"From the playtest: commander view is much brighter at night; you ride the lift back into the Hollow after a match; the Tutorial now plays on Mountain Front; every Mountain Front ring has all four crystal colors; relics hide in rock nooks out in the rings; the Avalanche breaks the same rocks in both views; the Gatewright stays at his post.",
+			"Fixes: Mountain Front cairns block every player the same way, even after a rejoin. Rejoining no longer counts teamwork achievement progress twice. Settings switches no longer flip the wrong accessibility option. Level 100+ players no longer lose skill ranks they earned. Fixed a possible crash near the mountain cliff wall. In multiplayer, hits on a boss's weak spot now count while the boss is moving. Filled small holes in the Hollow's lift cage, gate, stone door and street lamps. The Hollow's rock walls are rebuilt with rough granite and snow on the ledges, and the Tailor's stall is finished."
+		],
+		"images": [
+			{
+				"src": "v0-1-1/enemies-hunt-you.jpg",
+				"caption": "Get close and enemies come for you.",
+				"note": 0
+			},
+			{
+				"src": "v0-1-1/long-night-daylight.jpg",
+				"caption": "With Long night on, the sun comes up once the boss falls.",
+				"note": 2
+			},
+			{
+				"src": "v0-1-1/new-ice-brawler.jpg",
+				"caption": "The Ice Brawler has a new look.",
+				"note": 4
+			},
+			{
+				"src": "v0-1-1/hero-run.jpg",
+				"caption": "Your hero runs facing where he's going, and his feet no longer slide.",
+				"note": 5
+			},
+			{
+				"src": "v0-1-1/commander-night.jpg",
+				"caption": "Nights are easier to see in commander view.",
+				"note": 6
+			},
+			{
+				"src": "v0-1-1/tutorial-mountain-front.jpg",
+				"caption": "The Tutorial now plays on Mountain Front.",
+				"note": 6
+			},
+			{
+				"src": "v0-1-1/hidden-relics.jpg",
+				"caption": "Relics now hide out in the rings.",
+				"note": 6
+			},
+			{
+				"src": "v0-1-1/hollow-rock-walls.jpg",
+				"caption": "The Hollow's rebuilt rock walls.",
+				"note": 7
+			}
+		]
+	},
+	{
 		"version": "0.1.0",
 		"title": "Mountain Front & the New Hollow",
 		"date": "2026-10-21",
